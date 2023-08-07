@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Application>
+
+  <Header>
+    <Version val="12050"/>
+    <WithIsn val="Y"/>
+    <_InternalTask val="N"/>
+    <IsRoot val="N"/>
+    <InIndex val="N"/>
+  </Header>
+
+  <ProgramsRepository>
+    <Programs>
+      <Task MainProgram="N">
+        <Header Description="WRITE 受発注データ詳細" ISN_2="1" LastIsn="1" id="1139">
+          <ExecutionRight comp="-1"/>
+          <Resident val="N"/>
+          <SQL val="Y"/>
+          <ReturnValue>
+            <ReturnValueAttr/>
+            <TSK_PARAMS val="3"/>
+            <ParametersCount val="3"/>
+            <ParametersAttributes>
+              <Attr MgAttr="N"/>
+              <Attr MgAttr="A"/>
+              <Attr MgAttr="A"/>
+            </ParametersAttributes>
+          </ReturnValue>
+          <SqlWhereExist val="N"/>
+          <TaskType val="B"/>
+          <External val="N"/>
+          <Offline val="N"/>
+          <FormType val="N"/>
+          <DotNetObjectExists val="N"/>
+          <LastModified _date="735878" _time="61950" date="2015/10/07" time="17:12:30"/>
+        </Header>
+        <ItemIsn val="3"/>
+        <Resource>
+          <Columns>
+            <Column id="3" name="取引部門">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="147"/>
+                <StoredAs id="173" val="4"/>
+                <Size id="174" val="2"/>
+                <Definition id="175" val="2"/>
+              </PropertyList>
+            </Column>
+            <Column id="1" name="READ_DB_NAME">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="20"/>
+                <StoredAs id="173" val="3"/>
+                <Size id="174" val="20"/>
+                <Definition id="175" val="2"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="2" name="WRITE_DB_NAME">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="20"/>
+                <StoredAs id="173" val="3"/>
+                <Size id="174" val="20"/>
+                <Definition id="175" val="2"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+          </Columns>
+          <ColumnsLastIsn val="4"/>
+        </Resource>
+        <Information>
+          <Key>
+            <Mode val="N"/>
+          </Key>
+          <DB comp="-1"/>
+          <Sort>
+            <CLS val="A"/>
+          </Sort>
+          <ForceRecordDelete DEL="N"/>
+          <EndTaskCondition val="Y"/>
+          <EvaluateEndCondition val="A"/>
+          <InitialMode val="E"/>
+          <Locate Direction="A"/>
+          <Range Direction="A"/>
+          <VarRange/>
+          <TaskProperties>
+            <SelectionTable val="N"/>
+            <ConfirmUpdate CNFU="N"/>
+            <ConfirmCancel val="N"/>
+            <ErrorStrategy val="A"/>
+            <LockingStrategy val="I"/>
+            <CacheStrategy val="T"/>
+            <ForceRecordSuffix val="N"/>
+            <TransactionMode val="P"/>
+            <TransactionBegin val="T"/>
+            <PreloadView val="N"/>
+            <AllowEmptyDataview val="N"/>
+            <KeepCreatedContext val="N"/>
+          </TaskProperties>
+          <SIDE_WIN>
+            <AllowOptions val="N"/>
+            <AllowQuery val="Y"/>
+            <AllowModify val="N"/>
+            <AllowCreate val="N"/>
+            <AllowDelete val="N"/>
+            <AllowLocate val="Y"/>
+            <AllowRange val="Y"/>
+            <AllowIndexChange val="N"/>
+            <AllowSorting val="Y"/>
+            <AllowIOFiles val="Y"/>
+            <RecordCycle val="Y"/>
+            <AllowEvents val="Y"/>
+            <AllowIndexOptimization val="Y"/>
+            <AllowLocationInQuery val="Y"/>
+            <AllowPrintingData val="N"/>
+          </SIDE_WIN>
+          <WIN>
+            <OpenTaskWindow val="N"/>
+            <CloseTaskWindow val="Y"/>
+            <ForegroundWindow val="Y"/>
+            <FlipFld val="N"/>
+            <RefreshTaskWindow ReturnValue="N"/>
+          </WIN>
+          <BOX>
+            <Direction val="V"/>
+          </BOX>
+        </Information>
+        <SQL_FORM DB="MSSQL" RESTAB="MSSQL">
+          <SQL_STMT_U val="INSERT INTO [:1].[dbo].受発注データ詳細&#xD;&#xA;(&#xD;&#xA;       [取引部門]&#xD;&#xA;      ,[取引Ｄ区分]&#xD;&#xA;      ,[伝票Ｎｏ]&#xD;&#xA;      ,[行Ｎｏ]&#xD;&#xA;      ,[取引先名]&#xD;&#xA;      ,[取引先郵便番号]&#xD;&#xA;      ,[取引先住所１]&#xD;&#xA;      ,[取引先住所２]&#xD;&#xA;      ,[取引先ＴＥＬ]&#xD;&#xA;      ,[納入先名]&#xD;&#xA;      ,[納入先郵便番号]&#xD;&#xA;      ,[納入先住所１]&#xD;&#xA;      ,[納入先住所２]&#xD;&#xA;      ,[納入先ＴＥＬ]&#xD;&#xA;      ,[伝票発行区分]&#xD;&#xA;      ,[相手店Ｃ]&#xD;&#xA;      ,[相手取引先Ｃ]&#xD;&#xA;      ,[相手部門Ｃ]&#xD;&#xA;      ,[相手商品Ｃ]&#xD;&#xA;      ,[送り状番号]&#xD;&#xA;      ,[着日]&#xD;&#xA;      ,[掛率]&#xD;&#xA;      ,[件名]&#xD;&#xA;      ,[検索Ｃ]&#xD;&#xA;      ,[予備率]&#xD;&#xA;      ,[予備Ｃ１]&#xD;&#xA;      ,[予備Ｃ２]&#xD;&#xA;      ,[予備Ｃ３]&#xD;&#xA;      ,[予備区分１]&#xD;&#xA;      ,[予備区分２]&#xD;&#xA;      ,[予備区分３]&#xD;&#xA;      ,[任意Ｃ１]&#xD;&#xA;      ,[任意Ｃ２]&#xD;&#xA;      ,[任意Ｃ３]&#xD;&#xA;      ,[任意Ｃ４]&#xD;&#xA;      ,[任意Ｃ５]&#xD;&#xA;      ,[任意文字１]&#xD;&#xA;      ,[任意文字２]&#xD;&#xA;      ,[任意文字３]&#xD;&#xA;      ,[任意文字４]&#xD;&#xA;      ,[任意文字５]&#xD;&#xA;      ,[任意日付１]&#xD;&#xA;      ,[任意時間１]&#xD;&#xA;      ,[任意日付２]&#xD;&#xA;      ,[任意時間２]&#xD;&#xA;      ,[任意日付３]&#xD;&#xA;      ,[任意時間３]&#xD;&#xA;      ,[任意日付４]&#xD;&#xA;      ,[任意時間４]&#xD;&#xA;      ,[任意日付５]&#xD;&#xA;      ,[任意時間５]&#xD;&#xA;) &#xD;&#xA;&#xD;&#xA;SELECT&#xD;&#xA;       :3                 /* 取引部門 */&#xD;&#xA;      ,[SHODRTRN001]      /* 取引Ｄ区分*/ &#xD;&#xA;      ,[SHODRTRN004]      /* 伝票Ｎｏ*/ &#xD;&#xA;      ,[SHODRTRN005]      /* 行Ｎｏ*/ &#xD;&#xA;      ,ISNULL (SYO.SHSYGTRN004,'') /* 取引先名*/ &#xD;&#xA;      ,ISNULL (SYO.SHSYGTRN005,'') /* 取引先郵便番号*/ &#xD;&#xA;      ,ISNULL (SYO.SHSYGTRN006,'') /* 取引先住所１*/ &#xD;&#xA;      ,ISNULL (SYO.SHSYGTRN007,'') /* 取引先住所２*/ &#xD;&#xA;      ,ISNULL (SYO.SHSYGTRN008,'') /* 取引先ＴＥＬ*/ &#xD;&#xA;      ,ISNULL (NOU.SHSYGTRN004,'') /* 納入先名*/ &#xD;&#xA;      ,ISNULL (NOU.SHSYGTRN005,'') /* 納入先郵便番号*/ &#xD;&#xA;      ,ISNULL (NOU.SHSYGTRN006,'') /* 納入先住所１*/ &#xD;&#xA;      ,ISNULL (NOU.SHSYGTRN007,'') /* 納入先住所２*/ &#xD;&#xA;      ,ISNULL (NOU.SHSYGTRN008,'') /* 納入先ＴＥＬ*/ &#xD;&#xA;      ,[SHODRTRN015]      /* 伝票発行区分*/ &#xD;&#xA;      ,[SHODRTRN049]      /* 相手店Ｃ*/ &#xD;&#xA;      ,[SHODRTRN050]      /* 相手取引先Ｃ*/ &#xD;&#xA;      ,[SHODRTRN051]      /* 相手部門Ｃ*/ &#xD;&#xA;      ,[SHODRTRN052]      /* 相手商品Ｃ*/ &#xD;&#xA;      ,''                 /* 送り状番号*/&#xD;&#xA;      ,'00000000'         /* 着日*/&#xD;&#xA;      ,[SHODRTRN095]      /* 掛率*/&#xD;&#xA;      ,[SHODRTRN093]      /* 件名*/&#xD;&#xA;      ,[SHODRTRN088]      /* 検索Ｃ */ &#xD;&#xA;      ,[SHODRTRN102]      /* 予備率 */&#xD;&#xA;      ,[SHODRTRN99]       /* 予備Ｃ１ */&#xD;&#xA;      ,[SHODRTRN100]      /* 予備Ｃ２ */&#xD;&#xA;      ,[SHODRTRN101]      /* 予備Ｃ３ */&#xD;&#xA;      ,[SHODRTRN96]       /* 予備区分１ */&#xD;&#xA;      ,[SHODRTRN97]       /* 予備区分２ */&#xD;&#xA;      ,[SHODRTRN98]       /* 予備区分３ */&#xD;&#xA;      ,[SHODRTRN074]      /* 任意ｺｰﾄﾞ１ */ &#xD;&#xA;      ,[SHODRTRN075]      /* 任意ｺｰﾄﾞ２ */ &#xD;&#xA;      ,[SHODRTRN076]      /* 任意ｺｰﾄﾞ３ */ &#xD;&#xA;      ,[SHODRTRN077]      /* 任意ｺｰﾄﾞ４ */ &#xD;&#xA;      ,[SHODRTRN078]      /* 任意ｺｰﾄﾞ５ */ &#xD;&#xA;      ,[SHODRTRN079]      /* 任意文字１ */ &#xD;&#xA;      ,[SHODRTRN080]      /* 任意文字２ */ &#xD;&#xA;      ,[SHODRTRN081]      /* 任意文字３ */ &#xD;&#xA;      ,''                 /* 任意文字４ */ &#xD;&#xA;      ,''                 /* 任意文字５ */ &#xD;&#xA;      ,[SHODRTRN082]      /* 任意日付１ */ &#xD;&#xA;      ,[SHODRTRN083]      /* 任意時間１ */ &#xD;&#xA;      ,[SHODRTRN084]      /* 任意日付２ */ &#xD;&#xA;      ,[SHODRTRN085]      /* 任意時間２ */ &#xD;&#xA;      ,[SHODRTRN086]      /* 任意日付３ */ &#xD;&#xA;      ,[SHODRTRN087]      /* 任意時間３ */ &#xD;&#xA;      ,''                 /* 任意日付４ */ &#xD;&#xA;      ,''                 /* 任意時間４ */ &#xD;&#xA;      ,''                 /* 任意日付５ */ &#xD;&#xA;      ,''                 /* 任意時間５ */ &#xD;&#xA;&#xD;&#xA;&#xD;&#xA;FROM&#xD;&#xA;[:2].[dbo].SHODRTRN&#xD;&#xA;&#xD;&#xA;  LEFT JOIN&#xD;&#xA;[:2].[dbo].[SHSYGTRN] SYO ON ( (SYO.SHSYGTRN001 = 21 AND SHODRTRN001 = 1&#xD;&#xA;                            AND SYO.SHSYGTRN002 = 1 &#xD;&#xA;                            AND SYO.SHSYGTRN003 = SHODRTRN004)&#xD;&#xA;                            OR (SYO.SHSYGTRN001 = 13 AND SHODRTRN001 = 3&#xD;&#xA;                            AND SYO.SHSYGTRN002 = 2&#xD;&#xA;                            AND SYO.SHSYGTRN003 = SHODRTRN004))&#xD;&#xA;&#xD;&#xA;  LEFT JOIN&#xD;&#xA;[:2].[dbo].[SHSYGTRN] NOU ON  ( NOU.SHSYGTRN001 = 21 AND SHODRTRN001 = 1&#xD;&#xA;                            AND NOU.SHSYGTRN002 = 3 &#xD;&#xA;                            AND NOU.SHSYGTRN003 = SHODRTRN004)"/>
+          <INARG>
+            <Arguments>
+              <Argument>
+                <id val="1"/>
+                <Exp val="2"/>
+              </Argument>
+              <Argument>
+                <id val="2"/>
+                <Exp val="1"/>
+              </Argument>
+              <Argument Variable="1">
+                <id val="3"/>
+              </Argument>
+            </Arguments>
+          </INARG>
+        </SQL_FORM>
+        <TaskLogic>
+          <LogicUnit id="2" propagate="78">
+            <Level val="R"/>
+            <Type val="M"/>
+            <_DspTemplate val="0"/>
+            <_HeaderPosition val="1"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <_TotalVariabls val="3"/>
+            <_TotalVirtuals val="3"/>
+            <PRM_LEN val="3"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <LogicLines>
+              <LogicLine>
+                <DATAVIEW_SRC FlowIsn="2" Type="Q">
+                  <Condition val="N"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </DATAVIEW_SRC>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="1" FlowIsn="3" id="1">
+                  <Column val="1"/>
+                  <Type val="V"/>
+                  <IsParameter val="Y"/>
+                  <_RecomputeIndex val="1"/>
+                  <_FormIndex val="1"/>
+                  <_ControlIndex val="1"/>
+                  <_OleSubformIdx val="1"/>
+                  <_TabbingOrderDspIndex val="1"/>
+                  <DIFF_UPDATE val="T"/>
+                  <PartOfDataview val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="2" FlowIsn="4" id="2">
+                  <Column val="2"/>
+                  <Type val="V"/>
+                  <IsParameter val="Y"/>
+                  <_RecomputeIndex val="1"/>
+                  <_FormIndex val="1"/>
+                  <_ControlIndex val="1"/>
+                  <_OleSubformIdx val="1"/>
+                  <_TabbingOrderDspIndex val="1"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="3" FlowIsn="5" id="3">
+                  <Column val="3"/>
+                  <Type val="V"/>
+                  <IsParameter val="Y"/>
+                  <_RecomputeIndex val="1"/>
+                  <_FormIndex val="1"/>
+                  <_ControlIndex val="1"/>
+                  <_OleSubformIdx val="1"/>
+                  <_TabbingOrderDspIndex val="1"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+        </TaskLogic>
+        <TaskForms>
+          <FormEntry id="2">
+            <PropertyList model="FORM_GUI0">
+              <_Comment id="218"/>
+              <FormName id="311" valUnicode="WRITE 残高履歴マスタ(請求支払)"/>
+            </PropertyList>
+          </FormEntry>
+        </TaskForms>
+        <Expressions>
+          <Expression id="1">
+            <ExpSyntax val="Trim({0,2})"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="2">
+            <ExpSyntax val="Trim({0,3})"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+        </Expressions>
+      </Task>
+    </Programs>
+  </ProgramsRepository>
+
+</Application>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Application>
+
+  <Header>
+    <Version val="14071.00"/>
+    <WithIsn val="Y"/>
+    <Exe comp="-1"/>
+    <LastIsn val="21"/>
+    <LastIsnFolder val="0"/>
+  </Header>
+
+  <ComponentsRepository>
+    <Components>
+      <Component id="1" name="UserFunctionality">
+        <Description val="Handles the Range, Locate, Sort and Print Data internal events"/>
+        <ComponentType val="Magic xpa"/>
+        <Type val="U"/>
+        <LoadImmediate val="Y"/>
+        <Comment val="This component provides an interface for the user to perform Range, Locate, Sort and Print Data.The component does not expose any object. It has logic units for handling the Range, Locate, Sort and Print Data internal events.The source code for this component is available in the Add_On\UserFunctionality directory, so you can customize the screens of the component as you wish."/>
+        <MciFile val="UserFunctionality.eci"/>
+        <CABINET_FILE val="%EngineDir%Add_On\UserFunctionality\UserFunctionality.ecf"/>
+      </Component>
+      <Component id="3" name="ExcelCreator.Shared.v10">
+        <Description val="ExcelCreator.Shared.v10"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <LastISN val="448"/>
+        <AssemblyName val="ExcelCreator.Shared.v10, Version=10.0.5270.1116, Culture=neutral, PublicKeyToken=411a8845f4d5d1b9"/>
+        <AssemblyPath val="%XLSCRT%ExcelCreator.Shared.v10.dll"/>
+        <UseSpecificVersion val="Y"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="4" name="ExcelCreator.Creator.v10">
+        <Description val="ExcelCreator.Creator.v10"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <LastISN val="448"/>
+        <AssemblyName val="ExcelCreator.Creator.v10, Version=10.0.5270.1116, Culture=neutral, PublicKeyToken=e70d0f98050da475"/>
+        <AssemblyPath val="%XLSCRT%ExcelCreator.Creator.v10.dll"/>
+        <UseSpecificVersion val="Y"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="5" name="ExcelCreator.CellDesigner.v10">
+        <Description val="ExcelCreator.CellDesigner.v10"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <LastISN val="448"/>
+        <AssemblyName val="ExcelCreator.CellDesigner.v10, Version=10.0.5270.1116, Culture=neutral, PublicKeyToken=c7a69a9a87c82556"/>
+        <AssemblyPath val="%XLSCRT%ExcelCreator.CellDesigner.v10.dll"/>
+        <UseSpecificVersion val="Y"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="6" name="ExcelCreator.Document.v10">
+        <Description val="ExcelCreator.Document.v10"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <LastISN val="448"/>
+        <AssemblyName val="ExcelCreator.Document.v10, Version=10.0.5270.1116, Culture=neutral, PublicKeyToken=40e5e8c862e0994c"/>
+        <AssemblyPath val="%XLSCRT%ExcelCreator.Document.v10.dll"/>
+        <UseSpecificVersion val="Y"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="7" name="ExcelCreator.Xls.Core.v10">
+        <Description val="ExcelCreator.Xls.Core.v10"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <LastISN val="448"/>
+        <AssemblyName val="ExcelCreator.Xls.Core.v10, Version=10.0.5270.1116, Culture=neutral, PublicKeyToken=53fa96998d653c73"/>
+        <AssemblyPath val="%XLSCRT%ExcelCreator.Xls.Core.v10.dll"/>
+        <UseSpecificVersion val="Y"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="8" name="ExcelCreator.Xls.Creator.v10">
+        <Description val="ExcelCreator.Xls.Creator.v10"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <LastISN val="448"/>
+        <AssemblyName val="ExcelCreator.Xls.Creator.v10, Version=10.0.5270.1116, Culture=neutral, PublicKeyToken=7d03361a5824228f"/>
+        <AssemblyPath val="%XLSCRT%ExcelCreator.Xls.Creator.v10.dll"/>
+        <UseSpecificVersion val="Y"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="9" name="ExcelCreator.Xlsx.Core.v10">
+        <Description val="ExcelCreator.Xlsx.Core.v10"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <LastISN val="448"/>
+        <AssemblyName val="ExcelCreator.Xlsx.Core.v10, Version=10.0.5270.1116, Culture=neutral, PublicKeyToken=afb069e70259a56a"/>
+        <AssemblyPath val="%XLSCRT%ExcelCreator.Xlsx.Core.v10.dll"/>
+        <UseSpecificVersion val="Y"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="11" name="ExcelCreator.Xlsx.Creator.v10">
+        <Description val="ExcelCreator.Xlsx.Creator.v10"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <LastISN val="448"/>
+        <AssemblyName val="ExcelCreator.Xlsx.Creator.v10, Version=10.0.5270.1116, Culture=neutral, PublicKeyToken=a1afcfd03b061a55"/>
+        <AssemblyPath val="%XLSCRT%ExcelCreator.Xlsx.Creator.v10.dll"/>
+        <UseSpecificVersion val="Y"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="12" name="System">
+        <Description val="System"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <LastISN val="448"/>
+        <AssemblyName val="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+        <AssemblyPath val="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll"/>
+        <UseSpecificVersion val="N"/>
+        <isGuiThreadExecution val="N"/>
+      </Component>
+      <Component id="13" name="System.Core">
+        <Description val="System.Core"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <LastISN val="448"/>
+        <AssemblyName val="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+        <AssemblyPath val="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll"/>
+        <UseSpecificVersion val="Y"/>
+        <isGuiThreadExecution val="N"/>
+      </Component>
+      <Component id="14" name="System.Windows.Forms">
+        <Description val="System.Windows.Forms"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <LastISN val="448"/>
+        <AssemblyName val="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+        <AssemblyPath val="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll"/>
+        <UseSpecificVersion val="Y"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="15" name="System.Drawing">
+        <Description val="System.Drawing"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <LastISN val="448"/>
+        <AssemblyName val="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+        <AssemblyPath val="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll"/>
+        <UseSpecificVersion val="Y"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="16" name="ExcelCreator.Html.Creator.v10">
+        <Description val="ExcelCreator.Html.Creator.v10"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <LastISN val="448"/>
+        <AssemblyName val="ExcelCreator.Html.Creator.v10, Version=10.0.5270.1116, Culture=neutral, PublicKeyToken=494ce5e0c7a6a80c"/>
+        <AssemblyPath val="%XLSCRT%ExcelCreator.Html.Creator.v10.dll"/>
+        <UseSpecificVersion val="Y"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="17" name="ExcelCreator.Pdf.Creator.v10">
+        <Description val="ExcelCreator.Pdf.Creator.v10"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <LastISN val="448"/>
+        <AssemblyName val="ExcelCreator.Pdf.Creator.v10, Version=10.0.5270.1116, Culture=neutral, PublicKeyToken=e4b6c7625c98a906"/>
+        <AssemblyPath val="%XLSCRT%ExcelCreator.Pdf.Creator.v10.dll"/>
+        <UseSpecificVersion val="Y"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="18" name="ExcelCreator.View.v10">
+        <Description val="ExcelCreator.View.v10"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <LastISN val="448"/>
+        <AssemblyName val="ExcelCreator.View.v10, Version=10.0.5270.1116, Culture=neutral, PublicKeyToken=ef668955e9772a61"/>
+        <AssemblyPath val="%XLSCRT%ExcelCreator.View.v10.dll"/>
+        <UseSpecificVersion val="Y"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="19" name="ExcelCreator.Xls.View.v10">
+        <Description val="ExcelCreator.Xls.View.v10"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <LastISN val="448"/>
+        <AssemblyName val="ExcelCreator.Xls.View.v10, Version=10.0.5270.1116, Culture=neutral, PublicKeyToken=d6c580e72ba6dcc4"/>
+        <AssemblyPath val="%XLSCRT%ExcelCreator.Xls.View.v10.dll"/>
+        <UseSpecificVersion val="N"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="20" name="ExcelCreator.Xlsx.View.v10">
+        <Description val="ExcelCreator.Xlsx.View.v10"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <LastISN val="448"/>
+        <AssemblyName val="ExcelCreator.Xlsx.View.v10, Version=10.0.5270.1116, Culture=neutral, PublicKeyToken=c551c97308384f23"/>
+        <AssemblyPath val="%XLSCRT%ExcelCreator.Xlsx.View.v10.dll"/>
+        <UseSpecificVersion val="Y"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="21" name="ExcelCreator.Xlsx.CreatorExpre">
+        <Description val="ExcelCreator.Xlsx.CreatorExpress.v10"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <LastISN val="448"/>
+        <AssemblyName val="ExcelCreator.Xlsx.CreatorExpress.v10, Version=10.0.5270.1116, Culture=neutral, PublicKeyToken=9b83eaf7c36ffa11"/>
+        <AssemblyPath val="%XLSCRT%ExcelCreator.Xlsx.CreatorExpress.v10.dll"/>
+        <UseSpecificVersion val="Y"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+    </Components>
+  </ComponentsRepository>
+
+</Application>

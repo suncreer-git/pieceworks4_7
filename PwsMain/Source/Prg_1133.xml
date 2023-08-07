@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Application>
+
+  <Header>
+    <Version val="12050"/>
+    <WithIsn val="Y"/>
+    <_InternalTask val="N"/>
+    <IsRoot val="N"/>
+    <InIndex val="N"/>
+  </Header>
+
+  <ProgramsRepository>
+    <Programs>
+      <Task MainProgram="N">
+        <Header Description="WRITE 残高履歴マスタ(請求支払)" ISN_2="1" LastIsn="1" id="1133">
+          <ExecutionRight comp="-1"/>
+          <Resident val="N"/>
+          <SQL val="Y"/>
+          <ReturnValue>
+            <ReturnValueAttr/>
+            <TSK_PARAMS val="3"/>
+            <ParametersCount val="3"/>
+            <ParametersAttributes>
+              <Attr MgAttr="N"/>
+              <Attr MgAttr="A"/>
+              <Attr MgAttr="A"/>
+            </ParametersAttributes>
+          </ReturnValue>
+          <SqlWhereExist val="N"/>
+          <TaskType val="B"/>
+          <External val="N"/>
+          <Offline val="N"/>
+          <FormType val="N"/>
+          <DotNetObjectExists val="N"/>
+          <LastModified _date="735878" _time="51982" date="2015/10/07" time="14:26:22"/>
+        </Header>
+        <ItemIsn val="3"/>
+        <Resource>
+          <Columns>
+            <Column id="3" name="取引部門">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="147"/>
+                <StoredAs id="173" val="4"/>
+                <Size id="174" val="2"/>
+                <Definition id="175" val="2"/>
+              </PropertyList>
+            </Column>
+            <Column id="1" name="READ_DB_NAME">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="20"/>
+                <StoredAs id="173" val="3"/>
+                <Size id="174" val="20"/>
+                <Definition id="175" val="2"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="2" name="WRITE_DB_NAME">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="20"/>
+                <StoredAs id="173" val="3"/>
+                <Size id="174" val="20"/>
+                <Definition id="175" val="2"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+          </Columns>
+          <ColumnsLastIsn val="3"/>
+        </Resource>
+        <Information>
+          <Key>
+            <Mode val="N"/>
+          </Key>
+          <DB comp="-1"/>
+          <Sort>
+            <CLS val="A"/>
+          </Sort>
+          <ForceRecordDelete DEL="N"/>
+          <EndTaskCondition val="Y"/>
+          <EvaluateEndCondition val="A"/>
+          <InitialMode val="E"/>
+          <Locate Direction="A"/>
+          <Range Direction="A"/>
+          <VarRange/>
+          <TaskProperties>
+            <SelectionTable val="N"/>
+            <ConfirmUpdate CNFU="N"/>
+            <ConfirmCancel val="N"/>
+            <ErrorStrategy val="A"/>
+            <LockingStrategy val="I"/>
+            <CacheStrategy val="T"/>
+            <ForceRecordSuffix val="N"/>
+            <TransactionMode val="P"/>
+            <TransactionBegin val="T"/>
+            <PreloadView val="N"/>
+            <AllowEmptyDataview val="N"/>
+            <KeepCreatedContext val="N"/>
+          </TaskProperties>
+          <SIDE_WIN>
+            <AllowOptions val="N"/>
+            <AllowQuery val="Y"/>
+            <AllowModify val="N"/>
+            <AllowCreate val="N"/>
+            <AllowDelete val="N"/>
+            <AllowLocate val="Y"/>
+            <AllowRange val="Y"/>
+            <AllowIndexChange val="N"/>
+            <AllowSorting val="Y"/>
+            <AllowIOFiles val="Y"/>
+            <RecordCycle val="Y"/>
+            <AllowEvents val="Y"/>
+            <AllowIndexOptimization val="Y"/>
+            <AllowLocationInQuery val="Y"/>
+            <AllowPrintingData val="N"/>
+          </SIDE_WIN>
+          <WIN>
+            <OpenTaskWindow val="N"/>
+            <CloseTaskWindow val="Y"/>
+            <ForegroundWindow val="Y"/>
+            <FlipFld val="N"/>
+            <RefreshTaskWindow ReturnValue="N"/>
+          </WIN>
+          <BOX>
+            <Direction val="V"/>
+          </BOX>
+        </Information>
+        <SQL_FORM DB="MSSQL" RESTAB="MSSQL">
+          <SQL_STMT_U val="INSERT INTO [:1].[dbo].取引先残高履歴マスタ&#xD;&#xA;(&#xD;&#xA;       [取引部門]&#xD;&#xA;      ,[取引先区分]&#xD;&#xA;      ,[取引先Ｃ]&#xD;&#xA;      ,[請求支払先Ｃ]&#xD;&#xA;      ,[集計先Ｃ]&#xD;&#xA;      ,[取引先名]&#xD;&#xA;      ,[取引先略称]&#xD;&#xA;      ,[部署名]&#xD;&#xA;      ,[代表者氏名]&#xD;&#xA;      ,[検索文字カナ]&#xD;&#xA;      ,[郵便番号]&#xD;&#xA;      ,[住所１]&#xD;&#xA;      ,[住所２]&#xD;&#xA;      ,[電話番号]&#xD;&#xA;      ,[ＦＡＸ番号]&#xD;&#xA;      ,[相手取引先Ｃ]&#xD;&#xA;      ,[相手店Ｃ]&#xD;&#xA;      ,[実績Ｃ１]&#xD;&#xA;      ,[実績Ｃ２]&#xD;&#xA;      ,[実績Ｃ３]&#xD;&#xA;      ,[実績Ｃ４]&#xD;&#xA;      ,[実績Ｃ５]&#xD;&#xA;      ,[単価区分]&#xD;&#xA;      ,[単価ランク]&#xD;&#xA;      ,[売上単価掛率]&#xD;&#xA;      ,[売上額丸め区分]&#xD;&#xA;      ,[消費税丸め区分]&#xD;&#xA;      ,[消費税区分]&#xD;&#xA;      ,[受注伝票フォーマット]&#xD;&#xA;      ,[納品書フォーマット]&#xD;&#xA;      ,[請求書フォーマット]&#xD;&#xA;      ,[請求書発行区分]&#xD;&#xA;      ,[諸口区分]&#xD;&#xA;      ,[元帳区分]&#xD;&#xA;      ,[締日１]&#xD;&#xA;      ,[締日２]&#xD;&#xA;      ,[締日３]&#xD;&#xA;      ,[回収月１]&#xD;&#xA;      ,[回収日１]&#xD;&#xA;      ,[回収月２]&#xD;&#xA;      ,[回収日２]&#xD;&#xA;      ,[回収月３]&#xD;&#xA;      ,[回収日３]&#xD;&#xA;      ,[回収方法区分]&#xD;&#xA;      ,[相手部門Ｃ]&#xD;&#xA;      ,[従業員数]&#xD;&#xA;      ,[決算月]&#xD;&#xA;      ,[年商]&#xD;&#xA;      ,[与信限度額]&#xD;&#xA;      ,[課税区分]&#xD;&#xA;      ,[勘定科目]&#xD;&#xA;      ,[補助科目]&#xD;&#xA;      ,[前回請求日]&#xD;&#xA;      ,[次回請求日]&#xD;&#xA;      ,[前回回収日]&#xD;&#xA;      ,[次回回収日]&#xD;&#xA;      ,[役職]&#xD;&#xA;      ,[ＵＲＬ]&#xD;&#xA;      ,[前回請求残]&#xD;&#xA;      ,[入金現金]&#xD;&#xA;      ,[入金小切手]&#xD;&#xA;      ,[入金振込普通]&#xD;&#xA;      ,[入金振込当座]&#xD;&#xA;      ,[入金手形]&#xD;&#xA;      ,[入金相殺]&#xD;&#xA;      ,[入金手数料]&#xD;&#xA;      ,[入金電債]&#xD;&#xA;      ,[入金その他]&#xD;&#xA;      ,[掛売上]&#xD;&#xA;      ,[掛返品]&#xD;&#xA;      ,[掛値引]&#xD;&#xA;      ,[掛売上その他]&#xD;&#xA;      ,[掛消費税]&#xD;&#xA;      ,[掛売上非課税]&#xD;&#xA;      ,[掛返品非課税]&#xD;&#xA;      ,[掛値引非課税]&#xD;&#xA;      ,[掛売上その他非課税]&#xD;&#xA;      ,[伝票枚数]&#xD;&#xA;      ,[更新区分]&#xD;&#xA;      ,[更新日]&#xD;&#xA;      ,[修正日]&#xD;&#xA;      ,[修正時間]&#xD;&#xA;) &#xD;&#xA;&#xD;&#xA;SELECT&#xD;&#xA;       :3                 /* 取引部門 */&#xD;&#xA;      ,[SHZARMST001]      /* 取引先区分 */&#xD;&#xA;      ,[SHZARMST002]      /* 取引先Ｃ */&#xD;&#xA;      ,[SHZARMST003]      /* 請求支払先Ｃ */&#xD;&#xA;      ,[SHZARMST004]      /* 集計先Ｃ */&#xD;&#xA;      ,[SHZARMST005]      /* 取引先名 */&#xD;&#xA;      ,[SHZARMST006]      /* 取引先略称 */&#xD;&#xA;      ,[SHZARMST007]      /* 部署名 */&#xD;&#xA;      ,[SHZARMST008]      /* 代表者氏名 */&#xD;&#xA;      ,[SHZARMST009]      /* 検索文字カナ */&#xD;&#xA;      ,[SHZARMST010]      /* 郵便番号 */&#xD;&#xA;      ,[SHZARMST011]      /* 住所１ */&#xD;&#xA;      ,[SHZARMST012]      /* 住所２ */&#xD;&#xA;      ,[SHZARMST013]      /* 電話番号 */&#xD;&#xA;      ,[SHZARMST014]      /* ＦＡＸ番号 */&#xD;&#xA;      ,[SHZARMST015]      /* 相手取引先Ｃ */&#xD;&#xA;      ,[SHZARMST016]      /* 相手店Ｃ */&#xD;&#xA;      ,[SHZARMST017]      /* 実績Ｃ１ */&#xD;&#xA;      ,[SHZARMST018]      /* 実績Ｃ２ */&#xD;&#xA;      ,[SHZARMST019]      /* 実績Ｃ３ */&#xD;&#xA;      ,[SHZARMST020]      /* 実績Ｃ４ */&#xD;&#xA;      ,[SHZARMST021]      /* 実績Ｃ５ */&#xD;&#xA;      ,[SHZARMST022]      /* 単価区分 */&#xD;&#xA;      ,[SHZARMST023]      /* 単価ランク */&#xD;&#xA;      ,[SHZARMST024]      /* 売上単価掛率 */&#xD;&#xA;      ,[SHZARMST025]      /* 売上額丸め区分 */&#xD;&#xA;      ,[SHZARMST026]      /* 消費税丸め区分 */&#xD;&#xA;      ,[SHZARMST027]      /* 消費税区分 */&#xD;&#xA;      ,[SHZARMST028]      /* 受注伝票フォーマット */&#xD;&#xA;      ,[SHZARMST029]      /* 納品書フォーマット */&#xD;&#xA;      ,[SHZARMST030]      /* 請求書フォーマット */&#xD;&#xA;      ,[SHZARMST031]      /* 請求書発行区分 */&#xD;&#xA;      ,[SHZARMST032]      /* 諸口区分 */&#xD;&#xA;      ,[SHZARMST033]      /* 元帳区分 */&#xD;&#xA;      ,[SHZARMST034]      /* 締日１ */&#xD;&#xA;      ,[SHZARMST035]      /* 締日２ */&#xD;&#xA;      ,[SHZARMST036]      /* 締日３ */&#xD;&#xA;      ,[SHZARMST037]      /* 回収月１ */&#xD;&#xA;      ,[SHZARMST038]      /* 回収日１ */&#xD;&#xA;      ,[SHZARMST039]      /* 回収月２ */&#xD;&#xA;      ,[SHZARMST040]      /* 回収日２ */&#xD;&#xA;      ,[SHZARMST041]      /* 回収月３ */&#xD;&#xA;      ,[SHZARMST042]      /* 回収日３ */&#xD;&#xA;      ,[SHZARMST043]      /* 回収方法区分 */&#xD;&#xA;      ,[SHZARMST044]      /* 相手部門Ｃ */&#xD;&#xA;      ,[SHZARMST045]      /* 従業員数 */&#xD;&#xA;      ,[SHZARMST046]      /* 決算月 */&#xD;&#xA;      ,[SHZARMST047]      /* 年商 */&#xD;&#xA;      ,[SHZARMST048]      /* 与信限度額 */&#xD;&#xA;      ,[SHZARMST117]      /* 課税区分 */&#xD;&#xA;      ,[SHZARMST118]      /* 勘定科目 */&#xD;&#xA;      ,[SHZARMST119]      /* 補助科目 */&#xD;&#xA;      ,'00000000'         /* 前回請求日 */&#xD;&#xA;      ,'00000000'         /* 次回請求日 */&#xD;&#xA;      ,'00000000'         /* 前回回収日 */&#xD;&#xA;      ,'00000000'         /* 次回回収日 */&#xD;&#xA;      ,''                 /* 役職 */&#xD;&#xA;      ,''                 /* ＵＲＬ */&#xD;&#xA;      ,[SHZARMST058]+[SHZARMST059]+[SHZARMST060]      /* 前回請求残 */&#xD;&#xA;      ,[SHZARMST061]      /* 入金現金 */&#xD;&#xA;      ,0                  /* 入金小切手 */&#xD;&#xA;      ,[SHZARMST062]      /* 入金振込普通 */&#xD;&#xA;      ,0                  /* 入金振込当座 */&#xD;&#xA;      ,[SHZARMST063]      /* 入金手形 */&#xD;&#xA;      ,[SHZARMST064]      /* 入金相殺 */&#xD;&#xA;      ,[SHZARMST065]      /* 入金手数料 */&#xD;&#xA;      ,0                  /* 入金電債 */&#xD;&#xA;      ,[SHZARMST066]      /* 入金その他 */&#xD;&#xA;      ,[SHZARMST067]      /* 掛売上 */&#xD;&#xA;      ,[SHZARMST068]      /* 掛返品 */&#xD;&#xA;      ,[SHZARMST069]      /* 掛値引 */&#xD;&#xA;      ,[SHZARMST070]      /* 掛売上その他 */&#xD;&#xA;      , CASE WHEN  SHZARMST027 = 0 THEN SHZARMST071&#xD;&#xA;             WHEN  SHZARMST027 = 1 THEN SHZARMST072&#xD;&#xA;&#x9;     WHEN  SHZARMST027 = 2 THEN SHZARMST073 ELSE 0 END  /* 掛消費税 */&#xD;&#xA;      ,[SHZARMST074]      /* 掛売上非課税 */&#xD;&#xA;      ,[SHZARMST075]      /* 掛返品非課税 */&#xD;&#xA;      ,[SHZARMST076]      /* 掛値引非課税 */&#xD;&#xA;      ,[SHZARMST077]      /* 掛売上その他非課税 */&#xD;&#xA;      ,[SHZARMST079]      /* 伝票枚数 */&#xD;&#xA;      ,[SHZARMST132]      /* 更新区分 */&#xD;&#xA;      ,[SHZARMST133]      /* 更新日 */&#xD;&#xA;      ,[SHZARMST152]      /* 修正日 */&#xD;&#xA;      ,[SHZARMST153]      /* 修正時間 */&#xD;&#xA;&#xD;&#xA;FROM&#xD;&#xA;[:2].[dbo].SHZARMST&#xD;&#xA;&#xD;&#xA;WHERE&#xD;&#xA;  SHZARMST132 = 0 /* 請求 */"/>
+          <INARG>
+            <Arguments>
+              <Argument>
+                <id val="1"/>
+                <Exp val="2"/>
+              </Argument>
+              <Argument>
+                <id val="2"/>
+                <Exp val="1"/>
+              </Argument>
+              <Argument Variable="1">
+                <id val="3"/>
+              </Argument>
+            </Arguments>
+          </INARG>
+        </SQL_FORM>
+        <TaskLogic>
+          <LogicUnit id="2" propagate="78">
+            <Level val="R"/>
+            <Type val="M"/>
+            <_DspTemplate val="0"/>
+            <_HeaderPosition val="1"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <_TotalVariabls val="3"/>
+            <_TotalVirtuals val="3"/>
+            <PRM_LEN val="3"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <LogicLines>
+              <LogicLine>
+                <DATAVIEW_SRC FlowIsn="2" Type="Q">
+                  <Condition val="N"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </DATAVIEW_SRC>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="1" FlowIsn="3" id="1">
+                  <Column val="1"/>
+                  <Type val="V"/>
+                  <IsParameter val="Y"/>
+                  <_RecomputeIndex val="1"/>
+                  <_FormIndex val="1"/>
+                  <_ControlIndex val="1"/>
+                  <_OleSubformIdx val="1"/>
+                  <_TabbingOrderDspIndex val="1"/>
+                  <DIFF_UPDATE val="T"/>
+                  <PartOfDataview val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="2" FlowIsn="4" id="2">
+                  <Column val="2"/>
+                  <Type val="V"/>
+                  <IsParameter val="Y"/>
+                  <_RecomputeIndex val="1"/>
+                  <_FormIndex val="1"/>
+                  <_ControlIndex val="1"/>
+                  <_OleSubformIdx val="1"/>
+                  <_TabbingOrderDspIndex val="1"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="3" FlowIsn="5" id="3">
+                  <Column val="3"/>
+                  <Type val="V"/>
+                  <IsParameter val="Y"/>
+                  <_RecomputeIndex val="1"/>
+                  <_FormIndex val="1"/>
+                  <_ControlIndex val="1"/>
+                  <_OleSubformIdx val="1"/>
+                  <_TabbingOrderDspIndex val="1"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+        </TaskLogic>
+        <TaskForms>
+          <FormEntry id="2">
+            <PropertyList model="FORM_GUI0">
+              <_Comment id="218"/>
+              <FormName id="311" valUnicode="WRITE 残高履歴マスタ(請求支払)"/>
+            </PropertyList>
+          </FormEntry>
+        </TaskForms>
+        <Expressions>
+          <Expression id="1">
+            <ExpSyntax val="Trim({0,2})"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="2">
+            <ExpSyntax val="Trim({0,3})"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+        </Expressions>
+      </Task>
+    </Programs>
+  </ProgramsRepository>
+
+</Application>
