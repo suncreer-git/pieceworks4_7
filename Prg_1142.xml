@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Application>
+
+  <Header>
+    <Version val="12050"/>
+    <WithIsn val="Y"/>
+    <_InternalTask val="N"/>
+    <IsRoot val="N"/>
+    <InIndex val="N"/>
+  </Header>
+
+  <ProgramsRepository>
+    <Programs>
+      <Task MainProgram="N">
+        <Header Description="update 取引先マスタ" ISN_2="1" LastIsn="4" id="1142">
+          <ExecutionRight comp="-1"/>
+          <Resident val="N"/>
+          <SQL val="N"/>
+          <ReturnValue>
+            <ReturnValueAttr/>
+            <TSK_PARAMS val="2"/>
+            <ParametersCount val="2"/>
+            <ParametersAttributes>
+              <Attr MgAttr="N"/>
+              <Attr MgAttr="D"/>
+            </ParametersAttributes>
+          </ReturnValue>
+          <SqlWhereExist val="N"/>
+          <TaskType val="B"/>
+          <External val="N"/>
+          <Offline val="N"/>
+          <FormType val="N"/>
+          <DotNetObjectExists val="N"/>
+          <LastModified _date="735884" _time="40454" date="2015/10/13" time="11:14:14"/>
+        </Header>
+        <ItemIsn val="2"/>
+        <Resource>
+          <Columns>
+            <Column id="1" name="p_取引部門">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="147"/>
+                <DbColumnName id="178"/>
+                <Type id="179"/>
+                <UserType id="180"/>
+              </PropertyList>
+            </Column>
+            <Column id="3" name="P_最終請求更新日">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_DATE" comp="-1" id="1" obj="65"/>
+                <DbColumnName id="178"/>
+                <Type id="179"/>
+                <UserType id="180"/>
+              </PropertyList>
+            </Column>
+          </Columns>
+          <ColumnsLastIsn val="3"/>
+        </Resource>
+        <Information>
+          <Key>
+            <Mode val="N"/>
+          </Key>
+          <DB comp="-1"/>
+          <Sort>
+            <CLS val="A"/>
+          </Sort>
+          <ForceRecordDelete DEL="N"/>
+          <EndTaskCondition val="Y"/>
+          <EvaluateEndCondition val="A"/>
+          <InitialMode val="M"/>
+          <Locate Direction="A"/>
+          <Range Direction="A"/>
+          <VarRange/>
+          <TaskProperties>
+            <SelectionTable val="N"/>
+            <ConfirmUpdate CNFU="N"/>
+            <ConfirmCancel val="N"/>
+            <ErrorStrategy val="A"/>
+            <LockingStrategy val="I"/>
+            <CacheStrategy val="T"/>
+            <ForceRecordSuffix val="N"/>
+            <TransactionMode val="P"/>
+            <TransactionBegin val="T"/>
+            <PreloadView val="N"/>
+            <AllowEmptyDataview val="N"/>
+            <KeepCreatedContext val="N"/>
+          </TaskProperties>
+          <SIDE_WIN>
+            <AllowOptions val="N"/>
+            <AllowQuery val="Y"/>
+            <AllowModify val="Y"/>
+            <AllowCreate val="Y"/>
+            <AllowDelete val="Y"/>
+            <AllowLocate val="Y"/>
+            <AllowRange val="Y"/>
+            <AllowIndexChange val="Y"/>
+            <AllowSorting val="Y"/>
+            <AllowIOFiles val="Y"/>
+            <RecordCycle val="Y"/>
+            <AllowEvents val="N"/>
+            <AllowIndexOptimization val="Y"/>
+            <AllowLocationInQuery val="Y"/>
+            <AllowPrintingData val="N"/>
+          </SIDE_WIN>
+          <WIN>
+            <OpenTaskWindow val="N"/>
+            <CloseTaskWindow val="Y"/>
+            <ForegroundWindow val="Y"/>
+            <FlipFld val="N"/>
+            <RefreshTaskWindow ReturnValue="N"/>
+          </WIN>
+          <BOX>
+            <Direction val="V"/>
+          </BOX>
+        </Information>
+        <TaskLogic>
+          <LogicUnit id="2" propagate="78">
+            <Level val="R"/>
+            <Type val="M"/>
+            <_DspTemplate val="0"/>
+            <_HeaderPosition val="1"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <_TotalVariabls val="2"/>
+            <_TotalVirtuals val="2"/>
+            <PRM_LEN val="2"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <LogicLines>
+              <LogicLine>
+                <DATAVIEW_SRC FlowIsn="2" Type="M">
+                  <Condition val="N"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </DATAVIEW_SRC>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="1" FlowIsn="3" id="1">
+                  <Column val="1"/>
+                  <Type val="V"/>
+                  <IsParameter val="Y"/>
+                  <_RecomputeIndex val="1"/>
+                  <_FormIndex val="1"/>
+                  <_ControlIndex val="1"/>
+                  <_OleSubformIdx val="1"/>
+                  <_TabbingOrderDspIndex val="1"/>
+                  <DIFF_UPDATE val="T"/>
+                  <PartOfDataview val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="2" FlowIsn="4" id="2">
+                  <Column val="2"/>
+                  <Type val="V"/>
+                  <IsParameter val="Y"/>
+                  <_RecomputeIndex val="1"/>
+                  <_FormIndex val="1"/>
+                  <_ControlIndex val="1"/>
+                  <_OleSubformIdx val="1"/>
+                  <_TabbingOrderDspIndex val="1"/>
+                  <DIFF_UPDATE val="T"/>
+                  <PartOfDataview val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="5">
+                  <Type val="0"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="6">
+                  <Type val="0"/>
+                  <Text val="残高履歴の最終更新日 = 前回請求日"/>
+                </Remark>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="3" propagate="78">
+            <Level val="R"/>
+            <Type val="S"/>
+            <_DspTemplate val="0"/>
+            <_HeaderPosition val="6"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <Expanded val="1"/>
+            <LogicLines>
+              <LogicLine>
+                <CallTask FlowIsn="7">
+                  <OperationType val="T"/>
+                  <TaskID comp="-1" obj="2"/>
+                  <Lock val="N"/>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="8">
+                  <OperationType val="T"/>
+                  <TaskID comp="-1" obj="3"/>
+                  <Lock val="N"/>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="9">
+                  <OperationType val="T"/>
+                  <TaskID comp="-1" obj="4"/>
+                  <Lock val="N"/>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+        </TaskLogic>
+        <TaskForms>
+          <FormEntry id="2">
+            <PropertyList model="FORM_GUI0">
+              <_Comment id="218"/>
+              <FormName id="311" valUnicode="update 取引先マスタ"/>
+            </PropertyList>
+          </FormEntry>
+        </TaskForms>
+        <Task MainProgram="N">
+          <Header Description="前回請求日セット" ISN_2="2" id="1142">
+            <ExecutionRight comp="-1"/>
+            <Resident val="N"/>
+            <SQL val="Y"/>
+            <ReturnValue>
+              <ReturnValueAttr/>
+              <ParametersAttributes/>
+            </ReturnValue>
+            <SqlWhereExist val="N"/>
+            <TaskType val="B"/>
+            <External val="N"/>
+            <FormType val="N"/>
+            <DotNetObjectExists val="N"/>
+            <LastModified _date="735884" _time="40164" date="2015/10/13" time="11:09:24"/>
+          </Header>
+          <Resource>
+            <Columns/>
+          </Resource>
+          <Information>
+            <Key>
+              <Mode val="N"/>
+            </Key>
+            <DB comp="-1"/>
+            <Sort>
+              <CLS val="A"/>
+            </Sort>
+            <ForceRecordDelete DEL="N"/>
+            <EndTaskCondition val="Y"/>
+            <EvaluateEndCondition val="A"/>
+            <InitialMode val="M"/>
+            <Locate Direction="A"/>
+            <Range Direction="A"/>
+            <VarRange/>
+            <TaskProperties>
+              <SelectionTable val="N"/>
+              <ConfirmUpdate CNFU="N"/>
+              <ConfirmCancel val="N"/>
+              <ErrorStrategy val="A"/>
+              <LockingStrategy val="I"/>
+              <CacheStrategy val="N"/>
+              <ForceRecordSuffix val="N"/>
+              <TransactionMode val="W"/>
+              <TransactionBegin val="T"/>
+              <PreloadView val="N"/>
+              <AllowEmptyDataview val="N"/>
+              <KeepCreatedContext val="N"/>
+            </TaskProperties>
+            <SIDE_WIN>
+              <AllowOptions val="N"/>
+              <AllowQuery val="Y"/>
+              <AllowModify val="Y"/>
+              <AllowCreate val="N"/>
+              <AllowDelete val="N"/>
+              <AllowLocate val="Y"/>
+              <AllowRange val="Y"/>
+              <AllowIndexChange val="N"/>
+              <AllowSorting val="Y"/>
+              <AllowIOFiles val="Y"/>
+              <RecordCycle val="Y"/>
+              <AllowEvents val="Y"/>
+              <AllowIndexOptimization val="Y"/>
+              <AllowLocationInQuery val="Y"/>
+              <AllowPrintingData val="N"/>
+            </SIDE_WIN>
+            <WIN>
+              <OpenTaskWindow val="N"/>
+              <CloseTaskWindow val="Y"/>
+              <ForegroundWindow val="Y"/>
+              <FlipFld val="N"/>
+              <RefreshTaskWindow ReturnValue="N"/>
+            </WIN>
+            <BOX>
+              <Direction val="V"/>
+            </BOX>
+          </Information>
+          <SQL_FORM DB="MSSQL" RESTAB="MSSQL">
+            <SQL_STMT_U val="UPDATE 取引先マスタ&#xD;&#xA; SET &#xD;&#xA;    前回請求日 = zan.更新日&#xD;&#xA;&#xD;&#xA;from 取引先マスタ mst&#xD;&#xA;&#xD;&#xA;inner join&#xD;&#xA;(&#xD;&#xA;select&#xD;&#xA;   取引部門 &#xD;&#xA;  ,取引先区分&#xD;&#xA;  ,取引先Ｃ&#xD;&#xA;  ,更新日&#xD;&#xA;&#xD;&#xA;from&#xD;&#xA;( &#xD;&#xA;   SELECT&#xD;&#xA;     rank() over(partition by ZAR.取引部門&#xD;&#xA;                             ,ZAR.取引先区分    &#xD;&#xA;                             ,ZAR.取引先Ｃ&#xD;&#xA;                    order by  ZAR.取引部門 &#xD;&#xA;                             ,ZAR.取引先区分 &#xD;&#xA;                             ,ZAR.取引先Ｃ&#xD;&#xA;                             ,ZAR.更新日 DESC) as rk&#xD;&#xA;    ,ZAR.取引部門&#xD;&#xA;    ,ZAR.取引先区分&#xD;&#xA;    ,ZAR.取引先Ｃ&#xD;&#xA;    ,ZAR.更新日&#xD;&#xA;&#xD;&#xA;   from 取引先残高履歴マスタ ZAR&#xD;&#xA;                                INNER JOIN&#xD;&#xA;        取引先マスタ MST     ON (MST.取引部門 = ZAR.取引部門 &#xD;&#xA;&#x9;                         AND MST.取引先区分 = ZAR.取引先区分&#xD;&#xA;&#x9;&#x9;                     AND MST.取引先Ｃ = ZAR.取引先Ｃ)&#xD;&#xA;   WHERE &#xD;&#xA;         ZAR.取引部門     = :1&#xD;&#xA;    AND  ZAR.取引先区分   = 1              /* 得意先 */&#xD;&#xA;    AND  ZAR.更新区分     = 0              /* 0:請求 */&#xD;&#xA;) as X&#xD;&#xA;where rk=1&#xD;&#xA;) zan&#xD;&#xA;       ON (MST.取引部門   = zan.取引部門&#xD;&#xA;      AND  MST.取引先区分 = zan.取引先区分&#xD;&#xA;      AND  MST.取引先Ｃ   = zan.取引先Ｃ   )&#xD;&#xA;where&#xD;&#xA;      MST.取引部門 = :1"/>
+            <INARG>
+              <Arguments>
+                <Argument Parent="1" Variable="1">
+                  <id val="1"/>
+                </Argument>
+              </Arguments>
+            </INARG>
+          </SQL_FORM>
+          <TaskLogic>
+            <LogicUnit id="2" propagate="78">
+              <Level val="R"/>
+              <Type val="M"/>
+              <_DspTemplate val="0"/>
+              <_HeaderPosition val="1"/>
+              <Scope val="S"/>
+              <EngineDirective val="S"/>
+              <ShowMessage val="Y"/>
+              <Condition val="89"/>
+              <Event>
+                <EventType val="S"/>
+                <PublicObject comp="-1"/>
+              </Event>
+              <LogicLines>
+                <LogicLine>
+                  <DATAVIEW_SRC FlowIsn="2" Type="Q">
+                    <Condition val="N"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </DATAVIEW_SRC>
+                </LogicLine>
+              </LogicLines>
+            </LogicUnit>
+          </TaskLogic>
+          <TaskForms>
+            <FormEntry id="2">
+              <PropertyList model="FORM_GUI0">
+                <_Comment id="218"/>
+                <FormName id="311" valUnicode="前回請求日セット"/>
+              </PropertyList>
+            </FormEntry>
+          </TaskForms>
+        </Task>
+        <Task MainProgram="N">
+          <Header Description="次回請求日セット(前処理)" ISN_2="3" id="1142">
+            <ExecutionRight comp="-1"/>
+            <Resident val="N"/>
+            <SQL val="Y"/>
+            <ReturnValue>
+              <ReturnValueAttr/>
+              <ParametersAttributes/>
+            </ReturnValue>
+            <SqlWhereExist val="N"/>
+            <TaskType val="B"/>
+            <External val="N"/>
+            <FormType val="N"/>
+            <DotNetObjectExists val="N"/>
+            <LastModified _date="735884" _time="40443" date="2015/10/13" time="11:14:03"/>
+          </Header>
+          <Resource>
+            <Columns/>
+          </Resource>
+          <Information>
+            <Key>
+              <Mode val="N"/>
+            </Key>
+            <DB comp="-1"/>
+            <Sort>
+              <CLS val="A"/>
+            </Sort>
+            <ForceRecordDelete DEL="N"/>
+            <EndTaskCondition val="Y"/>
+            <EvaluateEndCondition val="A"/>
+            <InitialMode val="M"/>
+            <Locate Direction="A"/>
+            <Range Direction="A"/>
+            <VarRange/>
+            <TaskProperties>
+              <SelectionTable val="N"/>
+              <ConfirmUpdate CNFU="N"/>
+              <ConfirmCancel val="N"/>
+              <ErrorStrategy val="A"/>
+              <LockingStrategy val="I"/>
+              <CacheStrategy val="N"/>
+              <ForceRecordSuffix val="N"/>
+              <TransactionMode val="W"/>
+              <TransactionBegin val="T"/>
+              <PreloadView val="N"/>
+              <AllowEmptyDataview val="N"/>
+              <KeepCreatedContext val="N"/>
+            </TaskProperties>
+            <SIDE_WIN>
+              <AllowOptions val="N"/>
+              <AllowQuery val="Y"/>
+              <AllowModify val="Y"/>
+              <AllowCreate val="N"/>
+              <AllowDelete val="N"/>
+              <AllowLocate val="Y"/>
+              <AllowRange val="Y"/>
+              <AllowIndexChange val="N"/>
+              <AllowSorting val="Y"/>
+              <AllowIOFiles val="Y"/>
+              <RecordCycle val="Y"/>
+              <AllowEvents val="N"/>
+              <AllowIndexOptimization val="Y"/>
+              <AllowLocationInQuery val="Y"/>
+              <AllowPrintingData val="N"/>
+            </SIDE_WIN>
+            <WIN>
+              <OpenTaskWindow val="N"/>
+              <CloseTaskWindow val="Y"/>
+              <ForegroundWindow val="Y"/>
+              <FlipFld val="N"/>
+              <RefreshTaskWindow ReturnValue="N"/>
+            </WIN>
+            <BOX>
+              <Direction val="V"/>
+            </BOX>
+          </Information>
+          <SQL_FORM DB="MSSQL" RESTAB="MSSQL">
+            <SQL_STMT_U val="UPDATE 取引先マスタ&#xD;&#xA; SET &#xD;&#xA;    次回請求日 = ':2'&#xD;&#xA;&#xD;&#xA;from 取引先マスタ mst&#xD;&#xA;&#xD;&#xA;where&#xD;&#xA;     MST.取引部門 = :1&#xD;&#xA; AND MST.締日１ &lt; 99"/>
+            <INARG>
+              <Arguments>
+                <Argument Parent="1" Variable="1">
+                  <id val="1"/>
+                </Argument>
+                <Argument>
+                  <id val="2"/>
+                  <Exp val="1"/>
+                </Argument>
+              </Arguments>
+            </INARG>
+          </SQL_FORM>
+          <TaskLogic>
+            <LogicUnit id="2" propagate="78">
+              <Level val="R"/>
+              <Type val="M"/>
+              <_DspTemplate val="0"/>
+              <_HeaderPosition val="1"/>
+              <Scope val="S"/>
+              <EngineDirective val="S"/>
+              <ShowMessage val="Y"/>
+              <Condition val="89"/>
+              <Event>
+                <EventType val="S"/>
+                <PublicObject comp="-1"/>
+              </Event>
+              <LogicLines>
+                <LogicLine>
+                  <DATAVIEW_SRC FlowIsn="2" Type="Q">
+                    <Condition val="N"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </DATAVIEW_SRC>
+                </LogicLine>
+              </LogicLines>
+            </LogicUnit>
+          </TaskLogic>
+          <TaskForms>
+            <FormEntry id="2">
+              <PropertyList model="FORM_GUI0">
+                <_Comment id="218"/>
+                <FormName id="311" valUnicode="前回請求日セット"/>
+              </PropertyList>
+            </FormEntry>
+          </TaskForms>
+          <Expressions>
+            <Expression id="1">
+              <ExpSyntax val="DStr (AddDate({1,2}, 0,0,1), 'YYYYMMDD')"/>
+              <ExpAttribute val="U"/>
+            </Expression>
+          </Expressions>
+        </Task>
+        <Task MainProgram="N">
+          <Header Description="次回請求日セット" ISN_2="4" id="1142">
+            <ExecutionRight comp="-1"/>
+            <Resident val="N"/>
+            <SQL val="Y"/>
+            <ReturnValue>
+              <ReturnValueAttr/>
+              <ParametersAttributes/>
+            </ReturnValue>
+            <SqlWhereExist val="N"/>
+            <TaskType val="B"/>
+            <External val="N"/>
+            <FormType val="N"/>
+            <DotNetObjectExists val="N"/>
+            <LastModified _date="735884" _time="40221" date="2015/10/13" time="11:10:21"/>
+          </Header>
+          <Resource>
+            <Columns/>
+          </Resource>
+          <Information>
+            <Key>
+              <Mode val="N"/>
+            </Key>
+            <DB comp="-1"/>
+            <Sort>
+              <CLS val="A"/>
+            </Sort>
+            <ForceRecordDelete DEL="N"/>
+            <EndTaskCondition val="Y"/>
+            <EvaluateEndCondition val="A"/>
+            <InitialMode val="M"/>
+            <Locate Direction="A"/>
+            <Range Direction="A"/>
+            <VarRange/>
+            <TaskProperties>
+              <SelectionTable val="N"/>
+              <ConfirmUpdate CNFU="N"/>
+              <ConfirmCancel val="N"/>
+              <ErrorStrategy val="A"/>
+              <LockingStrategy val="I"/>
+              <CacheStrategy val="N"/>
+              <ForceRecordSuffix val="N"/>
+              <TransactionMode val="W"/>
+              <TransactionBegin val="T"/>
+              <PreloadView val="N"/>
+              <AllowEmptyDataview val="N"/>
+              <KeepCreatedContext val="N"/>
+            </TaskProperties>
+            <SIDE_WIN>
+              <AllowOptions val="N"/>
+              <AllowQuery val="Y"/>
+              <AllowModify val="Y"/>
+              <AllowCreate val="N"/>
+              <AllowDelete val="N"/>
+              <AllowLocate val="Y"/>
+              <AllowRange val="Y"/>
+              <AllowIndexChange val="N"/>
+              <AllowSorting val="Y"/>
+              <AllowIOFiles val="Y"/>
+              <RecordCycle val="Y"/>
+              <AllowEvents val="N"/>
+              <AllowIndexOptimization val="Y"/>
+              <AllowLocationInQuery val="Y"/>
+              <AllowPrintingData val="N"/>
+            </SIDE_WIN>
+            <WIN>
+              <OpenTaskWindow val="N"/>
+              <CloseTaskWindow val="Y"/>
+              <ForegroundWindow val="Y"/>
+              <FlipFld val="N"/>
+              <RefreshTaskWindow ReturnValue="N"/>
+            </WIN>
+            <BOX>
+              <Direction val="V"/>
+            </BOX>
+          </Information>
+          <SQL_FORM DB="MSSQL" RESTAB="MSSQL">
+            <SQL_STMT_U val="UPDATE 取引先マスタ&#xD;&#xA; SET &#xD;&#xA;    次回請求日 = JIKAI.次回請求日&#xD;&#xA;&#xD;&#xA;from 取引先マスタ mst&#xD;&#xA;&#xD;&#xA;inner join&#xD;&#xA;(&#xD;&#xA;&#xD;&#xA;SELECT&#xD;&#xA;  取引部門&#xD;&#xA; ,取引先区分&#xD;&#xA; ,取引先Ｃ&#xD;&#xA; ,MAX (CASE WHEN 締区分 =  1 THEN 締日 ELSE 0 END) 締日１&#xD;&#xA; ,MAX (CASE WHEN 締区分 =  2 THEN 締日 ELSE 0 END) 締日２&#xD;&#xA; ,MAX (CASE WHEN 締区分 =  3 THEN 締日 ELSE 0 END) 締日３&#xD;&#xA; ,MIN (請求日) 請求日&#xD;&#xA; ,MIN (次回請求日) 次回請求日&#xD;&#xA;&#xD;&#xA;FROM&#xD;&#xA;(&#xD;&#xA;SELECT&#xD;&#xA;  取引部門&#xD;&#xA; ,取引先区分&#xD;&#xA; ,取引先Ｃ&#xD;&#xA; ,締区分&#xD;&#xA; ,締日&#xD;&#xA; ,請求日&#xD;&#xA; ,  /* 取引先マスタの「次回請求日」からその次の請求日計算 */&#xD;&#xA;   CONVERT( varchar(8),&#xD;&#xA;        CASE WHEN 締日 = 31&#xD;&#xA;             THEN EOMONTH (DATEADD (month, 加算月, 請求日))&#xD;&#xA;             ELSE DATEADD (day, 締日-1, DATEADD (month, 加算月, CONVERT (varchar(6), 請求日) + '01')) END&#xD;&#xA;                      ,112) 次回請求日&#xD;&#xA;FROM&#xD;&#xA;(&#xD;&#xA;/* -------------- 取引先マスタ 次回請求日からの締日１の次回請求日 -----------*/&#xD;&#xA;SELECT&#xD;&#xA;  取引部門&#xD;&#xA; ,取引先区分&#xD;&#xA; ,取引先Ｃ&#xD;&#xA; ,1      締区分&#xD;&#xA; ,締日１ 締日&#xD;&#xA; ,次回請求日 請求日&#xD;&#xA; ,CASE WHEN 次回請求日 = EOMONTH(次回請求日) THEN 31 ELSE DAY(次回請求日) END 請求締日&#xD;&#xA; ,CASE WHEN 締日１ &lt;= CASE WHEN 次回請求日 = EOMONTH(次回請求日) THEN 31 ELSE DAY(次回請求日) END THEN 1 ELSE 0 END 加算月&#xD;&#xA;&#xD;&#xA;FROM&#xD;&#xA;    取引先マスタ&#xD;&#xA;WHERE&#xD;&#xA;    次回請求日 > 0&#xD;&#xA;AND 取引先区分 = 1&#xD;&#xA;AND 締日１ > 0&#xD;&#xA;&#xD;&#xA;UNION ALL&#xD;&#xA;/* -------------- 取引先マスタ 次回請求日からの締日２の次回請求日 -----------*/&#xD;&#xA;SELECT&#xD;&#xA;  取引部門&#xD;&#xA; ,取引先区分&#xD;&#xA; ,取引先Ｃ&#xD;&#xA; ,2      締区分&#xD;&#xA; ,締日２ 締日&#xD;&#xA; ,次回請求日 請求日&#xD;&#xA; ,CASE WHEN 次回請求日 = EOMONTH(次回請求日) THEN 31 ELSE DAY(次回請求日) END 請求締日&#xD;&#xA; ,CASE WHEN 締日２ &lt;= CASE WHEN 次回請求日 = EOMONTH(次回請求日) THEN 31 ELSE DAY(次回請求日) END THEN 1 ELSE 0 END 加算月&#xD;&#xA;&#xD;&#xA;FROM&#xD;&#xA;    取引先マスタ&#xD;&#xA;WHERE&#xD;&#xA;    次回請求日 > 0&#xD;&#xA;AND 取引先区分 = 1&#xD;&#xA;AND 締日２ > 0&#xD;&#xA;&#xD;&#xA;UNION ALL&#xD;&#xA;/* -------------- 取引先マスタ 次回請求日からの締日３の次回請求日 -----------*/&#xD;&#xA;SELECT&#xD;&#xA;  取引部門&#xD;&#xA; ,取引先区分&#xD;&#xA; ,取引先Ｃ&#xD;&#xA; ,3      締区分&#xD;&#xA; ,締日３ 締日&#xD;&#xA; ,次回請求日 請求日&#xD;&#xA; ,CASE WHEN 次回請求日 = EOMONTH(次回請求日) THEN 31 ELSE DAY(次回請求日) END 請求締日&#xD;&#xA; ,CASE WHEN 締日３ &lt;= CASE WHEN 次回請求日 = EOMONTH(次回請求日) THEN 31 ELSE DAY(次回請求日) END THEN 1 ELSE 0 END 加算月&#xD;&#xA;&#xD;&#xA;FROM&#xD;&#xA;    取引先マスタ&#xD;&#xA;WHERE&#xD;&#xA;    次回請求日 > 0&#xD;&#xA;AND 取引先区分 = 1&#xD;&#xA;AND 締日３ > 0&#xD;&#xA;) MST&#xD;&#xA;&#xD;&#xA;) 次回&#xD;&#xA;&#xD;&#xA;WHERE&#xD;&#xA;  締日 &lt; 99&#xD;&#xA;GROUP BY&#xD;&#xA;  取引部門&#xD;&#xA; ,取引先区分&#xD;&#xA; ,取引先Ｃ&#xD;&#xA;&#xD;&#xA; ) JIKAI&#xD;&#xA;       ON (MST.取引部門   = JIKAI.取引部門&#xD;&#xA;      AND  MST.取引先区分 = JIKAI.取引先区分&#xD;&#xA;      AND  MST.取引先Ｃ   = JIKAI.取引先Ｃ   )&#xD;&#xA;where&#xD;&#xA;      MST.取引部門 = :1"/>
+            <INARG>
+              <Arguments>
+                <Argument Parent="1" Variable="1">
+                  <id val="1"/>
+                </Argument>
+              </Arguments>
+            </INARG>
+          </SQL_FORM>
+          <TaskLogic>
+            <LogicUnit id="2" propagate="78">
+              <Level val="R"/>
+              <Type val="M"/>
+              <_DspTemplate val="0"/>
+              <_HeaderPosition val="1"/>
+              <Scope val="S"/>
+              <EngineDirective val="S"/>
+              <ShowMessage val="Y"/>
+              <Condition val="89"/>
+              <Event>
+                <EventType val="S"/>
+                <PublicObject comp="-1"/>
+              </Event>
+              <LogicLines>
+                <LogicLine>
+                  <DATAVIEW_SRC FlowIsn="2" Type="Q">
+                    <Condition val="N"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </DATAVIEW_SRC>
+                </LogicLine>
+              </LogicLines>
+            </LogicUnit>
+          </TaskLogic>
+          <TaskForms>
+            <FormEntry id="2">
+              <PropertyList model="FORM_GUI0">
+                <_Comment id="218"/>
+                <FormName id="311" valUnicode="前回請求日セット"/>
+              </PropertyList>
+            </FormEntry>
+          </TaskForms>
+        </Task>
+      </Task>
+    </Programs>
+  </ProgramsRepository>
+
+</Application>

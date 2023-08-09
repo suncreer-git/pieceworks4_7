@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Application>
+
+  <Header>
+    <Version val="13021"/>
+    <WithIsn val="Y"/>
+    <_InternalTask val="N"/>
+    <IsRoot val="N"/>
+    <InIndex val="N"/>
+    <UniqueISNConvState val="12"/>
+  </Header>
+
+  <ProgramsRepository>
+    <Programs>
+      <Task MainProgram="N">
+        <Header Description="WRITE 商品マスタ" ISN_2="1" LastIsn="1" id="1130">
+          <ExecutionRight comp="-1"/>
+          <Resident val="N"/>
+          <SQL val="Y"/>
+          <ReturnValue>
+            <ReturnValueAttr/>
+            <TSK_PARAMS val="3"/>
+            <ParametersAttributes>
+              <Attr MgAttr="N"/>
+              <Attr MgAttr="A"/>
+              <Attr MgAttr="A"/>
+            </ParametersAttributes>
+          </ReturnValue>
+          <SqlWhereExist val="N"/>
+          <TaskType val="B"/>
+          <External val="N"/>
+          <Offline val="N"/>
+          <FormType val="N"/>
+          <DotNetObjectExists val="N"/>
+          <LastModified _date="738042" _time="50348" date="2021/09/09" time="13:59:08"/>
+        </Header>
+        <ItemIsn val="3"/>
+        <Resource>
+          <Columns>
+            <Column id="3" name="取引部門">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="147"/>
+                <StoredAs id="173" val="4"/>
+                <Size id="174" val="2"/>
+                <Definition id="175" val="2"/>
+              </PropertyList>
+            </Column>
+            <Column id="1" name="READ_DB_NAME">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="20"/>
+                <StoredAs id="173" val="3"/>
+                <Size id="174" val="20"/>
+                <Definition id="175" val="2"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="2" name="WRITE_DB_NAME">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="20"/>
+                <StoredAs id="173" val="3"/>
+                <Size id="174" val="20"/>
+                <Definition id="175" val="2"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+          </Columns>
+        </Resource>
+        <Information>
+          <Key>
+            <Mode val="N"/>
+          </Key>
+          <DB comp="-1"/>
+          <Sort>
+            <CLS val="A"/>
+          </Sort>
+          <ForceRecordDelete DEL="N"/>
+          <EndTaskCondition val="Y"/>
+          <EvaluateEndCondition val="A"/>
+          <InitialMode val="E"/>
+          <Locate Direction="A"/>
+          <Range Direction="A"/>
+          <VarRange/>
+          <TaskProperties>
+            <SelectionTable val="N"/>
+            <ConfirmUpdate CNFU="N"/>
+            <ConfirmCancel val="N"/>
+            <ErrorStrategy val="A"/>
+            <LockingStrategy val="I"/>
+            <CacheStrategy val="T"/>
+            <ForceRecordSuffix val="N"/>
+            <TransactionMode val="P"/>
+            <TransactionBegin val="T"/>
+            <PreloadView val="N"/>
+            <AllowEmptyDataview val="N"/>
+            <KeepCreatedContext val="N"/>
+          </TaskProperties>
+          <SIDE_WIN>
+            <AllowOptions val="N"/>
+            <AllowQuery val="Y"/>
+            <AllowModify val="N"/>
+            <AllowCreate val="N"/>
+            <AllowDelete val="N"/>
+            <AllowLocate val="Y"/>
+            <AllowRange val="Y"/>
+            <AllowIndexChange val="N"/>
+            <AllowSorting val="Y"/>
+            <AllowIOFiles val="Y"/>
+            <RecordCycle val="Y"/>
+            <AllowEvents val="Y"/>
+            <AllowIndexOptimization val="Y"/>
+            <AllowLocationInQuery val="Y"/>
+            <AllowPrintingData val="N"/>
+          </SIDE_WIN>
+          <WIN>
+            <OpenTaskWindow val="N"/>
+            <CloseTaskWindow val="Y"/>
+            <ForegroundWindow val="Y"/>
+            <FlipFld val="N"/>
+            <RefreshTaskWindow ReturnValue="N"/>
+          </WIN>
+          <BOX>
+            <Direction val="V"/>
+          </BOX>
+        </Information>
+        <SQL_FORM DB="MSSQL" RESTAB="MSSQL">
+          <SQL_STMT_U val="INSERT INTO [:1].[dbo].商品マスタ&#xD;&#xA;(      [取引部門]&#xD;&#xA;      ,[商品Ｃ]&#xD;&#xA;      ,[グループＣ１]&#xD;&#xA;      ,[グループＣ２]&#xD;&#xA;      ,[グループＣ３]&#xD;&#xA;      ,[グループＣ４]&#xD;&#xA;      ,[グループＣ５]&#xD;&#xA;      ,[ＪＡＮＣ]&#xD;&#xA;      ,[商品名]&#xD;&#xA;      ,[規格]&#xD;&#xA;      ,[検索文字カナ]&#xD;&#xA;      ,[仕入先Ｃ]&#xD;&#xA;      ,[単位１]&#xD;&#xA;      ,[単位２]&#xD;&#xA;      ,[単位３]&#xD;&#xA;      ,[入数１]&#xD;&#xA;      ,[入数２]&#xD;&#xA;      ,[入数３]&#xD;&#xA;      ,[標準売上単価１]&#xD;&#xA;      ,[標準売上単価２]&#xD;&#xA;      ,[標準売上単価３]&#xD;&#xA;      ,[粗利原価１]&#xD;&#xA;      ,[粗利原価２]&#xD;&#xA;      ,[粗利原価３]&#xD;&#xA;      ,[標準仕入単価１]&#xD;&#xA;      ,[標準仕入単価２]&#xD;&#xA;      ,[標準仕入単価３]&#xD;&#xA;      ,[量１]&#xD;&#xA;      ,[量２]&#xD;&#xA;      ,[量３]&#xD;&#xA;      ,[上代単価１]&#xD;&#xA;      ,[上代単価２]&#xD;&#xA;      ,[上代単価３]&#xD;&#xA;      ,[予備区分量換算区分]&#xD;&#xA;      ,[ロット在庫区分]&#xD;&#xA;      ,[当月評価単価]&#xD;&#xA;      ,[最低単価１]&#xD;&#xA;      ,[最低単価２]&#xD;&#xA;      ,[最低単価３]&#xD;&#xA;      ,[税込単価１]&#xD;&#xA;      ,[税込単価２]&#xD;&#xA;      ,[税込単価３]&#xD;&#xA;      ,[単価ランク１]&#xD;&#xA;      ,[単価ランク２]&#xD;&#xA;      ,[単価ランク３]&#xD;&#xA;      ,[単価ランク４]&#xD;&#xA;      ,[単価ランク５]&#xD;&#xA;      ,[一律単価区分]&#xD;&#xA;      ,[課税区分]&#xD;&#xA;      ,[税率]&#xD;&#xA;      ,[在庫区分]&#xD;&#xA;      ,[当月最終単価]&#xD;&#xA;      ,[基本倉庫Ｃ]&#xD;&#xA;      ,[基本単位添字売]&#xD;&#xA;      ,[基本単位添字仕]&#xD;&#xA;      ,[ランク]&#xD;&#xA;      ,[ブランド]&#xD;&#xA;      ,[発注点]&#xD;&#xA;      ,[発注点単位]&#xD;&#xA;      ,[発注ロット]&#xD;&#xA;      ,[発注ロット単位]&#xD;&#xA;      ,[リードタイム]&#xD;&#xA;      ,[有効期限日数]&#xD;&#xA;      ,[出荷期限日数]&#xD;&#xA;      ,[商品区分]&#xD;&#xA;      ,[原材料区分]&#xD;&#xA;      ,[画像ファイルパス]&#xD;&#xA;      ,[有効期限警告日数１]&#xD;&#xA;      ,[有効期限警告日数２]&#xD;&#xA;      ,[有効期限警告日数３]&#xD;&#xA;      ,[出荷期限警告日数１]&#xD;&#xA;      ,[出荷期限警告日数２]&#xD;&#xA;      ,[出荷期限警告日数３]&#xD;&#xA;      ,[予備Ｃ１]&#xD;&#xA;      ,[予備Ｃ２]&#xD;&#xA;      ,[予備Ｃ３]&#xD;&#xA;      ,[予備日付１]&#xD;&#xA;      ,[予備日付２]&#xD;&#xA;      ,[予備日付３]&#xD;&#xA;      ,[予備区分１]&#xD;&#xA;      ,[予備区分２]&#xD;&#xA;      ,[予備区分３]&#xD;&#xA;      ,[予備金額１]&#xD;&#xA;      ,[予備金額２]&#xD;&#xA;      ,[予備金額３]&#xD;&#xA;      ,[予備数量１]&#xD;&#xA;      ,[予備数量２]&#xD;&#xA;      ,[予備数量３]&#xD;&#xA;      ,[予備文字１]&#xD;&#xA;      ,[予備文字２]&#xD;&#xA;      ,[予備文字３]&#xD;&#xA;      ,[登録日]&#xD;&#xA;      ,[修正日]&#xD;&#xA;      ,[最新更新ＰＧ]&#xD;&#xA;)&#xD;&#xA;&#xD;&#xA;SELECT&#xD;&#xA;           :3           /* 取引部門*/&#xD;&#xA;      ,[SHSHOMST001]    /*  商品Ｃ*/&#xD;&#xA;      ,[SHSHOMST002]    /* グループＣ１*/&#xD;&#xA;      ,[SHSHOMST003]    /* グループＣ２*/&#xD;&#xA;      ,[SHSHOMST004]    /* グループＣ３*/&#xD;&#xA;      ,[SHSHOMST005]    /* グループＣ４*/&#xD;&#xA;      ,[SHSHOMST006]    /* グループＣ５*/&#xD;&#xA;      ,[SHSHOMST007]    /* ＪＡＮＣ*/&#xD;&#xA;      ,[SHSHOMST008]    /* 商品名*/&#xD;&#xA;      ,[SHSHOMST009]    /* 規格*/&#xD;&#xA;      ,[SHSHOMST010]    /* 検索文字カナ*/&#xD;&#xA;      ,[SHSHOMST011]    /* 仕入先Ｃ*/&#xD;&#xA;      ,[SHSHOMST012]    /* 単位１*/&#xD;&#xA;      ,[SHSHOMST013]    /* 単位２*/&#xD;&#xA;      ,[SHSHOMST014]    /* 単位３*/&#xD;&#xA;      ,[SHSHOMST015]    /* 入数１*/&#xD;&#xA;      ,[SHSHOMST016]    /* 入数２*/&#xD;&#xA;      ,[SHSHOMST017]    /* 入数３*/&#xD;&#xA;      ,[SHSHOMST018]    /* 標準売上単価１*/&#xD;&#xA;      ,[SHSHOMST019]    /* 標準売上単価２*/&#xD;&#xA;      ,[SHSHOMST020]    /* 標準売上単価３*/&#xD;&#xA;      ,[SHSHOMST021]    /* 粗利原価１*/&#xD;&#xA;      ,[SHSHOMST022]    /* 粗利原価２*/&#xD;&#xA;      ,[SHSHOMST023]    /* 粗利原価３*/&#xD;&#xA;      ,[SHSHOMST024]    /* 標準仕入単価１*/&#xD;&#xA;      ,[SHSHOMST025]    /* 標準仕入単価２*/&#xD;&#xA;      ,[SHSHOMST026]    /* 標準仕入単価３*/&#xD;&#xA;      ,[SHSHOMST027]    /* 量１*/&#xD;&#xA;      ,[SHSHOMST028]    /* 量２*/&#xD;&#xA;      ,[SHSHOMST029]    /* 量３*/&#xD;&#xA;      ,[SHSHOMST030]    /* 上代単価１*/&#xD;&#xA;      ,[SHSHOMST031]    /* 上代単価２*/&#xD;&#xA;      ,[SHSHOMST032]    /* 上代単価３*/&#xD;&#xA;      ,[SHSHOMST033]    /* 予備区分量換算区分*/&#xD;&#xA;      ,[SHSHOMST034]    /* ロット在庫区分*/&#xD;&#xA;      ,[SHSHOMST035]    /* 当月評価単価*/&#xD;&#xA;      ,[SHSHOMST036]    /* 最低単価１*/&#xD;&#xA;      ,[SHSHOMST037]    /* 最低単価２*/&#xD;&#xA;      ,[SHSHOMST038]    /* 最低単価３*/&#xD;&#xA;      ,[SHSHOMST039]    /* 税込単価１*/&#xD;&#xA;      ,[SHSHOMST040]    /* 税込単価２*/&#xD;&#xA;      ,[SHSHOMST041]    /* 税込単価３*/&#xD;&#xA;      ,[SHSHOMST042]    /* 単価ランク１*/&#xD;&#xA;      ,[SHSHOMST043]    /* 単価ランク２*/&#xD;&#xA;      ,[SHSHOMST044]    /* 単価ランク３*/&#xD;&#xA;      ,[SHSHOMST045]    /* 単価ランク４*/&#xD;&#xA;      ,[SHSHOMST046]    /* 単価ランク５*/&#xD;&#xA;      ,[SHSHOMST047]    /* 一律単価区分*/&#xD;&#xA;      ,[SHSHOMST048]    /* 課税区分*/&#xD;&#xA;      ,[SHSHOMST049]    /* 税率*/&#xD;&#xA;      ,[SHSHOMST050]    /* 在庫区分*/&#xD;&#xA;      ,[SHSHOMST051]    /* 当月最終単価*/&#xD;&#xA;      ,[SHSHOMST052]    /* 基本倉庫Ｃ*/&#xD;&#xA;      ,[SHSHOMST053]    /* 基本単位添字売*/&#xD;&#xA;      ,[SHSHOMST054]    /* 基本単位添字仕*/&#xD;&#xA;      ,[SHSHOMST055]    /* ランク*/&#xD;&#xA;      ,[SHSHOMST056]    /* ブランド*/&#xD;&#xA;      ,[SHSHOMST057]    /* 発注点*/&#xD;&#xA;      ,[SHSHOMST058]    /* 発注点単位*/&#xD;&#xA;      ,[SHSHOMST059]    /* 発注ロット*/&#xD;&#xA;      ,[SHSHOMST060]    /* 発注ロット単位*/&#xD;&#xA;      ,[SHSHOMST061]    /* リードタイム*/&#xD;&#xA;      ,[SHSHOMST062]    /* 有効期限日数*/&#xD;&#xA;      ,[SHSHOMST063]    /* 出荷期限日数*/&#xD;&#xA;      ,[SHSHOMST064]    /* 商品区分*/&#xD;&#xA;      ,[SHSHOMST065]    /* 原材料区分*/&#xD;&#xA;      ,[SHSHOMST066]    /* 画像ファイルパス*/&#xD;&#xA;,CONVERT ( int, SUBSTRING (STR(SHSHOMST076,9), 1,3))    /* 有効期限警告日数１*/&#xD;&#xA;,CONVERT ( int, SUBSTRING (STR(SHSHOMST076,9), 4,3))    /* 有効期限警告日数２*/&#xD;&#xA;,CONVERT ( int, SUBSTRING (STR(SHSHOMST076,9), 7,3))    /* 有効期限警告日数３*/&#xD;&#xA;      ,0    /* 出荷期限警告日数１*/&#xD;&#xA;      ,0    /* 出荷期限警告日数２*/&#xD;&#xA;      ,0    /* 出荷期限警告日数３*/&#xD;&#xA;      ,[SHSHOMST067]    /* 予備Ｃ１*/&#xD;&#xA;      ,[SHSHOMST068]    /* 予備Ｃ２*/&#xD;&#xA;      ,[SHSHOMST069]    /* 予備Ｃ３*/&#xD;&#xA;      ,[SHSHOMST070]    /* 予備日付１*/&#xD;&#xA;      ,[SHSHOMST071]    /* 予備日付２*/&#xD;&#xA;      ,[SHSHOMST072]    /* 予備日付３*/&#xD;&#xA;      ,[SHSHOMST073]    /* 予備区分１*/&#xD;&#xA;      ,[SHSHOMST074]    /* 予備区分２*/&#xD;&#xA;      ,[SHSHOMST075]    /* 予備区分３*/&#xD;&#xA;      ,0    /* 予備金額１*/&#xD;&#xA;      ,[SHSHOMST077]    /* 予備金額２*/&#xD;&#xA;      ,[SHSHOMST078]    /* 予備金額３*/&#xD;&#xA;      ,[SHSHOMST079]    /* 予備数量１*/&#xD;&#xA;      ,[SHSHOMST080]    /* 予備数量２*/&#xD;&#xA;      ,[SHSHOMST081]    /* 予備数量３*/&#xD;&#xA;      ,[SHSHOMST082]    /* 予備文字１*/&#xD;&#xA;      ,[SHSHOMST083]    /* 予備文字２*/&#xD;&#xA;      ,[SHSHOMST084]    /* 予備文字３*/&#xD;&#xA;      ,[SHSHOMST085]    /* 登録日*/&#xD;&#xA;      ,[SHSHOMST086]    /* 修正日*/&#xD;&#xA;      ,[SHSHOMST087]    /* 最新更新ＰＧ*/&#xD;&#xA;&#xD;&#xA;FROM&#xD;&#xA;[:2].[dbo].SHSHOMST&#xD;&#xA;"/>
+          <INARG>
+            <Arguments>
+              <Argument>
+                <Exp val="2"/>
+              </Argument>
+              <Argument>
+                <Exp val="1"/>
+              </Argument>
+              <Argument Variable="1"/>
+            </Arguments>
+          </INARG>
+        </SQL_FORM>
+        <TaskLogic>
+          <LogicUnit id="2" propagate="78">
+            <Level val="R"/>
+            <Type val="M"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <LogicLines>
+              <LogicLine>
+                <DATAVIEW_SRC FlowIsn="2" Type="Q">
+                  <Condition val="N"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </DATAVIEW_SRC>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="1" FlowIsn="3" id="1">
+                  <Column val="3"/>
+                  <Type val="V"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <PartOfDataview val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="2" FlowIsn="4" id="2">
+                  <Column val="1"/>
+                  <Type val="V"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="3" FlowIsn="5" id="3">
+                  <Column val="2"/>
+                  <Type val="V"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+        </TaskLogic>
+        <TaskForms>
+          <FormEntry id="2">
+            <PropertyList model="FORM_GUI0">
+              <_Comment id="218"/>
+              <FormName id="311" valUnicode="WRITE 商品マスタ"/>
+            </PropertyList>
+          </FormEntry>
+        </TaskForms>
+        <Expressions>
+          <Expression id="1">
+            <ExpSyntax val="Trim({0,2})"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="2">
+            <ExpSyntax val="Trim({0,3})"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+        </Expressions>
+      </Task>
+    </Programs>
+  </ProgramsRepository>
+
+</Application>

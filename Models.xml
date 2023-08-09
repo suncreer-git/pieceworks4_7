@@ -1,0 +1,3759 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Application>
+
+  <Header>
+    <Version val="13021"/>
+    <WithIsn val="Y"/>
+    <LastIsn val="152"/>
+    <LastIsnFolder val="1"/>
+    <Folders>
+      <Folder id="1">
+        <Name val="COM"/>
+      </Folder>
+    </Folders>
+  </Header>
+
+  <ModelsRepository>
+    <Models>
+      <Object id="151" name="/////////　旧モデル　/////////">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Size id="174"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="1" name="日付">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_DATE" id="1"/>
+          <Picture id="157" valUnicode="##/##/##"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DefaultValue id="170" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <DefaultStorage id="274"/>
+        </PropertyList>
+      </Object>
+      <Object id="2" name="年">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="2"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="2"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="3" name="月">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="2"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="2"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="4" name="日">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="2"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="2"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="5" name="時間">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_TIME" id="1"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+        </PropertyList>
+      </Object>
+      <Object id="6" name="伝票NO">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="8"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="8"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="7" name="行NO">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="3"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="3"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="8" name="金額７">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="N7C"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="7"/>
+          <_Negative id="192" val="Y"/>
+        </PropertyList>
+      </Object>
+      <Object id="9" name="金額８">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="N8C"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="8"/>
+          <_Negative id="192" val="Y"/>
+        </PropertyList>
+      </Object>
+      <Object id="10" name="金額９">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="N9C"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="9"/>
+          <_Negative id="192" val="Y"/>
+        </PropertyList>
+      </Object>
+      <Object id="11" name="金額１０">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="N10C"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="10"/>
+          <_Negative id="192" val="Y"/>
+        </PropertyList>
+      </Object>
+      <Object id="12" name="金額１１">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="N11C"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="11"/>
+          <_Negative id="192" val="Y"/>
+        </PropertyList>
+      </Object>
+      <Object id="13" name="単価">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="N8.4C"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DefaultValue id="170" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181" val="4"/>
+          <_Whole id="182" val="8"/>
+          <_Negative id="192" val="Y"/>
+        </PropertyList>
+      </Object>
+      <Object id="14" name="入数">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="N7.4C"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DefaultValue id="170" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181" val="4"/>
+          <_Whole id="182" val="7"/>
+          <_Negative id="192" val="Y"/>
+        </PropertyList>
+      </Object>
+      <Object id="15" name="個数">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="N7.4C"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DefaultValue id="170" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181" val="4"/>
+          <_Whole id="182" val="7"/>
+          <_Negative id="192" val="Y"/>
+        </PropertyList>
+      </Object>
+      <Object id="16" name="数量５．４">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="N5.4C"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DefaultValue id="170" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181" val="4"/>
+          <_Whole id="182" val="5"/>
+          <_Negative id="192" val="Y"/>
+        </PropertyList>
+      </Object>
+      <Object id="17" name="数量８．４">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="N8.4C"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DefaultValue id="170" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181" val="4"/>
+          <_Whole id="182" val="8"/>
+          <_Negative id="192" val="Y"/>
+          <DefaultStorage id="274"/>
+        </PropertyList>
+      </Object>
+      <Object id="18" name="取引先ｺｰﾄﾞ">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="7"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="7"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="19" name="商品ｺｰﾄﾞ">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="54"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="54"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="20" name="実績(ｸﾞﾙｰﾌﾟ)ｺｰﾄﾞ">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="6"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="6"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="21" name="実績(ｸﾞﾙｰﾌﾟ)ｺｰﾄﾞ大小">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="3"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="3"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="22" name="相手店コード">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="10"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="10"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="23" name="相手取引先コード">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="10"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="10"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="24" name="相手部門ｺｰﾄﾞ">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="10"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="10"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="25" name="相手商品コード">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="24"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="24"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="26" name="ＪＡＮコード">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="13"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="13"/>
+          <_Flip id="194"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object id="27" name="名称４">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="14"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="14"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="28" name="名称６">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="20"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="20"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="29" name="名称１２">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="40"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="40"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="30" name="名称１８">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="60"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="60"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="31" name="名称２４">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="80"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="80"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="32" name="検索文字(ｶﾅ)">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="20"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="20"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="33" name="ランク">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="1"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="1"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="34" name="ＴＥＬ">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="13"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="13"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="35" name="郵便番号">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="8"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="8"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="36" name="住所">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="60"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="60"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="37" name="規格">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="20"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="20"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="38" name="単位添字">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="1"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="1"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="39" name="単位">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="10"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="10"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="40" name="手形番号">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="15"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="15"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="41" name="締日">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="2"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="2"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="42" name="回収月">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="1"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="1"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="43" name="支払方法">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="6"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="6"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="44" name="摘要">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="60"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="60"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="45" name="区分１">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="1"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="1"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="46" name="区分２">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="2"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="2"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="47" name="比率２．１">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="N2.1"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DefaultValue id="170" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181" val="1"/>
+          <_Whole id="182" val="2"/>
+          <_Negative id="192" val="Y"/>
+        </PropertyList>
+      </Object>
+      <Object id="48" name="比率３．１">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="N3.1"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DefaultValue id="170" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181" val="1"/>
+          <_Whole id="182" val="3"/>
+          <_Negative id="192" val="Y"/>
+        </PropertyList>
+      </Object>
+      <Object id="49" name="比率３．２">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="N3.2"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DefaultValue id="170" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181" val="2"/>
+          <_Whole id="182" val="3"/>
+          <_Negative id="192" val="Y"/>
+        </PropertyList>
+      </Object>
+      <Object id="50" name="比率４．１">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="N4.1"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DefaultValue id="170" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181" val="1"/>
+          <_Whole id="182" val="4"/>
+          <_Negative id="192" val="Y"/>
+        </PropertyList>
+      </Object>
+      <Object id="51" name="比率４．２">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="N4.2"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DefaultValue id="170" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181" val="2"/>
+          <_Whole id="182" val="4"/>
+          <_Negative id="192" val="Y"/>
+        </PropertyList>
+      </Object>
+      <Object id="52" name="ＦＬＧ">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="1"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="1"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="53" name="更新ＰＧ">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="20"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="20"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="54" name="棚番">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="15"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="15"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="55" name="相手伝票NO">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="20"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="20"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="56" name="管理ﾏｽﾀｷｰ">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="1"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="1"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="57" name="部門ｺｰﾄﾞ(財務)">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="3"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="3"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="58" name="科目ｺｰﾄﾞ(財務)">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="7"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="7"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="59" name="時間(文字)">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="2"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="2"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="60" name="任意ｺｰﾄﾞ">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="8"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="8"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="61" name="任意文字">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="20"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="20"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object Public="V9 Compatible Default Table" id="62" name="V9 Compatible Default Table">
+        <PropertyList model="CTRL_GUI0_TABLE">
+          <BorderStyle id="64" val="1"/>
+          <LineDivider id="78" val="Y"/>
+          <ColumnDivider id="189" val="Y"/>
+          <TableInWindow id="190" val="Y"/>
+          <_WindowWidth id="241"/>
+          <RowHighlightStyle id="409" val="2"/>
+          <BottomPositionInterval id="411" val="2"/>
+          <V11TableInWindow id="535" val="Y"/>
+        </PropertyList>
+      </Object>
+      <Object id="63" name="xpaTable">
+        <PropertyList model="CTRL_GUI0_TABLE">
+          <Placement bottom="100" id="20"/>
+          <ControlName id="46" val="Tabl"/>
+          <Color id="51" val="158"/>
+          <LineDivider id="78" val="Y"/>
+          <ColumnDivider id="189" val="Y"/>
+          <AllowColumnResize id="191"/>
+          <MultiMarking id="196"/>
+          <_WindowWidth id="241"/>
+          <RowHighlightStyle id="409" val="2"/>
+          <RowHighlightColor id="410" val="45"/>
+          <BottomPositionInterval id="411" val="2"/>
+          <SetTableColorBy id="428" val="2"/>
+          <AlternatingBgColor id="429" val="151"/>
+          <AllowColumnReorder id="430"/>
+          <V11TableInWindow id="535" val="Y"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" id="152" name="/////////　新モデル　/////////">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Size id="174"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="日付" id="65" name="日付">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_DATE" id="1"/>
+          <Picture id="157" valUnicode="##/##/##"/>
+          <NullValue id="167" val="0"/>
+          <DefaultValue id="170" val="0"/>
+          <DatabaseDefault id="171" valUnicode="'00000000'"/>
+          <StoredAs id="173"/>
+          <Type id="179" val="char(8)"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="年" id="66" name="年">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="2"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="2"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="月" id="67" name="月">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="2"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="2"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="日" id="68" name="日">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="2"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="2"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="時間" id="69" name="時間">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_TIME" id="1"/>
+          <NullValue id="167" val="0"/>
+          <DefaultValue id="170" val="0"/>
+          <DatabaseDefault id="171" valUnicode="'000000'"/>
+          <StoredAs id="173"/>
+          <Type id="179" val="char(6)"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="伝票NO" id="70" name="伝票Ｎｏ">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="8"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="8"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="行NO" id="71" name="行Ｎｏ">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="3"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="3"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="金額７" id="72" name="金額７">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="N7C"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="7"/>
+          <_Negative id="192" val="Y"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="金額８" id="73" name="金額８">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="N8C"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="8"/>
+          <_Negative id="192" val="Y"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="金額９" id="74" name="金額９">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="N9C"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="9"/>
+          <_Negative id="192" val="Y"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="金額１０" id="75" name="金額１０">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="N10C"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="10"/>
+          <_Negative id="192" val="Y"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="金額１１" id="76" name="金額１１">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="N11C"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="11"/>
+          <_Negative id="192" val="Y"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="単価" id="77" name="単価">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="N8.4C"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DefaultValue id="170" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181" val="4"/>
+          <_Whole id="182" val="8"/>
+          <_Negative id="192" val="Y"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="入数" id="78" name="入数">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="N7.4C"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DefaultValue id="170" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181" val="4"/>
+          <_Whole id="182" val="7"/>
+          <_Negative id="192" val="Y"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="個数" id="79" name="個数">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="N7.4C"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DefaultValue id="170" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181" val="4"/>
+          <_Whole id="182" val="7"/>
+          <_Negative id="192" val="Y"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="数量５．４" id="80" name="数量５．４">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="N5.4C"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DefaultValue id="170" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181" val="4"/>
+          <_Whole id="182" val="5"/>
+          <_Negative id="192" val="Y"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="数量８．４" id="81" name="数量８．４">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="N8.4C"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DefaultValue id="170" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181" val="4"/>
+          <_Whole id="182" val="8"/>
+          <_Negative id="192" val="Y"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="取引先ｺｰﾄﾞ" id="82" name="取引先ｺｰﾄﾞ">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="7"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="7"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="商品ｺｰﾄﾞ" id="83" name="商品ｺｰﾄﾞ">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="30"/>
+          <DatabaseDefault id="171" valUnicode="''"/>
+          <Size id="174" val="30"/>
+          <_Flip id="194"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="実績(ｸﾞﾙｰﾌﾟ)ｺｰﾄﾞ" id="84" name="実績(ｸﾞﾙｰﾌﾟ)ｺｰﾄﾞ">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="6"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="6"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="実績(ｸﾞﾙｰﾌﾟ)ｺｰﾄﾞ大小" id="85" name="実績(ｸﾞﾙｰﾌﾟ)ｺｰﾄﾞ大小">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="3"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="3"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="相手店コード" id="86" name="相手店コード">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_UNICODE" id="1"/>
+          <Picture id="157" valUnicode="15"/>
+          <DefaultValue id="170"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <Size id="174" val="30"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="相手取引先コード" id="87" name="相手取引先コード">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_UNICODE" id="1"/>
+          <Picture id="157" valUnicode="15"/>
+          <DefaultValue id="170"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <Size id="174" val="30"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="相手部門ｺｰﾄﾞ" id="88" name="相手部門ｺｰﾄﾞ">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_UNICODE" id="1"/>
+          <Picture id="157" valUnicode="10"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <Size id="174" val="20"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="相手商品コード" id="89" name="相手商品コード">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="30"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <Size id="174" val="30"/>
+          <_Flip id="194"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="ＪＡＮコード" id="90" name="ＪＡＮコード">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_UNICODE" id="1"/>
+          <Picture id="157" valUnicode="16"/>
+          <DefaultValue id="170"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <Size id="174" val="32"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="名称８" id="91" name="名称８">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_UNICODE" id="1"/>
+          <Picture id="157" valUnicode="8"/>
+          <DefaultValue id="170"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <Size id="174" val="16"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="名称１２" id="92" name="名称１２">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_UNICODE" id="1"/>
+          <Picture id="157" valUnicode="12"/>
+          <DefaultValue id="170"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <Size id="174" val="24"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="名称２４" id="93" name="名称２４">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_UNICODE" id="1"/>
+          <Picture id="157" valUnicode="24"/>
+          <DefaultValue id="170"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <Size id="174" val="48"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="名称４０" id="94" name="名称４０">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_UNICODE" id="1"/>
+          <Picture id="157" valUnicode="40"/>
+          <DefaultValue id="170"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <Size id="174" val="80"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="名称５０" id="95" name="名称５０">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_UNICODE" id="1"/>
+          <Picture id="157" valUnicode="50"/>
+          <DefaultValue id="170"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <Size id="174" val="100"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="検索文字(ｶﾅ)" id="96" name="検索文字(ｶﾅ)">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_UNICODE" id="1"/>
+          <Picture id="157" valUnicode="20"/>
+          <DefaultValue id="170"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <Size id="174" val="40"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="ランク" id="97" name="ランク">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_UNICODE" id="1"/>
+          <Picture id="157" valUnicode="2"/>
+          <DefaultValue id="170"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <Size id="174" val="4"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="ＴＥＬ" id="98" name="ＴＥＬ">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_UNICODE" id="1"/>
+          <Picture id="157" valUnicode="13"/>
+          <DefaultValue id="170"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <Size id="174" val="26"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="郵便番号" id="99" name="郵便番号">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_UNICODE" id="1"/>
+          <Picture id="157" valUnicode="8"/>
+          <DefaultValue id="170"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <Size id="174" val="16"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="住所" id="100" name="住所">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_UNICODE" id="1"/>
+          <Picture id="157" valUnicode="40"/>
+          <DefaultValue id="170"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <Size id="174" val="80"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="規格" id="101" name="規格">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_UNICODE" id="1"/>
+          <Picture id="157" valUnicode="40"/>
+          <DefaultValue id="170"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <Size id="174" val="80"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="単位添字" id="102" name="単位添字">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="1"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="1"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="単位" id="103" name="単位">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_UNICODE" id="1"/>
+          <Picture id="157" valUnicode="6"/>
+          <DefaultValue id="170"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <Size id="174" val="12"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="手形番号" id="104" name="手形番号">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_UNICODE" id="1"/>
+          <Picture id="157" valUnicode="15"/>
+          <DefaultValue id="170"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <Size id="174" val="30"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="締日" id="105" name="締日">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="2"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="2"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="回収月" id="106" name="回収月">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="1"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="1"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="支払方法" id="107" name="支払方法">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_UNICODE" id="1"/>
+          <Picture id="157" valUnicode="6"/>
+          <DefaultValue id="170"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <Size id="174" val="12"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="摘要" id="108" name="摘要">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_UNICODE" id="1"/>
+          <Picture id="157" valUnicode="40"/>
+          <DefaultValue id="170"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <Size id="174" val="80"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="区分１" id="109" name="区分１">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="1"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="1"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="区分２" id="110" name="区分２">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="2"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="2"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="比率２．１" id="111" name="比率２．１">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="N2.1"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DefaultValue id="170" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181" val="1"/>
+          <_Whole id="182" val="2"/>
+          <_Negative id="192" val="Y"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="比率３．１" id="112" name="比率３．１">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="N3.1"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DefaultValue id="170" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181" val="1"/>
+          <_Whole id="182" val="3"/>
+          <_Negative id="192" val="Y"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="比率３．２" id="113" name="比率３．２">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="N3.2"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DefaultValue id="170" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181" val="2"/>
+          <_Whole id="182" val="3"/>
+          <_Negative id="192" val="Y"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="比率４．１" id="114" name="比率４．１">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="N4.1"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DefaultValue id="170" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181" val="1"/>
+          <_Whole id="182" val="4"/>
+          <_Negative id="192" val="Y"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="比率４．２" id="115" name="比率４．２">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="N4.2"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DefaultValue id="170" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181" val="2"/>
+          <_Whole id="182" val="4"/>
+          <_Negative id="192" val="Y"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="ＦＬＧ" id="116" name="ＦＬＧ">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="1"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="1"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="更新ＰＧ" id="117" name="更新ＰＧ">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_UNICODE" id="1"/>
+          <Picture id="157" valUnicode="20"/>
+          <DefaultValue id="170"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <Size id="174" val="40"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="棚番" id="118" name="棚番">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_UNICODE" id="1"/>
+          <Picture id="157" valUnicode="20"/>
+          <DefaultValue id="170"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <Size id="174" val="40"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="相手伝票NO" id="119" name="相手伝票Ｎｏ">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_UNICODE" id="1"/>
+          <Picture id="157" valUnicode="20"/>
+          <DefaultValue id="170"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <Size id="174" val="40"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="管理ﾏｽﾀｷｰ" id="120" name="管理ﾏｽﾀｷｰ">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="1"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="1"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="部門ｺｰﾄﾞ(財務)" id="121" name="部門ｺｰﾄﾞ(財務)">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="3"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="3"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="科目ｺｰﾄﾞ(財務)" id="122" name="科目ｺｰﾄﾞ(財務)">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="7"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="7"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="時間(文字)" id="123" name="時間(文字)">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_UNICODE" id="1"/>
+          <Picture id="157" valUnicode="4"/>
+          <DefaultValue id="170"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <Size id="174" val="8"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="任意ｺｰﾄﾞ" id="124" name="任意ｺｰﾄﾞ">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="8"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="101"/>
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <GuiOutput id="160">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutput>
+          <GuiOutputTable id="161">
+            <PropertyList model="CTRL_GUI1_EDIT">
+              <Color id="51" val="101"/>
+            </PropertyList>
+          </GuiOutputTable>
+          <NullValue id="167" val="0"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="8"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="任意文字" id="125" name="任意文字">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_UNICODE" id="1"/>
+          <Picture id="157" valUnicode="20"/>
+          <DefaultValue id="170"/>
+          <DatabaseDefault id="171" valUnicode="' '"/>
+          <Size id="174" val="40"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="背景" id="126" name="FRM_背景">
+        <PropertyList model="FORM_GUI0">
+          <Placement id="20"/>
+          <Width id="23" val="557"/>
+          <Height id="24" val="322"/>
+          <SystemMenu id="27"/>
+          <MinimizeButton id="28"/>
+          <MaximizeButton id="29"/>
+          <GridX id="38" val="1"/>
+          <GridY id="39" val="2"/>
+          <Color id="51" val="146"/>
+          <BorderStyle id="64" val="2"/>
+          <_Comment id="218"/>
+          <StartupPosition id="275" val="1"/>
+          <FormName id="311"/>
+          <WindowType id="358" val="1"/>
+          <PersistentFormState id="493"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="テーブル" id="127" name="FRM_テーブル">
+        <PropertyList model="CTRL_GUI0_TABLE">
+          <Placement id="20"/>
+          <Color id="51" val="126"/>
+          <BorderStyle id="64" val="1"/>
+          <LineDivider id="78" val="Y"/>
+          <ColumnDivider id="189" val="Y"/>
+          <TableInWindow id="190" val="Y"/>
+          <_WindowWidth id="241"/>
+          <RowHighlightStyle id="409" val="4"/>
+          <RowHighlightColor id="410" val="142"/>
+          <BottomPositionInterval id="411" val="2"/>
+          <SetTableColorBy id="428" val="2"/>
+          <AlternatingBgColor id="429" val="125"/>
+          <V11TableInWindow id="535" val="Y"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="見出し" id="128" name="FRM_見出し">
+        <PropertyList model="CTRL_GUI0_EDIT">
+          <Placement id="20"/>
+          <Font id="50" val="135"/>
+          <Color id="51" val="147"/>
+          <HorizontalAlignment id="65" val="2"/>
+          <TabInto id="269"/>
+          <AllowParking id="315"/>
+          <V11BorderStyle id="538" val="3"/>
+          <V11Style id="539" val="4"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="項目数値" id="129" name="FRM_項目数値">
+        <PropertyList model="CTRL_GUI0_EDIT">
+          <Placement id="20"/>
+          <Font id="50" val="136"/>
+          <Color id="51" val="149"/>
+          <HorizontalAlignment id="65" val="3"/>
+          <AllowParking id="315" val="Y"/>
+          <V11BorderStyle id="538" val="3"/>
+          <V11Style id="539" val="4"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="項目文字" id="130" name="FRM_項目文字">
+        <PropertyList model="CTRL_GUI0_EDIT">
+          <Placement id="20"/>
+          <Font id="50" val="135"/>
+          <Color id="51" val="149"/>
+          <HorizontalAlignment id="65" val="1"/>
+          <AllowParking id="315" val="Y"/>
+          <V11BorderStyle id="538" val="3"/>
+          <V11Style id="539" val="4"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="項目日付" id="131" name="FRM_項目日付">
+        <PropertyList model="CTRL_GUI0_EDIT">
+          <Placement id="20"/>
+          <Font id="50" val="136"/>
+          <Color id="51" val="149"/>
+          <HorizontalAlignment id="65" val="2"/>
+          <AllowParking id="315" val="Y"/>
+          <V11BorderStyle id="538" val="3"/>
+          <V11Style id="539" val="4"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="※※※※※※※※※※" id="132" name="※※※以下ｘｐａより※※※">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="1"/>
+          <Size id="174" val="1"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="Ｆフォーム背景" id="133" name="フォーム_背景">
+        <PropertyList model="FORM_GUI0">
+          <Placement id="20"/>
+          <Width id="23" val="672"/>
+          <Height id="24" val="400"/>
+          <SystemMenu id="27"/>
+          <MinimizeButton id="28"/>
+          <MaximizeButton id="29"/>
+          <GridX id="38" val="1"/>
+          <GridY id="39" val="1"/>
+          <Color id="51" val="154"/>
+          <BorderStyle id="64" val="2"/>
+          <_Comment id="218"/>
+          <StartupPosition id="275" val="1"/>
+          <FormName id="311"/>
+          <WindowType id="358" val="1"/>
+          <PersistentFormState id="493" val="Y"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="Ｅカラム見出し" id="134" name="フォーム_項目見出し">
+        <PropertyList model="CTRL_GUI0_EDIT">
+          <Placement id="20"/>
+          <Font id="50" val="139"/>
+          <Color id="51" val="147"/>
+          <HorizontalAlignment id="65" val="2"/>
+          <TabInto id="269"/>
+          <AllowParking id="315"/>
+          <V11BorderStyle id="538" val="3"/>
+          <V11Style id="539" val="4"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="Ｅ入力項目数値" id="135" name="フォーム_入力項目数値">
+        <PropertyList model="CTRL_GUI0_EDIT">
+          <Placement id="20"/>
+          <Font id="50" val="139"/>
+          <Color id="51" val="151"/>
+          <HorizontalAlignment id="65" val="3"/>
+          <AllowParking id="315" val="Y"/>
+          <V11BorderStyle id="538" val="3"/>
+          <V11Style id="539" val="4"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="Ｅ入力項目文字" id="136" name="フォーム_入力項目文字">
+        <PropertyList model="CTRL_GUI0_EDIT">
+          <Placement id="20"/>
+          <Font id="50" val="139"/>
+          <Color id="51" val="151"/>
+          <HorizontalAlignment id="65" val="1"/>
+          <AllowParking id="315" val="Y"/>
+          <V11BorderStyle id="538" val="3"/>
+          <V11Style id="539" val="4"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="Ｅ入力項目日付" id="137" name="フォーム_入力項目日付">
+        <PropertyList model="CTRL_GUI0_EDIT">
+          <Placement id="20"/>
+          <Font id="50" val="139"/>
+          <Color id="51" val="151"/>
+          <HorizontalAlignment id="65" val="2"/>
+          <AllowParking id="315" val="Y"/>
+          <V11BorderStyle id="538" val="3"/>
+          <V11Style id="539" val="4"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="Ｅ表示項目" id="138" name="フォーム_表示項目">
+        <PropertyList model="CTRL_GUI0_EDIT">
+          <Placement id="20"/>
+          <Font id="50" val="139"/>
+          <Color id="51" val="149"/>
+          <AllowParking id="315"/>
+          <V11BorderStyle id="538" val="3"/>
+          <V11Style id="539" val="4"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="Ｔテーブル" id="139" name="フォーム_テーブル">
+        <PropertyList model="CTRL_GUI0_TABLE">
+          <Placement bottom="100" id="20" right="100"/>
+          <Color id="51" val="151"/>
+          <BorderStyle id="64" val="1"/>
+          <LineDivider id="78" val="Y"/>
+          <ColumnDivider id="189" val="Y"/>
+          <TableInWindow id="190" val="Y"/>
+          <_WindowWidth id="241"/>
+          <RowHighlightStyle id="409" val="2"/>
+          <RowHighlightColor id="410" val="45"/>
+          <BottomPositionInterval id="411" val="1"/>
+          <SetTableColorBy id="428" val="2"/>
+          <AlternatingBgColor id="429" val="158"/>
+          <V11TableInWindow id="535" val="Y"/>
+          <TitleColor id="677" val="150"/>
+          <InactiveRowHighlightColor id="697" val="151"/>
+          <ShowEllipsis id="699"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="Ｍテーブルカラム" id="140" name="フォーム_テーブルカラム">
+        <PropertyList model="CTRL_GUI0_COLUMN">
+          <Font id="50" val="140"/>
+          <Color id="51" val="150"/>
+          <HorizontalAlignment id="65" val="2"/>
+          <Sortable id="134" val="Y"/>
+          <Placement id="138"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="Ｅテーブル項目" id="141" name="フォーム_テーブル項目">
+        <PropertyList model="CTRL_GUI0_EDIT">
+          <Font id="50" val="140"/>
+          <Color id="51" val="151"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="Ｅ数値強調" id="142" name="フォーム_数値強調">
+        <PropertyList model="CTRL_GUI0_EDIT">
+          <Placement id="20"/>
+          <Font id="50" val="141"/>
+          <Color id="51" val="151"/>
+          <HorizontalAlignment id="65" val="3"/>
+          <V11BorderStyle id="538" val="3"/>
+          <V11Style id="539" val="4"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="Ｐボタン" id="143" name="フォーム_ボタン">
+        <PropertyList model="CTRL_GUI0_PUSH_BUTTON">
+          <Placement id="20" top="100"/>
+          <Font id="50" val="140"/>
+          <ButtonStyle id="96" val="2"/>
+          <RaiseAt id="395" val="2"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="Ｅ背景色テキスト" id="144" name="フォーム_テキスト背景色">
+        <PropertyList model="CTRL_GUI0_EDIT">
+          <Font id="50" val="139"/>
+          <Color id="51" val="154"/>
+          <Style id="63" val="1"/>
+          <BorderStyle id="64" val="3"/>
+          <Border id="452"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="Ｓボタンエリア" id="145" name="フォーム_ボタンエリア">
+        <PropertyList model="CTRL_GUI0_STATIC">
+          <Text id="19" valUnicode="ボタンエリア"/>
+          <Placement id="20" right="100" top="100"/>
+          <Color id="51" val="153"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="Ｃコンボボックス" id="146" name="フォーム_コンボ">
+        <PropertyList model="CTRL_GUI0_COMBOBOX">
+          <Font id="50" val="139"/>
+          <Color id="51" val="151"/>
+          <Style id="63" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" Public="取引部門" id="147" name="取引部門">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="4"/>
+          <DatabaseDefault id="171" valUnicode="0"/>
+          <DbColumnName id="178" val="取引部門"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="4"/>
+          <_Negative id="192"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+    </Models>
+  </ModelsRepository>
+
+</Application>
