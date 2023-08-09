@@ -31,7 +31,7 @@
           <External val="Y"/>
           <Offline val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="738741" _time="44875" date="2023/08/09" time="12:27:55"/>
+          <LastModified _date="738741" _time="48960" date="2023/08/09" time="13:36:00"/>
         </Header>
         <ItemIsn val="219"/>
         <Resource>
@@ -15580,7 +15580,7 @@
             <TaskType val="O"/>
             <External val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="738741" _time="44875" date="2023/08/09" time="12:27:55"/>
+            <LastModified _date="738741" _time="48960" date="2023/08/09" time="13:36:00"/>
           </Header>
           <ItemIsn val="116"/>
           <Resource>
@@ -21014,7 +21014,7 @@
               <Event>
                 <EventType val="S"/>
               </Event>
-              <TXT val="komennt"/>
+              <TXT val="コメント修正"/>
             </LogicUnit>
             <LogicUnit id="41" propagate="78">
               <Level val="K"/>
