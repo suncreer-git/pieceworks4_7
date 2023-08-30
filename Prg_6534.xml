@@ -14,7 +14,6 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="管理マスタ保守" ISN_2="5" LastIsn="6" id="6534">
-          <Public val="KnrMnt"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -24,11 +23,11 @@
           </ReturnValue>
           <SqlWhereExist val="N"/>
           <TaskType val="B"/>
-          <External val="Y"/>
+          <External val="N"/>
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="738550" _time="60097" date="2023/01/30" time="16:41:37"/>
+          <LastModified _date="738719" _time="35867" date="2023/07/18" time="09:57:47"/>
         </Header>
         <ItemIsn val="3"/>
         <Resource>
@@ -21035,7 +21034,7 @@
           </EVNT>
           <VarRangeInfo Mode="E" VarRangeVeeIsn="4" id="1"/>
           <Task MainProgram="N">
-            <Header Description="使用ＣＴＬ設定" ISN_2="3" LastIsn="5" id="6534">
+            <Header Description="使用ＣＴＬ設定" ISN_2="3" LastIsn="6" id="6534">
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -21777,7 +21776,7 @@
               </Expression>
             </Expressions>
             <Task MainProgram="N">
-              <Header Description="パスワード入力" ISN_2="4" LastIsn="5" id="6534">
+              <Header Description="パスワード入力" ISN_2="4" LastIsn="6" id="6534">
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="N"/>

@@ -2,7 +2,7 @@
 <Application>
 
   <Header>
-    <Version val="13021"/>
+    <Version val="14071.00"/>
     <WithIsn val="Y"/>
     <_InternalTask val="N"/>
     <IsRoot val="N"/>
@@ -14,7 +14,6 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="請求一覧表" ISN_2="1" LastIsn="6" id="5568">
-          <Public val="SekPrt"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -35,10 +34,10 @@
           </ReturnValue>
           <SqlWhereExist val="N"/>
           <TaskType val="O"/>
-          <External val="Y"/>
+          <External val="N"/>
           <Offline val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="738236" _time="61711" date="2022/03/22" time="17:08:31"/>
+          <LastModified _date="738739" _time="35320" date="2023/08/07" time="09:48:40"/>
         </Header>
         <ItemIsn val="97"/>
         <Resource>
@@ -554,7 +553,6 @@
             <Condition val="89"/>
             <Event>
               <EventType val="S"/>
-              <PublicObject comp="-1"/>
             </Event>
             <Expanded val="1"/>
             <LogicLines>
@@ -569,6 +567,7 @@
                 <Select FieldID="1" FlowIsn="3" id="1">
                   <Column val="1"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="Y"/>
                   <INT_DSP_INFO>
                     <v>0</v>
@@ -584,6 +583,7 @@
                 <Select FieldID="2" FlowIsn="4" id="2">
                   <Column val="2"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="Y"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -595,6 +595,7 @@
                 <Select FieldID="3" FlowIsn="5" id="3">
                   <Column val="3"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="Y"/>
                   <DIFF_UPDATE val="T"/>
                   <PartOfDataview val="N"/>
@@ -607,6 +608,7 @@
                 <Select FieldID="4" FlowIsn="6" id="4">
                   <Column val="4"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="Y"/>
                   <DIFF_UPDATE val="T"/>
                   <PartOfDataview val="N"/>
@@ -619,6 +621,7 @@
                 <Select FieldID="5" FlowIsn="7" id="5">
                   <Column val="5"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="Y"/>
                   <DIFF_UPDATE val="T"/>
                   <PartOfDataview val="Y"/>
@@ -631,6 +634,7 @@
                 <Select FieldID="6" FlowIsn="8" id="6">
                   <Column val="6"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="Y"/>
                   <DIFF_UPDATE val="T"/>
                   <PartOfDataview val="N"/>
@@ -643,6 +647,7 @@
                 <Select FieldID="7" FlowIsn="9" id="7">
                   <Column val="7"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="Y"/>
                   <DIFF_UPDATE val="T"/>
                   <PartOfDataview val="N"/>
@@ -655,6 +660,7 @@
                 <Select FieldID="8" FlowIsn="10" id="8">
                   <Column val="8"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="Y"/>
                   <DIFF_UPDATE val="T"/>
                   <PartOfDataview val="N"/>
@@ -667,6 +673,7 @@
                 <Select FieldID="9" FlowIsn="11" id="9">
                   <Column val="9"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="Y"/>
                   <DIFF_UPDATE val="T"/>
                   <PartOfDataview val="N"/>
@@ -685,6 +692,7 @@
                 <Select FieldID="10" FlowIsn="13" id="10">
                   <Column val="10"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -708,6 +716,7 @@
                 <Select FieldID="11" FlowIsn="16" id="11">
                   <Column val="1"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <Locate MAX="1" MIN="1"/>
                   <DIFF_UPDATE val="T"/>
@@ -720,6 +729,7 @@
                 <Select FieldID="12" FlowIsn="17" id="12">
                   <Column val="10"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <INT_RCMP_INFO>
                     <v>20</v>
@@ -747,6 +757,7 @@
                   <ASS val="7"/>
                   <Column val="11"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <PartOfDataview val="N"/>
@@ -765,6 +776,7 @@
                 <Select FieldID="14" FlowIsn="21" id="14">
                   <Column val="1"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <Locate MAX="16" MIN="16"/>
                   <DIFF_UPDATE val="T"/>
@@ -777,6 +789,7 @@
                 <Select FieldID="15" FlowIsn="22" id="15">
                   <Column val="2"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -788,6 +801,7 @@
                 <Select FieldID="16" FlowIsn="23" id="16">
                   <Column val="3"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -799,6 +813,7 @@
                 <Select FieldID="17" FlowIsn="24" id="17">
                   <Column val="4"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -810,6 +825,7 @@
                 <Select FieldID="18" FlowIsn="25" id="18">
                   <Column val="5"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -821,6 +837,7 @@
                 <Select FieldID="19" FlowIsn="26" id="19">
                   <Column val="6"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -832,6 +849,7 @@
                 <Select FieldID="20" FlowIsn="27" id="20">
                   <Column val="7"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -843,6 +861,7 @@
                 <Select FieldID="21" FlowIsn="28" id="21">
                   <Column val="8"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -854,6 +873,7 @@
                 <Select FieldID="22" FlowIsn="29" id="22">
                   <Column val="9"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -865,6 +885,7 @@
                 <Select FieldID="23" FlowIsn="30" id="23">
                   <Column val="10"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -876,6 +897,7 @@
                 <Select FieldID="24" FlowIsn="31" id="24">
                   <Column val="11"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -887,6 +909,7 @@
                 <Select FieldID="25" FlowIsn="32" id="25">
                   <Column val="12"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -898,6 +921,7 @@
                 <Select FieldID="26" FlowIsn="33" id="26">
                   <Column val="13"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -909,6 +933,7 @@
                 <Select FieldID="27" FlowIsn="34" id="27">
                   <Column val="14"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -920,6 +945,7 @@
                 <Select FieldID="28" FlowIsn="35" id="28">
                   <Column val="15"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -931,6 +957,7 @@
                 <Select FieldID="29" FlowIsn="36" id="29">
                   <Column val="16"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -942,6 +969,7 @@
                 <Select FieldID="30" FlowIsn="37" id="30">
                   <Column val="17"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -953,6 +981,7 @@
                 <Select FieldID="31" FlowIsn="38" id="31">
                   <Column val="109"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -964,6 +993,7 @@
                 <Select FieldID="32" FlowIsn="39" id="32">
                   <Column val="28"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -975,6 +1005,7 @@
                 <Select FieldID="33" FlowIsn="40" id="33">
                   <Column val="29"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -986,6 +1017,7 @@
                 <Select FieldID="34" FlowIsn="41" id="34">
                   <Column val="30"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -997,6 +1029,7 @@
                 <Select FieldID="35" FlowIsn="42" id="35">
                   <Column val="31"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -1008,6 +1041,7 @@
                 <Select FieldID="36" FlowIsn="43" id="36">
                   <Column val="32"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -1019,6 +1053,7 @@
                 <Select FieldID="37" FlowIsn="44" id="37">
                   <Column val="33"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -1036,6 +1071,7 @@
                 <Select FieldID="38" FlowIsn="46" id="38">
                   <Column val="91"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <INT_RCMP_INFO>
                     <v>78</v>
@@ -1054,6 +1090,7 @@
                 <Select FieldID="39" FlowIsn="47" id="39">
                   <Column val="92"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <INT_RCMP_INFO>
                     <v>78</v>
@@ -1072,6 +1109,7 @@
                 <Select FieldID="40" FlowIsn="48" id="40">
                   <Column val="93"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <INT_RCMP_INFO>
                     <v>78</v>
@@ -1090,6 +1128,7 @@
                 <Select FieldID="41" FlowIsn="49" id="41">
                   <Column val="94"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <INT_RCMP_INFO>
                     <v>78</v>
@@ -1108,6 +1147,7 @@
                 <Select FieldID="42" FlowIsn="50" id="42">
                   <Column val="95"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <INT_RCMP_INFO>
                     <v>78</v>
@@ -1132,6 +1172,7 @@
                 <Select FieldID="43" FlowIsn="52" id="43">
                   <Column val="111"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -1143,6 +1184,7 @@
                 <Select FieldID="44" FlowIsn="53" id="44">
                   <Column val="132"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -1154,6 +1196,7 @@
                 <Select FieldID="45" FlowIsn="54" id="45">
                   <Column val="136"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -1165,6 +1208,7 @@
                 <Select FieldID="46" FlowIsn="55" id="46">
                   <Column val="137"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -1176,6 +1220,7 @@
                 <Select FieldID="47" FlowIsn="56" id="47">
                   <Column val="148"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -1187,6 +1232,7 @@
                 <Select FieldID="48" FlowIsn="57" id="48">
                   <Column val="133"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -1207,6 +1253,7 @@
                 <Select FieldID="49" FlowIsn="60" id="49">
                   <Column val="1"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <Locate MAX="16" MIN="16"/>
                   <DIFF_UPDATE val="T"/>
@@ -1219,6 +1266,7 @@
                 <Select FieldID="50" FlowIsn="61" id="50">
                   <Column val="25"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -1230,6 +1278,7 @@
                 <Select FieldID="51" FlowIsn="62" id="51">
                   <Column val="26"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <INT_RCMP_INFO>
                     <v>72</v>
@@ -1250,6 +1299,7 @@
                 <Select FieldID="52" FlowIsn="64" id="52">
                   <Column val="23"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <REAL_VNAME_TXT val="KNR 更新エラーチェック"/>
                   <DIFF_UPDATE val="T"/>
@@ -1271,6 +1321,7 @@
                 <Select FieldID="53" FlowIsn="67" id="53">
                   <Column val="1"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <Locate MAX="16" MIN="16"/>
                   <DIFF_UPDATE val="T"/>
@@ -1283,6 +1334,7 @@
                 <Select FieldID="54" FlowIsn="68" id="54">
                   <Column val="2"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <Locate MAX="120" MIN="120"/>
                   <DIFF_UPDATE val="T"/>
@@ -1295,6 +1347,7 @@
                 <Select FieldID="55" FlowIsn="69" id="55">
                   <Column val="6"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="N"/>
@@ -1309,6 +1362,7 @@
                 <Select FieldID="56" FlowIsn="71" id="56">
                   <Column val="12"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -1321,6 +1375,7 @@
                   <ASS val="79"/>
                   <Column val="13"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <INT_DIT_INFO>
                     <v>1</v>
@@ -1343,6 +1398,7 @@
                 <Select FieldID="58" FlowIsn="74" id="58">
                   <Column val="14"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <INT_RCMP_INFO>
                     <v>76</v>
@@ -1359,6 +1415,7 @@
                 <Select FieldID="59" FlowIsn="75" id="59">
                   <Column val="15"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <INT_RCMP_INFO>
                     <v>76</v>
@@ -1376,6 +1433,7 @@
                   <ASS val="77"/>
                   <Column val="16"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <INT_DIT_INFO>
                     <v>32</v>
@@ -1396,6 +1454,7 @@
                   <ASS val="10"/>
                   <Column val="17"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <INT_RCMP_INFO>
                     <v>78</v>
@@ -1417,6 +1476,7 @@
                   <ASS val="29"/>
                   <Column val="18"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <INT_DIT_INFO>
                     <v>15</v>
@@ -1456,6 +1516,7 @@
                   <ASS val="11"/>
                   <Column val="19"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <INT_DIT_INFO>
                     <v>32</v>
@@ -1475,6 +1536,7 @@
                   <ASS val="12"/>
                   <Column val="20"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <INT_DIT_INFO>
                     <v>32</v>
@@ -1494,6 +1556,7 @@
                   <ASS val="13"/>
                   <Column val="21"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <INT_DIT_INFO>
                     <v>32</v>
@@ -1517,6 +1580,7 @@
                   <ASS val="14"/>
                   <Column val="22"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <INT_DIT_INFO>
                     <v>32</v>
@@ -1552,6 +1616,7 @@
                   <ASS val="19"/>
                   <Column val="23"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <INT_RCMP_INFO>
                     <v>93</v>
@@ -1572,6 +1637,7 @@
                 <Select FieldID="68" FlowIsn="88" id="68">
                   <Column val="24"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <INT_RCMP_INFO>
                     <v>90</v>
@@ -1593,6 +1659,7 @@
                   <ASS val="20"/>
                   <Column val="25"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <INT_RCMP_INFO>
                     <v>93</v>
@@ -1614,6 +1681,7 @@
                   <ASS val="7"/>
                   <Column val="26"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <PartOfDataview val="N"/>
@@ -1632,6 +1700,7 @@
                 <Select FieldID="71" FlowIsn="94" id="71">
                   <Column val="1"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <Locate MAX="16" MIN="16"/>
                   <DIFF_UPDATE val="T"/>
@@ -1644,6 +1713,7 @@
                 <Select FieldID="72" FlowIsn="95" id="72">
                   <Column val="71"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="N"/>
@@ -1655,6 +1725,7 @@
                 <Select FieldID="73" FlowIsn="96" id="73">
                   <Column val="70"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <Locate MAX="18" MIN="18"/>
                   <DIFF_UPDATE val="T"/>
@@ -1667,6 +1738,7 @@
                 <Select FieldID="74" FlowIsn="97" id="74">
                   <Column val="73"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <Locate MAX="21" MIN="21"/>
                   <DIFF_UPDATE val="T"/>
@@ -1679,6 +1751,7 @@
                 <Select FieldID="75" FlowIsn="98" id="75">
                   <Column val="2"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -1690,6 +1763,7 @@
                 <Select FieldID="76" FlowIsn="99" id="76">
                   <Column val="4"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -1701,6 +1775,7 @@
                 <Select FieldID="77" FlowIsn="100" id="77">
                   <Column val="5"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -1712,6 +1787,7 @@
                 <Select FieldID="78" FlowIsn="101" id="78">
                   <Column val="14"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -1723,6 +1799,7 @@
                 <Select FieldID="79" FlowIsn="102" id="79">
                   <Column val="18"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -1734,6 +1811,7 @@
                 <Select FieldID="80" FlowIsn="103" id="80">
                   <Column val="29"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="N"/>
@@ -1745,6 +1823,7 @@
                 <Select FieldID="81" FlowIsn="104" id="81">
                   <Column val="15"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="N"/>
@@ -1756,6 +1835,7 @@
                 <Select FieldID="82" FlowIsn="105" id="82">
                   <Column val="69"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="N"/>
@@ -1767,6 +1847,7 @@
                 <Select FieldID="83" FlowIsn="106" id="83">
                   <Column val="68"/>
                   <Type val="R"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -1787,6 +1868,7 @@
                 <Select FieldID="84" FlowIsn="109" id="84">
                   <Column val="27"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <INT_DIT_INFO>
                     <v>32</v>
@@ -1803,6 +1885,7 @@
                   <ASS val="17"/>
                   <Column val="28"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <PartOfDataview val="N"/>
@@ -1821,6 +1904,7 @@
                 <Select FieldID="86" FlowIsn="112" id="86">
                   <Column val="29"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -1832,6 +1916,7 @@
                 <Select FieldID="87" FlowIsn="113" id="87">
                   <Column val="30"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -1843,6 +1928,7 @@
                 <Select FieldID="88" FlowIsn="114" id="88">
                   <Column val="31"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -1860,6 +1946,7 @@
                 <Select FieldID="89" FlowIsn="116" id="89">
                   <Column val="32"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <INT_DIT_INFO>
                     <v>5</v>
@@ -1876,6 +1963,7 @@
                   <ASS val="101"/>
                   <Column val="33"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <_DitIndexForToolkit val="30"/>
                   <DIFF_UPDATE val="T"/>
@@ -1894,6 +1982,7 @@
                 <Select FieldID="91" FlowIsn="119" id="91">
                   <Column val="34"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -1905,6 +1994,7 @@
                 <Select FieldID="92" FlowIsn="120" id="92">
                   <Column val="35"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -1928,6 +2018,7 @@
                 <Select FieldID="93" FlowIsn="123" id="93">
                   <Column val="36"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -1951,6 +2042,7 @@
                 <Select FieldID="94" FlowIsn="126" id="94">
                   <Column val="37"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <PartOfDataview val="N"/>
@@ -1964,6 +2056,7 @@
                   <ASS val="145"/>
                   <Column val="38"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <_DitIndexForToolkit val="31"/>
                   <DIFF_UPDATE val="T"/>
@@ -1977,6 +2070,7 @@
                 <Select FieldID="96" FlowIsn="128" id="96">
                   <Column val="39"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <INT_DIT_INFO>
                     <v>31</v>
@@ -1995,6 +2089,7 @@
                 <Select FieldID="97" FlowIsn="313" id="97">
                   <Column val="40"/>
                   <Type val="V"/>
+                  <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -2013,12 +2108,14 @@
             <Condition val="89"/>
             <Event>
               <EventType val="S"/>
-              <PublicObject comp="-1"/>
             </Event>
             <LogicLines>
               <LogicLine>
                 <CallTask FlowIsn="129">
                   <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
                   <TaskID comp="-1" obj="979"/>
                   <Lock val="N"/>
                   <Arguments>
@@ -2062,12 +2159,14 @@
             <Condition val="89"/>
             <Event>
               <EventType val="S"/>
-              <PublicObject comp="-1"/>
             </Event>
             <LogicLines>
               <LogicLine>
                 <CallTask FlowIsn="130">
                   <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
                   <TaskID comp="-1" obj="979"/>
                   <Lock val="N"/>
                   <Arguments>
@@ -2109,7 +2208,6 @@
             <Condition val="89"/>
             <Event>
               <EventType val="S"/>
-              <PublicObject comp="-1"/>
             </Event>
           </LogicUnit>
           <LogicUnit id="6" propagate="78">
@@ -2122,7 +2220,6 @@
             <Condition val="89"/>
             <Event>
               <EventType val="S"/>
-              <PublicObject comp="-1"/>
             </Event>
             <LogicLines>
               <LogicLine>
@@ -2383,7 +2480,6 @@
                   <Event>
                     <EventType val="I"/>
                     <InternalEventID val="432"/>
-                    <PublicObject comp="-1"/>
                   </Event>
                   <Wait val="78"/>
                   <Arguments>
@@ -2418,7 +2514,6 @@
             <Condition val="89"/>
             <Event>
               <EventType val="S"/>
-              <PublicObject comp="-1"/>
             </Event>
           </LogicUnit>
           <LogicUnit id="8" propagate="78">
@@ -2429,7 +2524,6 @@
             <Condition val="89"/>
             <Event>
               <EventType val="S"/>
-              <PublicObject comp="-1"/>
             </Event>
           </LogicUnit>
           <LogicUnit id="9" propagate="78">
@@ -2442,7 +2536,6 @@
             <Event>
               <EventType val="I"/>
               <InternalEventID val="67"/>
-              <PublicObject comp="-1"/>
             </Event>
           </LogicUnit>
           <LogicUnit id="10" propagate="78">
@@ -2455,7 +2548,6 @@
             <Event>
               <EventType val="I"/>
               <InternalEventID val="66"/>
-              <PublicObject comp="-1"/>
             </Event>
           </LogicUnit>
           <LogicUnit id="11" propagate="78">
@@ -2468,7 +2560,6 @@
             <Event>
               <EventType val="I"/>
               <InternalEventID val="65"/>
-              <PublicObject comp="-1"/>
             </Event>
           </LogicUnit>
           <LogicUnit id="12" propagate="78">
@@ -2481,7 +2572,6 @@
             <Event>
               <EventType val="I"/>
               <InternalEventID val="64"/>
-              <PublicObject comp="-1"/>
             </Event>
           </LogicUnit>
           <LogicUnit id="13" propagate="78">
@@ -2494,7 +2584,6 @@
             <Event>
               <EventType val="S"/>
               <KeyCombinationID val="140"/>
-              <PublicObject comp="-1"/>
             </Event>
           </LogicUnit>
           <LogicUnit id="14" propagate="78">
@@ -2507,7 +2596,6 @@
             <Event>
               <EventType val="S"/>
               <KeyCombinationID val="141"/>
-              <PublicObject comp="-1"/>
             </Event>
           </LogicUnit>
           <LogicUnit id="15" propagate="78">
@@ -2518,7 +2606,6 @@
             <Condition val="89"/>
             <Event>
               <EventType val="S"/>
-              <PublicObject comp="-1"/>
             </Event>
           </LogicUnit>
           <LogicUnit id="16" propagate="78">
@@ -2531,7 +2618,6 @@
             <Condition val="-22"/>
             <Event>
               <EventType val="S"/>
-              <PublicObject comp="-1"/>
             </Event>
             <LogicLines>
               <LogicLine>
@@ -2556,7 +2642,6 @@
             <Condition val="89"/>
             <Event>
               <EventType val="S"/>
-              <PublicObject comp="-1"/>
             </Event>
             <TXT val="v)請求年月"/>
             <LogicLines>
@@ -2582,7 +2667,6 @@
             <Condition val="-22"/>
             <Event>
               <EventType val="S"/>
-              <PublicObject comp="-1"/>
             </Event>
             <TXT val="v)請求年月"/>
             <LogicLines>
@@ -2595,6 +2679,9 @@
               <LogicLine>
                 <CallTask FlowIsn="166">
                   <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
                   <TaskID comp="-1" obj="571"/>
                   <Lock val="N"/>
                   <Arguments>
@@ -2638,6 +2725,9 @@
               <LogicLine>
                 <CallTask FlowIsn="170">
                   <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
                   <TaskID comp="-1" obj="571"/>
                   <Lock val="N"/>
                   <Arguments>
@@ -2688,6 +2778,9 @@
               <LogicLine>
                 <CallTask FlowIsn="175">
                   <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
                   <TaskID comp="-1" obj="6454"/>
                   <Lock val="N"/>
                   <Arguments>
@@ -2760,6 +2853,9 @@
               <LogicLine>
                 <CallTask FlowIsn="181">
                   <OperationType val="T"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
                   <TaskID comp="-1" obj="3"/>
                   <Lock val="N"/>
                   <Wait val="Y"/>
@@ -2839,6 +2935,9 @@
               <LogicLine>
                 <CallTask FlowIsn="190">
                   <OperationType val="T"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
                   <TaskID comp="-1" obj="4"/>
                   <Lock val="N"/>
                   <Wait val="Y"/>
@@ -2860,7 +2959,6 @@
             <Condition val="-22"/>
             <Event>
               <EventType val="S"/>
-              <PublicObject comp="-1"/>
             </Event>
             <TXT val="V)締日"/>
             <LogicLines>
@@ -2873,6 +2971,9 @@
               <LogicLine>
                 <CallTask FlowIsn="192">
                   <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
                   <TaskID comp="-1" obj="571"/>
                   <Lock val="N"/>
                   <Arguments>
@@ -2916,6 +3017,9 @@
               <LogicLine>
                 <CallTask FlowIsn="196">
                   <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
                   <TaskID comp="-1" obj="571"/>
                   <Lock val="N"/>
                   <Arguments>
@@ -2959,6 +3063,9 @@
               <LogicLine>
                 <CallTask FlowIsn="200">
                   <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
                   <TaskID comp="-1" obj="571"/>
                   <Lock val="N"/>
                   <Arguments>
@@ -3003,6 +3110,9 @@
               <LogicLine>
                 <CallTask FlowIsn="204">
                   <OperationType val="T"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
                   <TaskID comp="-1" obj="3"/>
                   <Lock val="N"/>
                   <Wait val="Y"/>
@@ -3077,6 +3187,9 @@
               <LogicLine>
                 <CallTask FlowIsn="213">
                   <OperationType val="T"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
                   <TaskID comp="-1" obj="4"/>
                   <Lock val="N"/>
                   <Wait val="Y"/>
@@ -3104,7 +3217,6 @@
             <Condition val="-22"/>
             <Event>
               <EventType val="S"/>
-              <PublicObject comp="-1"/>
             </Event>
             <TXT val="E)得意先ｺｰﾄﾞ"/>
             <LogicLines>
@@ -3141,6 +3253,9 @@
               <LogicLine>
                 <CallTask FlowIsn="219">
                   <OperationType val="T"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
                   <TaskID comp="-1" obj="4"/>
                   <Lock val="N"/>
                   <Wait val="Y"/>
@@ -3162,7 +3277,6 @@
             <Condition val="-22"/>
             <Event>
               <EventType val="S"/>
-              <PublicObject comp="-1"/>
             </Event>
             <TXT val="E)実績ｺｰﾄﾞ"/>
             <LogicLines>
@@ -3207,7 +3321,6 @@
             <Condition val="-22"/>
             <Event>
               <EventType val="S"/>
-              <PublicObject comp="-1"/>
             </Event>
             <TXT val="V)[1]再計算する"/>
             <LogicLines>
@@ -3250,6 +3363,9 @@
               <LogicLine>
                 <CallTask FlowIsn="227">
                   <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
                   <TaskID comp="-1" obj="1091"/>
                   <Lock val="N"/>
                   <Arguments>
@@ -3273,6 +3389,9 @@
               <LogicLine>
                 <CallTask FlowIsn="228">
                   <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
                   <TaskID comp="-1" obj="1091"/>
                   <Lock val="N"/>
                   <Arguments>
@@ -3296,6 +3415,9 @@
               <LogicLine>
                 <CallTask FlowIsn="229">
                   <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
                   <TaskID comp="-1" obj="1092"/>
                   <Lock val="N"/>
                   <Arguments>
@@ -3322,6 +3444,9 @@
               <LogicLine>
                 <CallTask FlowIsn="230">
                   <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
                   <TaskID comp="-1" obj="1092"/>
                   <Lock val="N"/>
                   <Arguments>
@@ -3350,7 +3475,6 @@
                   <Event>
                     <EventType val="I"/>
                     <InternalEventID val="63"/>
-                    <PublicObject comp="-1"/>
                   </Event>
                   <Wait val="78"/>
                   <Condition val="Y"/>
@@ -3392,7 +3516,6 @@
                   <Event>
                     <EventType val="I"/>
                     <InternalEventID val="63"/>
-                    <PublicObject comp="-1"/>
                   </Event>
                   <Wait val="78"/>
                   <Condition val="Y"/>
@@ -3432,7 +3555,6 @@
             <Event>
               <EventType val="S"/>
               <KeyCombinationID val="89"/>
-              <PublicObject comp="-1"/>
             </Event>
             <Expanded val="1"/>
             <LogicLines>
@@ -3609,6 +3731,9 @@
               <LogicLine>
                 <CallTask FlowIsn="257">
                   <OperationType val="T"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
                   <TaskID comp="-1" obj="5"/>
                   <Lock val="N"/>
                   <Wait val="Y"/>
@@ -3622,6 +3747,9 @@
               <LogicLine>
                 <CallTask FlowIsn="258">
                   <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
                   <TaskID comp="-1" obj="6067"/>
                   <Lock val="N"/>
                   <Arguments>
@@ -3692,6 +3820,9 @@
               <LogicLine>
                 <CallTask FlowIsn="262">
                   <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
                   <TaskID comp="-1" obj="569"/>
                   <Lock val="N"/>
                   <Arguments>
@@ -3817,6 +3948,9 @@
               <LogicLine>
                 <CallTask FlowIsn="271">
                   <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
                   <TaskID comp="-1" obj="569"/>
                   <Lock val="N"/>
                   <Arguments>
@@ -3917,6 +4051,9 @@
               <LogicLine>
                 <CallTask FlowIsn="276">
                   <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
                   <TaskID comp="-1" obj="569"/>
                   <Lock val="N"/>
                   <Arguments>
@@ -4115,6 +4252,9 @@
               <LogicLine>
                 <CallTask FlowIsn="296">
                   <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
                   <TaskID comp="-1" obj="6003"/>
                   <Lock val="N"/>
                   <Arguments>
@@ -4163,6 +4303,9 @@
               <LogicLine>
                 <CallTask FlowIsn="298">
                   <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
                   <TaskID comp="-1" obj="991"/>
                   <Lock val="N"/>
                   <Arguments>
@@ -4218,6 +4361,9 @@
               <LogicLine>
                 <CallTask FlowIsn="300">
                   <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
                   <TaskID comp="-1" obj="4347"/>
                   <Lock val="N"/>
                   <Arguments>
@@ -4253,6 +4399,9 @@
               <LogicLine>
                 <CallTask FlowIsn="301">
                   <OperationType val="T"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
                   <TaskID comp="-1" obj="6"/>
                   <Lock val="N"/>
                   <Wait val="Y"/>
@@ -4342,6 +4491,9 @@
               <LogicLine>
                 <CallTask FlowIsn="312">
                   <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
                   <TaskID comp="-1" obj="6519"/>
                   <Lock val="N"/>
                   <Arguments>
@@ -4936,7 +5088,6 @@
                 <RaiseEvent id="234">
                   <EventType val="I"/>
                   <InternalEventID val="33"/>
-                  <PublicObject comp="-1"/>
                 </RaiseEvent>
                 <TabOrder id="314" val="24"/>
                 <RaiseAt id="395" val="1"/>
@@ -4956,7 +5107,6 @@
                 <RaiseEvent id="234">
                   <EventType val="I"/>
                   <InternalEventID val="34"/>
-                  <PublicObject comp="-1"/>
                 </RaiseEvent>
                 <TabOrder id="314" val="25"/>
               </PropertyList>
@@ -4974,7 +5124,6 @@
                 <RaiseEvent id="234">
                   <EventType val="I"/>
                   <InternalEventID val="14"/>
-                  <PublicObject comp="-1"/>
                 </RaiseEvent>
                 <TabOrder id="314" val="26"/>
               </PropertyList>
@@ -4992,7 +5141,6 @@
                 <RaiseEvent id="234">
                   <EventType val="S"/>
                   <KeyCombinationID val="89"/>
-                  <PublicObject comp="-1"/>
                 </RaiseEvent>
                 <TabOrder id="314" val="27"/>
                 <RaiseAt id="395" val="1"/>
@@ -5012,7 +5160,6 @@
                 <RaiseEvent id="234">
                   <EventType val="S"/>
                   <KeyCombinationID val="189"/>
-                  <PublicObject comp="-1"/>
                 </RaiseEvent>
                 <TabOrder id="314" val="28"/>
                 <RaiseAt id="395" val="1"/>
@@ -5634,32 +5781,27 @@
           <Event>
             <EventType val="I"/>
             <InternalEventID val="34"/>
-            <PublicObject comp="-1"/>
           </Event>
         </EVNT>
         <EVNT DESC="実行" FORCE_EXIT="N" id="2">
           <Event>
             <EventType val="N"/>
-            <PublicObject comp="-1"/>
           </Event>
         </EVNT>
         <EVNT DESC="残高履歴作成" FORCE_EXIT="N" id="3">
           <Event>
             <EventType val="N"/>
-            <PublicObject comp="-1"/>
           </Event>
         </EVNT>
         <EVNT DESC="再計算する" FORCE_EXIT="N" id="4">
           <Event>
             <EventType val="N"/>
-            <PublicObject comp="-1"/>
           </Event>
         </EVNT>
         <EVNT DESC="明細表示" FORCE_EXIT="E" id="5">
           <Event>
             <EventType val="S"/>
             <KeyCombinationID val="189"/>
-            <PublicObject comp="-1"/>
           </Event>
         </EVNT>
         <Task MainProgram="N">
@@ -6238,7 +6380,6 @@
               <Condition val="89"/>
               <Event>
                 <EventType val="S"/>
-                <PublicObject comp="-1"/>
               </Event>
               <LogicLines>
                 <LogicLine>
@@ -6252,6 +6393,7 @@
                   <Select FieldID="1" FlowIsn="3" id="1">
                     <Column val="1"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="Y"/>
                     <DIFF_UPDATE val="T"/>
                     <PartOfDataview val="Y"/>
@@ -6264,6 +6406,7 @@
                   <Select FieldID="2" FlowIsn="4" id="2">
                     <Column val="2"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="Y"/>
                     <DIFF_UPDATE val="T"/>
                     <PartOfDataview val="Y"/>
@@ -6276,6 +6419,7 @@
                   <Select FieldID="3" FlowIsn="5" id="3">
                     <Column val="3"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="Y"/>
                     <DIFF_UPDATE val="T"/>
                     <PartOfDataview val="Y"/>
@@ -6288,6 +6432,7 @@
                   <Select FieldID="4" FlowIsn="6" id="4">
                     <Column val="4"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="Y"/>
                     <DIFF_UPDATE val="T"/>
                     <PartOfDataview val="Y"/>
@@ -6300,6 +6445,7 @@
                   <Select FieldID="5" FlowIsn="7" id="5">
                     <Column val="5"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="Y"/>
                     <DIFF_UPDATE val="T"/>
                     <PartOfDataview val="Y"/>
@@ -6312,6 +6458,7 @@
                   <Select FieldID="6" FlowIsn="8" id="6">
                     <Column val="6"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="Y"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
@@ -6323,6 +6470,7 @@
                   <Select FieldID="7" FlowIsn="9" id="7">
                     <Column val="7"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="Y"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
@@ -6334,6 +6482,7 @@
                   <Select FieldID="8" FlowIsn="10" id="8">
                     <Column val="8"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="Y"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
@@ -6345,6 +6494,7 @@
                   <Select FieldID="9" FlowIsn="11" id="9">
                     <Column val="9"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="Y"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
@@ -6356,6 +6506,7 @@
                   <Select FieldID="10" FlowIsn="12" id="10">
                     <Column val="10"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="Y"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
@@ -6367,6 +6518,7 @@
                   <Select FieldID="11" FlowIsn="13" id="11">
                     <Column val="11"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="Y"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
@@ -6378,6 +6530,7 @@
                   <Select FieldID="12" FlowIsn="14" id="12">
                     <Column val="12"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="Y"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
@@ -6389,6 +6542,7 @@
                   <Select FieldID="13" FlowIsn="15" id="13">
                     <Column val="13"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="Y"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
@@ -6400,6 +6554,7 @@
                   <Select FieldID="14" FlowIsn="16" id="14">
                     <Column val="14"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="Y"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
@@ -6411,6 +6566,7 @@
                   <Select FieldID="15" FlowIsn="17" id="15">
                     <Column val="15"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="Y"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
@@ -6440,6 +6596,7 @@
                   <Select FieldID="16" FlowIsn="21" id="16">
                     <Column val="16"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <DIFF_UPDATE val="T"/>
                     <PartOfDataview val="Y"/>
@@ -6452,6 +6609,7 @@
                   <Select FieldID="17" FlowIsn="22" id="17">
                     <Column val="17"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <DIFF_UPDATE val="T"/>
                     <PartOfDataview val="Y"/>
@@ -6464,6 +6622,7 @@
                   <Select FieldID="18" FlowIsn="23" id="18">
                     <Column val="18"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <_DitIndexForToolkit val="28"/>
                     <DIFF_UPDATE val="T"/>
@@ -6477,6 +6636,7 @@
                   <Select FieldID="19" FlowIsn="24" id="19">
                     <Column val="19"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <INT_DIT_INFO>
                       <v>53</v>
@@ -6493,6 +6653,7 @@
                   <Select FieldID="20" FlowIsn="25" id="20">
                     <Column val="20"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <_DitIndexForToolkit val="30"/>
                     <DIFF_UPDATE val="T"/>
@@ -6512,6 +6673,7 @@
                   <Select FieldID="21" FlowIsn="27" id="21">
                     <Column val="21"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <INT_RCMP_INFO>
                       <v>50</v>
@@ -6528,6 +6690,7 @@
                   <Select FieldID="22" FlowIsn="28" id="22">
                     <Column val="22"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <INT_RCMP_INFO>
                       <v>50</v>
@@ -6544,6 +6707,7 @@
                   <Select FieldID="23" FlowIsn="29" id="23">
                     <Column val="23"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <INT_RCMP_INFO>
                       <v>50</v>
@@ -6560,6 +6724,7 @@
                   <Select FieldID="24" FlowIsn="30" id="24">
                     <Column val="24"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <INT_RCMP_INFO>
                       <v>50</v>
@@ -6576,6 +6741,7 @@
                   <Select FieldID="25" FlowIsn="31" id="25">
                     <Column val="25"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <INT_RCMP_INFO>
                       <v>50</v>
@@ -6592,6 +6758,7 @@
                   <Select FieldID="26" FlowIsn="32" id="26">
                     <Column val="26"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <INT_RCMP_INFO>
                       <v>50</v>
@@ -6608,6 +6775,7 @@
                   <Select FieldID="27" FlowIsn="33" id="27">
                     <Column val="27"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <INT_RCMP_INFO>
                       <v>50</v>
@@ -6624,6 +6792,7 @@
                   <Select FieldID="28" FlowIsn="34" id="28">
                     <Column val="28"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <INT_RCMP_INFO>
                       <v>50</v>
@@ -6640,6 +6809,7 @@
                   <Select FieldID="29" FlowIsn="35" id="29">
                     <Column val="29"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <INT_RCMP_INFO>
                       <v>50</v>
@@ -6656,6 +6826,7 @@
                   <Select FieldID="30" FlowIsn="36" id="30">
                     <Column val="30"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <INT_RCMP_INFO>
                       <v>50</v>
@@ -6672,6 +6843,7 @@
                   <Select FieldID="31" FlowIsn="37" id="31">
                     <Column val="31"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <INT_RCMP_INFO>
                       <v>50</v>
@@ -6688,6 +6860,7 @@
                   <Select FieldID="32" FlowIsn="38" id="32">
                     <Column val="32"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <INT_RCMP_INFO>
                       <v>50</v>
@@ -6704,6 +6877,7 @@
                   <Select FieldID="33" FlowIsn="39" id="33">
                     <Column val="33"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <INT_RCMP_INFO>
                       <v>50</v>
@@ -6720,6 +6894,7 @@
                   <Select FieldID="34" FlowIsn="40" id="34">
                     <Column val="34"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <INT_RCMP_INFO>
                       <v>50</v>
@@ -6736,6 +6911,7 @@
                   <Select FieldID="35" FlowIsn="41" id="35">
                     <Column val="35"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <INT_RCMP_INFO>
                       <v>50</v>
@@ -6752,6 +6928,7 @@
                   <Select FieldID="36" FlowIsn="42" id="36">
                     <Column val="36"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <INT_RCMP_INFO>
                       <v>50</v>
@@ -6768,6 +6945,7 @@
                   <Select FieldID="37" FlowIsn="43" id="37">
                     <Column val="37"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <INT_RCMP_INFO>
                       <v>50</v>
@@ -6784,6 +6962,7 @@
                   <Select FieldID="38" FlowIsn="44" id="38">
                     <Column val="38"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <INT_RCMP_INFO>
                       <v>50</v>
@@ -6800,6 +6979,7 @@
                   <Select FieldID="39" FlowIsn="45" id="39">
                     <Column val="39"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <INT_RCMP_INFO>
                       <v>50</v>
@@ -6816,6 +6996,7 @@
                   <Select FieldID="40" FlowIsn="46" id="40">
                     <Column val="40"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <INT_RCMP_INFO>
                       <v>50</v>
@@ -6832,6 +7013,7 @@
                   <Select FieldID="41" FlowIsn="47" id="41">
                     <Column val="41"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <INT_RCMP_INFO>
                       <v>50</v>
@@ -6848,6 +7030,7 @@
                   <Select FieldID="42" FlowIsn="48" id="42">
                     <Column val="42"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <INT_RCMP_INFO>
                       <v>50</v>
@@ -6871,6 +7054,7 @@
                     <ASS val="1"/>
                     <Column val="43"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <_DitIndexForToolkit val="53"/>
                     <DIFF_UPDATE val="T"/>
@@ -6884,6 +7068,7 @@
                   <Select FieldID="44" FlowIsn="51" id="44">
                     <Column val="44"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <DIFF_UPDATE val="T"/>
                     <PartOfDataview val="Y"/>
@@ -6903,7 +7088,6 @@
               <Condition val="89"/>
               <Event>
                 <EventType val="S"/>
-                <PublicObject comp="-1"/>
               </Event>
               <Expanded val="1"/>
               <LogicLines>
@@ -6930,7 +7114,6 @@
               <Condition val="89"/>
               <Event>
                 <EventType val="S"/>
-                <PublicObject comp="-1"/>
               </Event>
               <Expanded val="1"/>
               <LogicLines>
@@ -6958,7 +7141,6 @@
               <Event>
                 <EventType val="I"/>
                 <InternalEventID val="521"/>
-                <PublicObject comp="-1"/>
               </Event>
               <Expanded val="1"/>
               <LogicLines>
@@ -6967,7 +7149,6 @@
                     <Event>
                       <EventType val="I"/>
                       <InternalEventID val="14"/>
-                      <PublicObject comp="-1"/>
                     </Event>
                     <Wait val="78"/>
                     <Condition val="Y"/>
@@ -7838,7 +8019,6 @@
               <Condition val="89"/>
               <Event>
                 <EventType val="S"/>
-                <PublicObject comp="-1"/>
               </Event>
               <LogicLines>
                 <LogicLine>
@@ -7852,6 +8032,7 @@
                   <Select FieldID="1" FlowIsn="3" id="1">
                     <Column val="1"/>
                     <Type val="R"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <Range MAX="6" MIN="6"/>
                     <DIFF_UPDATE val="T"/>
@@ -7864,6 +8045,7 @@
                   <Select FieldID="2" FlowIsn="4" id="2">
                     <Column val="2"/>
                     <Type val="R"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <Range MAX="8" MIN="7"/>
                     <DIFF_UPDATE val="T"/>
@@ -7876,6 +8058,7 @@
                   <Select FieldID="3" FlowIsn="5" id="3">
                     <Column val="5"/>
                     <Type val="R"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
@@ -7887,6 +8070,7 @@
                   <Select FieldID="4" FlowIsn="6" id="4">
                     <Column val="6"/>
                     <Type val="R"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
@@ -7898,6 +8082,7 @@
                   <Select FieldID="5" FlowIsn="7" id="5">
                     <Column val="72"/>
                     <Type val="R"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
@@ -7909,6 +8094,7 @@
                   <Select FieldID="6" FlowIsn="8" id="6">
                     <Column val="73"/>
                     <Type val="R"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
@@ -7920,6 +8106,7 @@
                   <Select FieldID="7" FlowIsn="9" id="7">
                     <Column val="4"/>
                     <Type val="R"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <Range MAX="2"/>
                     <DIFF_UPDATE val="T"/>
@@ -7932,6 +8119,7 @@
                   <Select FieldID="8" FlowIsn="10" id="8">
                     <Column val="75"/>
                     <Type val="R"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <Range MAX="9" MIN="9"/>
                     <DIFF_UPDATE val="T"/>
@@ -7951,7 +8139,6 @@
               <Condition val="89"/>
               <Event>
                 <EventType val="S"/>
-                <PublicObject comp="-1"/>
               </Event>
               <Expanded val="1"/>
               <LogicLines>
@@ -7984,7 +8171,6 @@
               <Condition val="89"/>
               <Event>
                 <EventType val="S"/>
-                <PublicObject comp="-1"/>
               </Event>
               <Expanded val="1"/>
               <LogicLines>
@@ -8187,7 +8373,6 @@
               <Condition val="89"/>
               <Event>
                 <EventType val="S"/>
-                <PublicObject comp="-1"/>
               </Event>
               <LogicLines>
                 <LogicLine>
@@ -8201,6 +8386,7 @@
                   <Select FieldID="1" FlowIsn="3" id="1">
                     <Column val="1"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <DIFF_UPDATE val="T"/>
                     <PartOfDataview val="Y"/>
@@ -8213,6 +8399,7 @@
                   <Select FieldID="2" FlowIsn="4" id="2">
                     <Column val="2"/>
                     <Type val="V"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
@@ -8249,7 +8436,6 @@
               <Condition val="89"/>
               <Event>
                 <EventType val="S"/>
-                <PublicObject comp="-1"/>
               </Event>
               <Expanded val="1"/>
               <LogicLines>
@@ -8457,7 +8643,6 @@
               <Condition val="89"/>
               <Event>
                 <EventType val="S"/>
-                <PublicObject comp="-1"/>
               </Event>
               <LogicLines>
                 <LogicLine>
@@ -8471,6 +8656,7 @@
                   <Select FieldID="1" FlowIsn="3" id="1">
                     <Column val="1"/>
                     <Type val="R"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <Range MAX="3" MIN="3"/>
                     <DIFF_UPDATE val="T"/>
@@ -8483,6 +8669,7 @@
                   <Select FieldID="2" FlowIsn="4" id="2">
                     <Column val="2"/>
                     <Type val="R"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <Range MAX="2" MIN="2"/>
                     <DIFF_UPDATE val="T"/>
@@ -8495,6 +8682,7 @@
                   <Select FieldID="3" FlowIsn="5" id="3">
                     <Column val="58"/>
                     <Type val="R"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
@@ -8506,6 +8694,7 @@
                   <Select FieldID="4" FlowIsn="6" id="4">
                     <Column val="59"/>
                     <Type val="R"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
@@ -8517,6 +8706,7 @@
                   <Select FieldID="5" FlowIsn="7" id="5">
                     <Column val="60"/>
                     <Type val="R"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
@@ -8528,6 +8718,7 @@
                   <Select FieldID="6" FlowIsn="8" id="6">
                     <Column val="245"/>
                     <Type val="R"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <Range MAX="1" MIN="1"/>
                     <DIFF_UPDATE val="T"/>
@@ -8540,6 +8731,7 @@
                   <Select FieldID="7" FlowIsn="9" id="7">
                     <Column val="240"/>
                     <Type val="R"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <Range MIN="4"/>
                     <DIFF_UPDATE val="T"/>
@@ -8571,7 +8763,6 @@
               <Condition val="89"/>
               <Event>
                 <EventType val="S"/>
-                <PublicObject comp="-1"/>
               </Event>
               <Expanded val="1"/>
               <LogicLines>
@@ -8604,7 +8795,6 @@
               <Condition val="89"/>
               <Event>
                 <EventType val="S"/>
-                <PublicObject comp="-1"/>
               </Event>
               <Expanded val="1"/>
               <LogicLines>
@@ -8754,7 +8944,6 @@
               <Condition val="89"/>
               <Event>
                 <EventType val="S"/>
-                <PublicObject comp="-1"/>
               </Event>
               <LogicLines>
                 <LogicLine>
@@ -8768,6 +8957,7 @@
                   <Select FieldID="1" FlowIsn="3" id="1">
                     <Column val="1"/>
                     <Type val="R"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <Range MAX="1" MIN="1"/>
                     <DIFF_UPDATE val="T"/>
@@ -8780,6 +8970,7 @@
                   <Select FieldID="2" FlowIsn="4" id="2">
                     <Column val="2"/>
                     <Type val="R"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <Range MAX="2" MIN="2"/>
                     <DIFF_UPDATE val="T"/>
@@ -8792,6 +8983,7 @@
                   <Select FieldID="3" FlowIsn="5" id="3">
                     <Column val="5"/>
                     <Type val="R"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
@@ -8803,6 +8995,7 @@
                   <Select FieldID="4" FlowIsn="6" id="4">
                     <Column val="6"/>
                     <Type val="R"/>
+                    <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
@@ -8821,7 +9014,6 @@
               <Condition val="89"/>
               <Event>
                 <EventType val="S"/>
-                <PublicObject comp="-1"/>
               </Event>
               <Expanded val="1"/>
               <LogicLines>

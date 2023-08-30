@@ -13,7 +13,7 @@
   <ProgramsRepository>
     <Programs>
       <Task MainProgram="Y">
-        <Header Description="メインプログラム" ISN_2="1" LastIsn="3" id="1">
+        <Header Description="メインプログラム" ISN_2="1" LastIsn="2" id="1">
           <Resident val="N"/>
           <SQL val="N"/>
           <ReturnValue>
@@ -28,9 +28,9 @@
           <RunProjectAs val="O"/>
           <FormType val="N"/>
           <DotNetObjectExists val="Y"/>
-          <LastModified _date="738428" _time="56645" date="2022/09/30" time="15:44:05"/>
+          <LastModified _date="738749" _time="61824" date="2023/08/17" time="17:10:24"/>
         </Header>
-        <ItemIsn val="180"/>
+        <ItemIsn val="190"/>
         <Resource>
           <Columns>
             <Column id="23" name="main)修正モード色">
@@ -258,6 +258,14 @@
               </PropertyList>
             </Column>
             <Column id="69" name="v)BYTECHKFLG">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="116"/>
+                <DbColumnName id="178"/>
+                <Type id="179"/>
+                <UserType id="180"/>
+              </PropertyList>
+            </Column>
+            <Column id="206" name="v)VALIDATIONFLG">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="116"/>
                 <DbColumnName id="178"/>
@@ -668,6 +676,36 @@
                 <_FieldStyle id="276" val="1"/>
               </PropertyList>
             </Column>
+            <Column id="197" name="P)対象金額小数付">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_NUMERIC" id="1"/>
+                <Picture id="157" valUnicode="N11.4"/>
+                <_Dec id="181" val="4"/>
+                <_Whole id="182" val="11"/>
+                <_Negative id="192" val="Y"/>
+                <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
+            <Column id="199" name="P)小数桁数">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_NUMERIC" id="1"/>
+                <Picture id="157" valUnicode="2"/>
+                <_Dec id="181"/>
+                <_Whole id="182" val="2"/>
+                <_Negative id="192"/>
+                <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
+            <Column id="198" name="P)丸め(0Fix1Round2Roundup)">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_NUMERIC" id="1"/>
+                <Picture id="157" valUnicode="1"/>
+                <_Dec id="181"/>
+                <_Whole id="182" val="1"/>
+                <_Negative id="192"/>
+                <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
             <Column id="77" name="P)Unicode">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_UNICODE" id="1"/>
@@ -701,6 +739,23 @@
                 <_Whole id="182" val="4"/>
                 <_Negative id="192"/>
                 <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
+            <Column id="202" name="P)Unicode">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_UNICODE" id="1"/>
+                <Picture id="157" valUnicode="500"/>
+                <Size id="174" val="1000"/>
+                <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
+            <Column id="204" name="V)ANSI">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="1000"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="1000"/>
+                <_Flip id="194"/>
               </PropertyList>
             </Column>
             <Column id="82" name="P)部門s">
@@ -1323,6 +1378,23 @@
                 <PartOfDataview id="449"/>
               </PropertyList>
             </Column>
+            <Column id="201" name="P)PDFファイル発行F(0N1Y)">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="109"/>
+                <DbColumnName id="178"/>
+                <Type id="179"/>
+                <UserType id="180"/>
+              </PropertyList>
+            </Column>
+            <Column id="200" name="P)PDFファイフルパス">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="200"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="200"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
             <Column id="156" name="W)メッセージ">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
@@ -1939,6 +2011,19 @@
               <LogicLine>
                 <Select FieldID="50" FlowIsn="538" id="50">
                   <Column val="69"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <PartOfDataview val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="190" FlowIsn="4916" id="190">
+                  <Column val="206"/>
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
@@ -3733,6 +3818,56 @@
               </LogicLine>
             </LogicLines>
           </LogicUnit>
+          <LogicUnit id="49" propagate="78">
+            <Level val="F"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="F"/>
+            </Event>
+            <TXT val="UriroundSyosu"/>
+            <ReturnValueExpression val="209"/>
+            <LogicLines>
+              <LogicLine>
+                <Select FieldID="181" FlowIsn="4352" id="181">
+                  <Column val="197"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="183" FlowIsn="4354" id="183">
+                  <Column val="199"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="182" FlowIsn="4353" id="182">
+                  <Column val="198"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
           <LogicUnit id="17" propagate="78">
             <Level val="H"/>
             <Type val="U"/>
@@ -3744,6 +3879,7 @@
               <EventType val="U"/>
               <PublicObject comp="-1" obj="5"/>
             </Event>
+            <Expanded val="1"/>
             <LogicLines>
               <LogicLine>
                 <Select FieldID="58" FlowIsn="658" id="58">
@@ -3830,6 +3966,82 @@
                   <Type val="2"/>
                   <Text val=" "/>
                 </Remark>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="69" propagate="78">
+            <Level val="H"/>
+            <Type val="U"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="U"/>
+              <PublicObject comp="-1" obj="22"/>
+            </Event>
+            <Expanded val="1"/>
+            <LogicLines>
+              <LogicLine>
+                <Remark FlowIsn="4918">
+                  <Type val="2"/>
+                  <Text val="半角「&quot;」のみチェック"/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="186" FlowIsn="4909" id="186">
+                  <Column val="202"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="4911">
+                  <FieldID val="190"/>
+                  <WithValue val="5"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="188" FlowIsn="4912" id="188">
+                  <ASS val="214"/>
+                  <Column val="204"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="4914">
+                  <FieldID val="190"/>
+                  <WithValue val="217"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="218" FlowIsn="4915" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="警告" VR_DISP="B">
+                  <AppendToErrorLog val="N"/>
+                  <Condition val="N"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
               </LogicLine>
             </LogicLines>
           </LogicUnit>
@@ -4942,7 +5154,6 @@
               <EventType val="U"/>
               <PublicObject comp="-1" obj="9"/>
             </Event>
-            <Expanded val="1"/>
             <LogicLines>
               <LogicLine>
                 <Select FieldID="96" FlowIsn="1430" id="96">
@@ -6817,6 +7028,37 @@
                 </Select>
               </LogicLine>
               <LogicLine>
+                <Remark FlowIsn="4762">
+                  <Type val="2"/>
+                  <Text val="・2023.07.31 李 カスタマイズ PDFファイル作成ため、追加パラメータ↓"/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="185" FlowIsn="4761" id="185">
+                  <Column val="201"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <PartOfDataview val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="184" FlowIsn="4760" id="184">
+                  <Column val="200"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
                 <Remark FlowIsn="1751">
                   <Type val="2"/>
                   <Text val=" "/>
@@ -6863,12 +7105,39 @@
                 </Remark>
               </LogicLine>
               <LogicLine>
+                <BLOCK EndBlock="4766" EndBlockSegment="4765" FlowIsn="4763" Type="I">
+                  <Expanded val="1"/>
+                  <Condition Exp="210"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
                 <Evaluate FlowIsn="1747">
                   <Expression val="141"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </Evaluate>
+              </LogicLine>
+              <LogicLine>
+                <BLOCK EndBlock="4766" EndBlockSegment="4766" FlowIsn="4765" Type="E">
+                  <Expanded val="1"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <Evaluate FlowIsn="4767">
+                  <Expression val="211"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
+              </LogicLine>
+              <LogicLine>
+                <END_BLK FlowIsn="4766"/>
               </LogicLine>
               <LogicLine>
                 <Remark FlowIsn="1748">
@@ -6903,6 +7172,7 @@
               </LogicLine>
               <LogicLine>
                 <BLOCK EndBlock="1753" EndBlockSegment="1762" FlowIsn="1752" Type="I">
+                  <Expanded val="1"/>
                   <Condition Exp="143"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -6910,7 +7180,22 @@
               </LogicLine>
               <LogicLine>
                 <BLOCK EndBlock="1757" EndBlockSegment="1759" FlowIsn="1756" Type="I">
+                  <Expanded val="1"/>
                   <Condition Exp="144"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="4773">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <BLOCK EndBlock="4772" EndBlockSegment="4771" FlowIsn="4769" Type="I">
+                  <Expanded val="1"/>
+                  <Condition Exp="210"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </BLOCK>
@@ -6928,7 +7213,38 @@
                 </Invoke>
               </LogicLine>
               <LogicLine>
+                <BLOCK EndBlock="4772" EndBlockSegment="4772" FlowIsn="4771" Type="E">
+                  <Expanded val="1"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <Invoke FlowIsn="4768">
+                  <OperationType val="O"/>
+                  <Command val="212"/>
+                  <Wait val="N"/>
+                  <Show val="2"/>
+                  <BlockUI val="N"/>
+                  <ExecuteOn_ val="S"/>
+                  <Condition Exp="213"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Invoke>
+              </LogicLine>
+              <LogicLine>
+                <END_BLK FlowIsn="4772"/>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="4774">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
                 <BLOCK EndBlock="1757" EndBlockSegment="1757" FlowIsn="1759" Type="E">
+                  <Expanded val="1"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -8177,6 +8493,16 @@
               </LogicLine>
             </LogicLines>
           </LogicUnit>
+          <LogicUnit id="68" propagate="78">
+            <Level val="K"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+            </Event>
+          </LogicUnit>
         </TaskLogic>
         <TaskForms>
           <FormEntry id="1">
@@ -8341,12 +8667,20 @@
             <ExpSyntax val="{0,58}"/>
             <ExpAttribute val="U"/>
           </Expression>
+          <Expression id="214">
+            <ExpSyntax val="{0,186}"/>
+            <ExpAttribute val="U"/>
+          </Expression>
           <Expression id="39">
             <ExpSyntax val="Len(Trim({0,60}))"/>
             <ExpAttribute val="N"/>
           </Expression>
           <Expression id="37">
             <ExpSyntax val="IF({0,61}>{0,59},1,0)"/>
+            <ExpAttribute val="N"/>
+          </Expression>
+          <Expression id="217">
+            <ExpSyntax val="IF(InStr({0,186},'&quot;')=0,0,1)"/>
             <ExpAttribute val="N"/>
           </Expression>
           <Expression id="38">
@@ -8383,7 +8717,7 @@
           </Expression>
           <Expression id="44">
             <ExpSyntax val="DotNet.AdvanceSoftware.ExcelCreator.Creator()"/>
-            <ExpAttribute val="O"/>
+            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="61">
             <ExpSyntax val="0"/>
@@ -8435,15 +8769,15 @@
           </Expression>
           <Expression id="48">
             <ExpSyntax val="DNSet({0,78}.ExcelFileType, DotNet.AdvanceSoftware.ExcelCreator.ExcelFileType.xls)"/>
-            <ExpAttribute val="O"/>
+            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="49">
             <ExpSyntax val="DNSet({0,78}.ExcelFileType, DotNet.AdvanceSoftware.ExcelCreator.ExcelFileType.xlsx)"/>
-            <ExpAttribute val="O"/>
+            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="54">
-            <ExpSyntax val="{0,78}.OpenBook ({0,89}, Trim({0,88}))"/>
-            <ExpAttribute val="O"/>
+            <ExpSyntax val="{0,78}.OpenBook (DG, Trim(DF))"/>
+            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="55">
             <ExpSyntax val="{0,90} >= 0"/>
@@ -8502,12 +8836,12 @@
             <ExpAttribute val="B"/>
           </Expression>
           <Expression id="67">
-            <ExpSyntax val="{0,78}.RowCopy({0,79}-1)"/>
-            <ExpAttribute val="O"/>
+            <ExpSyntax val="{0,78}.RowCopy(BM-1)"/>
+            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="69">
-            <ExpSyntax val="{0,78}.RowInsertCopied({0,94}, 1)"/>
-            <ExpAttribute val="O"/>
+            <ExpSyntax val="{0,78}.RowInsertCopied(DJ, 1)"/>
+            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="71">
             <ExpSyntax val="{0,80} > 1"/>
@@ -8518,16 +8852,16 @@
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="73">
-            <ExpSyntax val="{0,78}.Cell( Trim({0,95}) ).Copy()"/>
-            <ExpAttribute val="O"/>
+            <ExpSyntax val="{0,78}.Cell( Trim(DK) ).Copy()"/>
+            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="74">
-            <ExpSyntax val="{0,78}.RowInsert({0,94}, {0,80})"/>
-            <ExpAttribute val="O"/>
+            <ExpSyntax val="{0,78}.RowInsert(DJ, BN)"/>
+            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="75">
-            <ExpSyntax val="{0,78}.Cell( 'A'&amp;Trim(Str({0,94}+1,'6')) ).Paste()"/>
-            <ExpAttribute val="O"/>
+            <ExpSyntax val="{0,78}.Cell( 'A'&amp;Trim(Str(DJ+1,'6')) ).Paste()"/>
+            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="76">
             <ExpSyntax val="({0,81}-1) * {0,80}"/>
@@ -8595,27 +8929,27 @@
           </Expression>
           <Expression id="89">
             <ExpSyntax val="DotNet.AdvanceSoftware.ExcelCreator.BoxType.Under"/>
-            <ExpAttribute val="O"/>
+            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="90">
             <ExpSyntax val="DotNet.AdvanceSoftware.ExcelCreator.BoxType.Over"/>
-            <ExpAttribute val="O"/>
+            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="91">
             <ExpSyntax val="DotNet.AdvanceSoftware.ExcelCreator.BoxType.Left"/>
-            <ExpAttribute val="O"/>
+            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="92">
             <ExpSyntax val="DotNet.AdvanceSoftware.ExcelCreator.BoxType.Right"/>
-            <ExpAttribute val="O"/>
+            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="93">
             <ExpSyntax val="DotNet.AdvanceSoftware.ExcelCreator.BoxType.Box"/>
-            <ExpAttribute val="O"/>
+            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="94">
             <ExpSyntax val="DotNet.AdvanceSoftware.ExcelCreator.BoxType.Ltc"/>
-            <ExpAttribute val="O"/>
+            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="95">
             <ExpSyntax val="{0,109} = 0"/>
@@ -8643,27 +8977,27 @@
           </Expression>
           <Expression id="101">
             <ExpSyntax val="DotNet.AdvanceSoftware.ExcelCreator.BorderStyle.Thin"/>
-            <ExpAttribute val="O"/>
+            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="102">
             <ExpSyntax val="DotNet.AdvanceSoftware.ExcelCreator.BorderStyle.None"/>
-            <ExpAttribute val="O"/>
+            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="103">
             <ExpSyntax val="DotNet.AdvanceSoftware.ExcelCreator.BorderStyle.Medium"/>
-            <ExpAttribute val="O"/>
+            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="104">
             <ExpSyntax val="DotNet.AdvanceSoftware.ExcelCreator.BorderStyle.Dashed"/>
-            <ExpAttribute val="O"/>
+            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="105">
             <ExpSyntax val="DotNet.AdvanceSoftware.ExcelCreator.BorderStyle.Dotted"/>
-            <ExpAttribute val="O"/>
+            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="106">
             <ExpSyntax val="DotNet.AdvanceSoftware.ExcelCreator.BorderStyle.Double"/>
-            <ExpAttribute val="O"/>
+            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="107">
             <ExpSyntax val="{0,110} = 0"/>
@@ -8691,27 +9025,27 @@
           </Expression>
           <Expression id="113">
             <ExpSyntax val="DotNet.AdvanceSoftware.ExcelCreator.xlColor.Auto"/>
-            <ExpAttribute val="O"/>
+            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="114">
             <ExpSyntax val="DotNet.AdvanceSoftware.ExcelCreator.xlColor.Black"/>
-            <ExpAttribute val="O"/>
+            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="115">
             <ExpSyntax val="DotNet.AdvanceSoftware.ExcelCreator.xlColor.DarkRed"/>
-            <ExpAttribute val="O"/>
+            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="116">
             <ExpSyntax val="DotNet.AdvanceSoftware.ExcelCreator.xlColor.DarkGreen"/>
-            <ExpAttribute val="O"/>
+            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="117">
             <ExpSyntax val="DotNet.AdvanceSoftware.ExcelCreator.xlColor.DrakBlue"/>
-            <ExpAttribute val="O"/>
+            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="118">
             <ExpSyntax val="DotNet.AdvanceSoftware.ExcelCreator.xlColor.Gray50"/>
-            <ExpAttribute val="O"/>
+            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="120">
             <ExpSyntax val="Trim({0,116})&lt;>''"/>
@@ -8738,20 +9072,20 @@
             <ExpAttribute val="N"/>
           </Expression>
           <Expression id="125">
-            <ExpSyntax val="{0,78}.SheetNo2({0,122})"/>
-            <ExpAttribute val="O"/>
+            <ExpSyntax val="{0,78}.SheetNo2(EL)"/>
+            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="126">
-            <ExpSyntax val="{0,78}.DeleteSheet({0,93},{0,123})"/>
-            <ExpAttribute val="O"/>
+            <ExpSyntax val="{0,78}.DeleteSheet(BR,EM)"/>
+            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="127">
             <ExpSyntax val="{0,93} >= 0 AND {0,123} > 0"/>
             <ExpAttribute val="B"/>
           </Expression>
           <Expression id="128">
-            <ExpSyntax val="{0,78}.ColumnDelete({0,124},{0,125})"/>
-            <ExpAttribute val="O"/>
+            <ExpSyntax val="{0,78}.ColumnDelete(EN,EO)"/>
+            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="129">
             <ExpSyntax val="{0,124}>0 AND {0,125}>0"/>
@@ -8774,20 +9108,20 @@
             <ExpAttribute val="B"/>
           </Expression>
           <Expression id="132">
-            <ExpSyntax val="{0,78}.Cell(Trim({0,126})).Drawing.AddImage(Trim({0,127}),{0,130},{0,131},{0,128},{0,129},{0,128},{0,129})"/>
-            <ExpAttribute val="O"/>
+            <ExpSyntax val="{0,78}.Cell(Trim(EP)).Drawing.AddImage(Trim(EQ),ET,EU,ER,ES,ER,ES)"/>
+            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="134">
-            <ExpSyntax val="{0,78}.Cell(Trim({0,126})).Drawing.AddImage(Trim({0,127}),{0,130},{0,131},{0,132},{0,133})"/>
-            <ExpAttribute val="O"/>
+            <ExpSyntax val="{0,78}.Cell(Trim(EP)).Drawing.AddImage(Trim(EQ),ET,EU,EV,EW)"/>
+            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="136">
-            <ExpSyntax val="{0,78}.Cell(Trim({0,126})).Drawing.AddImage(Trim({0,127}),{0,128},{0,129})"/>
-            <ExpAttribute val="O"/>
+            <ExpSyntax val="{0,78}.Cell(Trim(EP)).Drawing.AddImage(Trim(EQ),ER,ES)"/>
+            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="137">
-            <ExpSyntax val="{0,78}.Cell(Trim({0,126})).Drawing.AddImage(Trim({0,127}))"/>
-            <ExpAttribute val="O"/>
+            <ExpSyntax val="{0,78}.Cell(Trim(EP)).Drawing.AddImage(Trim(EQ))"/>
+            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="138">
             <ExpSyntax val="-1"/>
@@ -8799,7 +9133,11 @@
           </Expression>
           <Expression id="141">
             <ExpSyntax val="{0,78}.CloseBook('TRUE'LOG)"/>
-            <ExpAttribute val="O"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="211">
+            <ExpSyntax val="{0,78}.CloseBook('TRUE'LOG,Trim(FD),'FALSE'LOG)"/>
+            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="143">
             <ExpSyntax val="{0,81} > 0"/>
@@ -8813,8 +9151,16 @@
             <ExpSyntax val="Trim({0,137})"/>
             <ExpAttribute val="A"/>
           </Expression>
+          <Expression id="212">
+            <ExpSyntax val="Trim({0,184})"/>
+            <ExpAttribute val="A"/>
+          </Expression>
           <Expression id="146">
             <ExpSyntax val="Trim({0,137})&lt;>''"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="213">
+            <ExpSyntax val="Trim({0,184})&lt;>''"/>
             <ExpAttribute val="B"/>
           </Expression>
           <Expression id="147">
@@ -8870,8 +9216,8 @@
             <ExpAttribute val="B"/>
           </Expression>
           <Expression id="172">
-            <ExpSyntax val="{0,78}.RowDelete({0,147}-1,{0,148})"/>
-            <ExpAttribute val="O"/>
+            <ExpSyntax val="{0,78}.RowDelete(FF-1,FG)"/>
+            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="187">
             <ExpSyntax val="{0,168} > 0  AND  {0,80} > 1"/>
@@ -8992,6 +9338,18 @@
           <Expression id="208">
             <ExpSyntax val="{0,104}&lt;0"/>
             <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="209">
+            <ExpSyntax val="CASE ({0,182}, 0, Fix({0,181},11,{0,183}),&#xD;&#xA;          1, Round({0,181},11,{0,183}),&#xD;&#xA;          2, Fix({0,181}+IF({0,181}&lt;0,(-0.9999999999),0.9999999999),11,{0,183})&#xD;&#xA;           , {0,181})"/>
+            <ExpAttribute val="N"/>
+          </Expression>
+          <Expression id="210">
+            <ExpSyntax val="{0,185}=0"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="218">
+            <ExpSyntax val="'$'&amp;Trim({0,186})&amp;' '&amp;Trim({0,188})"/>
+            <ExpAttribute val="A"/>
           </Expression>
         </Expressions>
         <EVNT DESC="VBReport初期化" FORCE_EXIT="N" id="1">
@@ -9294,6 +9652,16 @@
               <PublicObject comp="-1"/>
             </MODEL>
           </EVENT_PARAMETER>
+          <EVENT_PARAMETER ATTR="N" NAME="P)PDFファイル発行F(0N1Y)" id="4">
+            <MODEL>
+              <PublicObject comp="-1" obj="109"/>
+            </MODEL>
+          </EVENT_PARAMETER>
+          <EVENT_PARAMETER ATTR="A" NAME="P)PDFファイフルパス" PICT_U="200" id="5">
+            <MODEL>
+              <PublicObject comp="-1"/>
+            </MODEL>
+          </EVENT_PARAMETER>
         </EVNT>
         <EVNT DESC="EC行削除" FORCE_EXIT="N" id="18">
           <Event>
@@ -9390,8 +9758,18 @@
             </MODEL>
           </EVENT_PARAMETER>
         </EVNT>
+        <EVNT DESC="バリデーションチェック" FORCE_EXIT="N" id="22">
+          <Event>
+            <EventType val="N"/>
+          </Event>
+          <EVENT_PARAMETER ATTR="U" NAME="P)Unicode" PICT_U="1000" id="1">
+            <MODEL>
+              <PublicObject comp="-1"/>
+            </MODEL>
+          </EVENT_PARAMETER>
+        </EVNT>
         <Task MainProgram="N">
-          <Header Description="メッセージマスタ" ISN_2="2" LastIsn="3" id="1">
+          <Header Description="メッセージマスタ" ISN_2="2" LastIsn="2" id="1">
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>

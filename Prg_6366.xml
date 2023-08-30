@@ -27,9 +27,9 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="738657" _time="37137" date="2023/05/17" time="10:18:57"/>
+          <LastModified _date="738732" _time="31627" date="2023/07/31" time="08:47:07"/>
         </Header>
-        <ItemIsn val="247"/>
+        <ItemIsn val="248"/>
         <Resource>
           <DB id="1">
             <DataObject comp="-1" obj="470"/>
@@ -3873,6 +3873,7 @@
             <Event>
               <EventType val="S"/>
             </Event>
+            <Expanded val="1"/>
             <LogicLines>
               <LogicLine>
                 <CallTask FlowIsn="298">
@@ -3889,6 +3890,30 @@
                   <Modifier val="S"/>
                   <Direction val="C"/>
                 </CallTask>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="446">
+                  <Type val="2"/>
+                  <Text val="2023.07.24 胡"/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="447">
+                  <Type val="2"/>
+                  <Text val="・入庫データを作成時、入出庫取引データ.金額へのセットも追加する"/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="625">
+                  <Type val="2"/>
+                  <Text val="2023.07.31 李 カスタマイズ"/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="626">
+                  <Type val="2"/>
+                  <Text val="・海外仕入のため、入庫データの予備数量～予備文字まで値を渡す"/>
+                </Remark>
               </LogicLine>
               <LogicLine>
                 <Remark FlowIsn="299">
@@ -4729,7 +4754,7 @@
                   <SyncData val="N"/>
                   <RetainFocus val="N"/>
                   <Condition val="Y"/>
-                  <Modifier val="S"/>
+                  <Modifier val="B"/>
                   <Direction val="C"/>
                 </CallTask>
               </LogicLine>
@@ -5051,6 +5076,7 @@
               </LogicLine>
               <LogicLine>
                 <BLOCK EndBlock="431" EndBlockSegment="431" FlowIsn="420" Type="I">
+                  <Expanded val="1"/>
                   <Condition Exp="52"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -5058,6 +5084,7 @@
               </LogicLine>
               <LogicLine>
                 <BLOCK EndBlock="429" EndBlockSegment="429" FlowIsn="421" Type="I">
+                  <Expanded val="1"/>
                   <Condition Exp="55"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -5093,12 +5120,40 @@
                 </CallTask>
               </LogicLine>
               <LogicLine>
+                <Remark FlowIsn="598">
+                  <Type val="2"/>
+                  <Text val="20230726 胡 ロットしない商品の場合、ロット№もセットする"/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <BLOCK EndBlock="596" EndBlockSegment="596" FlowIsn="595" Type="I">
+                  <Expanded val="1"/>
+                  <Condition val="N"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
                 <Update FlowIsn="423">
                   <FieldID val="63"/>
                   <WithValue val="57"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
                   <Condition Exp="56"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <END_BLK FlowIsn="596"/>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="597">
+                  <FieldID val="63"/>
+                  <WithValue val="57"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition Exp="78"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </Update>
@@ -5610,6 +5665,10 @@
           </Expression>
           <Expression id="56">
             <ExpSyntax val="{0,102}=1 AND {0,153}&lt;>'' AND {0,108}=''"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="78">
+            <ExpSyntax val="{0,153}&lt;>'' AND {0,108}=''"/>
             <ExpAttribute val="B"/>
           </Expression>
           <Expression id="57">
@@ -9092,9 +9151,9 @@
             <External val="N"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="738657" _time="37118" date="2023/05/17" time="10:18:38"/>
+            <LastModified _date="738732" _time="31481" date="2023/07/31" time="08:44:41"/>
           </Header>
-          <ItemIsn val="81"/>
+          <ItemIsn val="87"/>
           <Resource>
             <DB id="1">
               <DataObject comp="-1" obj="509"/>
@@ -9200,7 +9259,7 @@
                   </DATAVIEW_SRC>
                 </LogicLine>
                 <LogicLine>
-                  <LNK Direction="A" EVL_CND="R" FlowIsn="3" Key="1" Mode="W" SortType="61" VIEW="1" VIEWS="55">
+                  <LNK Direction="A" EVL_CND="R" FlowIsn="3" Key="1" Mode="W" SortType="61" VIEW="1" VIEWS="60">
                     <DB comp="-1" obj="509"/>
                     <Expanded val="1"/>
                     <Condition val="Y"/>
@@ -9887,6 +9946,72 @@
                   </Select>
                 </LogicLine>
                 <LogicLine>
+                  <Remark FlowIsn="275">
+                    <Type val="0"/>
+                    <Text val="・2023.07.31 李 カスタマイズ 海外仕入のため、追加カラム↓"/>
+                  </Remark>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="83" FlowIsn="276" id="83">
+                    <Column val="76"/>
+                    <Type val="R"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="N"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="84" FlowIsn="277" id="84">
+                    <Column val="77"/>
+                    <Type val="R"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="N"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="85" FlowIsn="278" id="85">
+                    <Column val="78"/>
+                    <Type val="R"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="N"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="86" FlowIsn="279" id="86">
+                    <Column val="79"/>
+                    <Type val="R"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="N"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="87" FlowIsn="280" id="87">
+                    <Column val="80"/>
+                    <Type val="R"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="N"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
                   <END_LINK FlowIsn="61"/>
                 </LogicLine>
                 <LogicLine>
@@ -9896,7 +10021,7 @@
                   </Remark>
                 </LogicLine>
                 <LogicLine>
-                  <LNK Direction="A" EVL_CND="R" FlowIsn="63" Key="1" Mode="W" SortType="85" VIEW="56" VIEWS="21">
+                  <LNK Direction="A" EVL_CND="R" FlowIsn="63" Key="1" Mode="W" SortType="85" VIEW="61" VIEWS="21">
                     <DB comp="-1" obj="510"/>
                     <Condition val="Y"/>
                   </LNK>
@@ -10177,7 +10302,7 @@
                   </Remark>
                 </LogicLine>
                 <LogicLine>
-                  <LNK Direction="A" EVL_CND="R" FlowIsn="88" Key="1" Mode="W" SortType="94" VIEW="77" VIEWS="5">
+                  <LNK Direction="A" EVL_CND="R" FlowIsn="88" Key="1" Mode="W" SortType="94" VIEW="82" VIEWS="5">
                     <DB comp="-1" obj="1081"/>
                     <Condition Exp="81"/>
                   </LNK>
@@ -10692,6 +10817,23 @@
                   <Update FlowIsn="138">
                     <FieldID val="38"/>
                     <WithValue val="14"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
+                </LogicLine>
+                <LogicLine>
+                  <Remark FlowIsn="206">
+                    <Type val="2"/>
+                    <Text val="2023.07.24 胡 金額もセットする"/>
+                  </Remark>
+                </LogicLine>
+                <LogicLine>
+                  <Update FlowIsn="207">
+                    <FieldID val="39"/>
+                    <WithValue val="87"/>
                     <Incremental val="N"/>
                     <ForcedUpdate val="Y"/>
                     <Condition val="Y"/>
@@ -11305,8 +11447,63 @@
                 <LogicLine>
                   <Remark FlowIsn="205">
                     <Type val="2"/>
-                    <Text val=" "/>
+                    <Text val="・2023.07.31 李 カスタマイズ 海外仕入のため、追加処理↓"/>
                   </Remark>
+                </LogicLine>
+                <LogicLine>
+                  <Update FlowIsn="281">
+                    <FieldID val="83"/>
+                    <WithValue val="88"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
+                </LogicLine>
+                <LogicLine>
+                  <Update FlowIsn="282">
+                    <FieldID val="84"/>
+                    <WithValue val="89"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
+                </LogicLine>
+                <LogicLine>
+                  <Update FlowIsn="283">
+                    <FieldID val="85"/>
+                    <WithValue val="90"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
+                </LogicLine>
+                <LogicLine>
+                  <Update FlowIsn="284">
+                    <FieldID val="86"/>
+                    <WithValue val="92"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
+                </LogicLine>
+                <LogicLine>
+                  <Update FlowIsn="285">
+                    <FieldID val="87"/>
+                    <WithValue val="91"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
                 </LogicLine>
               </LogicLines>
             </LogicUnit>
@@ -11666,6 +11863,30 @@
             <Expression id="86">
               <ExpSyntax val="{1,38}"/>
               <ExpAttribute val="N"/>
+            </Expression>
+            <Expression id="87">
+              <ExpSyntax val="{1,128}"/>
+              <ExpAttribute val="N"/>
+            </Expression>
+            <Expression id="88">
+              <ExpSyntax val="{1,156}"/>
+              <ExpAttribute val="N"/>
+            </Expression>
+            <Expression id="89">
+              <ExpSyntax val="{1,157}"/>
+              <ExpAttribute val="N"/>
+            </Expression>
+            <Expression id="90">
+              <ExpSyntax val="{1,158}"/>
+              <ExpAttribute val="N"/>
+            </Expression>
+            <Expression id="91">
+              <ExpSyntax val="{1,159}"/>
+              <ExpAttribute val="U"/>
+            </Expression>
+            <Expression id="92">
+              <ExpSyntax val="{1,160}"/>
+              <ExpAttribute val="D"/>
             </Expression>
           </Expressions>
         </Task>

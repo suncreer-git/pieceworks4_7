@@ -14,7 +14,6 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="商品マスタ保守" ISN_2="1" LastIsn="12" id="425">
-          <Public val="ShoMnt"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -24,10 +23,10 @@
           </ReturnValue>
           <SqlWhereExist val="N"/>
           <TaskType val="O"/>
-          <External val="Y"/>
+          <External val="N"/>
           <Offline val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="738719" _time="62950" date="2023/07/18" time="17:29:10"/>
+          <LastModified _date="738719" _time="35923" date="2023/07/18" time="09:58:43"/>
         </Header>
         <ItemIsn val="34"/>
         <Resource>
@@ -1858,7 +1857,7 @@
             <TaskType val="O"/>
             <External val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="738719" _time="62870" date="2023/07/18" time="17:27:50"/>
+            <LastModified _date="737693" _time="58283" date="2020/09/25" time="16:11:23"/>
           </Header>
           <MAGIC_SQL val="68"/>
           <ItemIsn val="139"/>
@@ -6737,7 +6736,7 @@
           </Expressions>
           <VarRangeInfo Mode="E" VarRangeVeeIsn="4" id="1"/>
           <Task MainProgram="N">
-            <Header Description="商品実績" ISN_2="3" LastIsn="12" id="425">
+            <Header Description="商品実績" ISN_2="3" LastIsn="5" id="425">
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -7761,7 +7760,7 @@
               </Expression>
             </Expressions>
             <Task MainProgram="N">
-              <Header Description="商品集計ﾋﾞｭｰ" ISN_2="4" LastIsn="12" id="425">
+              <Header Description="商品集計ﾋﾞｭｰ" ISN_2="4" LastIsn="4" id="425">
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="Y"/>
@@ -8633,7 +8632,7 @@
               </EVNT>
             </Task>
             <Task MainProgram="N">
-              <Header Description="合計取得" ISN_2="5" LastIsn="12" id="425">
+              <Header Description="合計取得" ISN_2="5" LastIsn="5" id="425">
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="N"/>
@@ -9070,7 +9069,7 @@
             </Task>
           </Task>
           <Task MainProgram="N">
-            <Header Description="詳細画面" ISN_2="6" LastIsn="12" id="425">
+            <Header Description="詳細画面" ISN_2="6" LastIsn="9" id="425">
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -19539,7 +19538,7 @@
               </EVENT_PARAMETER>
             </EVNT>
             <Task MainProgram="N">
-              <Header Description="セット商品確認" ISN_2="7" LastIsn="12" id="425">
+              <Header Description="セット商品確認" ISN_2="7" LastIsn="7" id="425">
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="N"/>
@@ -19794,7 +19793,7 @@
               <VarRangeInfo Mode="E" VarRangeVeeIsn="1" id="3"/>
             </Task>
             <Task MainProgram="N">
-              <Header Description="基本棚番セット" ISN_2="8" LastIsn="12" id="425">
+              <Header Description="基本棚番セット" ISN_2="8" LastIsn="8" id="425">
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="N"/>
@@ -20052,7 +20051,7 @@
               <VarRangeInfo Mode="E" VarRangeVeeIsn="1" id="4"/>
             </Task>
             <Task MainProgram="N">
-              <Header Description="基本棚番更新" ISN_2="9" LastIsn="12" id="425">
+              <Header Description="基本棚番更新" ISN_2="9" LastIsn="9" id="425">
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="N"/>
@@ -20354,7 +20353,7 @@
             </Task>
           </Task>
           <Task MainProgram="N">
-            <Header Description="セット商品" ISN_2="10" LastIsn="12" id="425">
+            <Header Description="セット商品" ISN_2="10" LastIsn="10" id="425">
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -20366,7 +20365,7 @@
               <TaskType val="O"/>
               <External val="N"/>
               <DotNetObjectExists val="N"/>
-              <LastModified _date="738719" _time="62950" date="2023/07/18" time="17:29:10"/>
+              <LastModified _date="738042" _time="52848" date="2021/09/09" time="14:40:48"/>
             </Header>
             <ItemIsn val="13"/>
             <Resource>
@@ -20832,7 +20831,6 @@
                 <LogicLines>
                   <LogicLine>
                     <BLOCK EndBlock="28" EndBlockSegment="28" FlowIsn="24" Type="I">
-                      <Expanded val="1"/>
                       <Condition Exp="14"/>
                       <Modifier val="B"/>
                       <Direction val="F"/>
@@ -20883,14 +20881,7 @@
                     <END_BLK FlowIsn="28"/>
                   </LogicLine>
                   <LogicLine>
-                    <Remark FlowIsn="82">
-                      <Type val="2"/>
-                      <Text val="230718 在庫区分=1でも入力可能に変更（コード部分コメントアウト）"/>
-                    </Remark>
-                  </LogicLine>
-                  <LogicLine>
                     <BLOCK EndBlock="33" EndBlockSegment="33" FlowIsn="29" Type="I">
-                      <Disabled val="1"/>
                       <Condition Exp="8"/>
                       <Modifier val="B"/>
                       <Direction val="F"/>
@@ -20924,7 +20915,6 @@
                       <Wait val="Y"/>
                       <SyncData val="N"/>
                       <RetainFocus val="N"/>
-                      <Disabled val="1"/>
                       <Condition val="Y"/>
                       <Modifier val="B"/>
                       <Direction val="F"/>
@@ -20933,16 +20923,13 @@
                   <LogicLine>
                     <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="17" FlowIsn="32" IMG_DEF_CHG="N" Image="C" Mode="E" TTL_DEF_CHG="N" TitleTxt="エラー" VR_DISP="B">
                       <AppendToErrorLog val="Y"/>
-                      <Disabled val="1"/>
                       <Condition val="Y"/>
                       <Modifier val="B"/>
                       <Direction val="F"/>
                     </STP>
                   </LogicLine>
                   <LogicLine>
-                    <END_BLK FlowIsn="33">
-                      <Disabled val="1"/>
-                    </END_BLK>
+                    <END_BLK FlowIsn="33"/>
                   </LogicLine>
                   <LogicLine>
                     <BLOCK EndBlock="38" EndBlockSegment="38" FlowIsn="34" Type="I">
@@ -21012,7 +20999,6 @@
                 <LogicLines>
                   <LogicLine>
                     <BLOCK EndBlock="43" EndBlockSegment="43" FlowIsn="39" Type="I">
-                      <Expanded val="1"/>
                       <Condition Exp="4"/>
                       <Modifier val="B"/>
                       <Direction val="C"/>
@@ -21581,7 +21567,7 @@
                 <ExpAttribute val="B"/>
               </Expression>
               <Expression id="10">
-                <ExpSyntax val="IF ({1,11}=3 OR {1,13}=3,'N6.4C',IF ({1,11}=2 OR {1,13}=2,'N7.3C',IF ({1,11}=1 OR {1,13}=1,'N8.2C','N8C')))"/>
+                <ExpSyntax val="IF ({1,11}=3 OR {1,13}=3,'6.4C',IF ({1,11}=2 OR {1,13}=2,'7.3C',IF ({1,11}=1 OR {1,13}=1,'8.2C','8C')))"/>
                 <ExpAttribute val="A"/>
               </Expression>
               <Expression id="11">
@@ -21638,7 +21624,7 @@
             <VarRangeInfo Mode="E" VarRangeVeeIsn="1" id="3"/>
           </Task>
           <Task MainProgram="N">
-            <Header Description="セット削除" ISN_2="11" LastIsn="12" id="425">
+            <Header Description="セット削除" ISN_2="11" LastIsn="11" id="425">
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>

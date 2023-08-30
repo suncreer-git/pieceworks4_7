@@ -14,7 +14,6 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="入金入力" ISN_2="1" LastIsn="14" id="470">
-          <Public val="NyuEnt"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -28,10 +27,10 @@
           </ReturnValue>
           <SqlWhereExist val="N"/>
           <TaskType val="O"/>
-          <External val="Y"/>
+          <External val="N"/>
           <Offline val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="738735" _time="42350" date="2023/08/03" time="11:45:50"/>
+          <LastModified _date="738735" _time="38585" date="2023/08/03" time="10:43:05"/>
         </Header>
         <ItemIsn val="125"/>
         <Resource>
@@ -5537,7 +5536,6 @@
               <EventType val="U"/>
               <PublicObject comp="-1" obj="3"/>
             </Event>
-            <Expanded val="1"/>
             <LogicLines>
               <LogicLine>
                 <Select FieldID="125" FlowIsn="416" id="125">
@@ -12838,9 +12836,9 @@
             <TaskType val="O"/>
             <External val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="738725" _time="40077" date="2023/07/24" time="11:07:57"/>
+            <LastModified _date="737622" _time="61569" date="2020/07/16" time="17:06:09"/>
           </Header>
-          <ItemIsn val="50"/>
+          <ItemIsn val="44"/>
           <Resource>
             <DB id="1">
               <DataObject comp="-1" obj="480"/>
@@ -13049,7 +13047,6 @@
                     <IsParameter val="N"/>
                     <INT_RCMP_INFO>
                       <v>30</v>
-                      <v>240</v>
                     </INT_RCMP_INFO>
                     <_DitIndexForToolkit val="26"/>
                     <DIFF_UPDATE val="T"/>
@@ -13153,9 +13150,6 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <INT_DIT_INFO>
-                      <v>32</v>
-                    </INT_DIT_INFO>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="N"/>
                     <Modifier val="S"/>
@@ -13488,101 +13482,13 @@
                   <END_LINK FlowIsn="41"/>
                 </LogicLine>
                 <LogicLine>
-                  <LNK Direction="A" EVL_CND="R" FlowIsn="240" Mode="R" SortType="241" VIEW="32" VIEWS="5">
-                    <DB comp="-1" obj="481"/>
-                    <Expanded val="1"/>
-                    <Condition val="Y"/>
-                  </LNK>
-                </LogicLine>
-                <LogicLine>
-                  <Select FieldID="46" FlowIsn="242" id="46">
-                    <ASS val="2"/>
-                    <Column val="96"/>
-                    <Type val="R"/>
-                    <ExposedToRoute val="N"/>
-                    <IsParameter val="N"/>
-                    <Locate MAX="2" MIN="2"/>
-                    <DIFF_UPDATE val="T"/>
-                    <Condition val="N"/>
-                    <Modifier val="S"/>
-                    <Direction val="C"/>
-                  </Select>
-                </LogicLine>
-                <LogicLine>
-                  <Select FieldID="47" FlowIsn="243" id="47">
-                    <ASS val="3"/>
-                    <Column val="1"/>
-                    <Type val="R"/>
-                    <ExposedToRoute val="N"/>
-                    <IsParameter val="N"/>
-                    <Locate MAX="3" MIN="3"/>
-                    <DIFF_UPDATE val="T"/>
-                    <Condition val="N"/>
-                    <Modifier val="S"/>
-                    <Direction val="C"/>
-                  </Select>
-                </LogicLine>
-                <LogicLine>
-                  <Select FieldID="48" FlowIsn="244" id="48">
-                    <ASS val="4"/>
-                    <Column val="4"/>
-                    <Type val="R"/>
-                    <ExposedToRoute val="N"/>
-                    <IsParameter val="N"/>
-                    <Locate MAX="4" MIN="4"/>
-                    <DIFF_UPDATE val="T"/>
-                    <Condition val="N"/>
-                    <Modifier val="S"/>
-                    <Direction val="C"/>
-                  </Select>
-                </LogicLine>
-                <LogicLine>
-                  <Select FieldID="49" FlowIsn="245" id="49">
-                    <ASS val="6"/>
-                    <Column val="5"/>
-                    <Type val="R"/>
-                    <ExposedToRoute val="N"/>
-                    <IsParameter val="N"/>
-                    <Locate MAX="5" MIN="5"/>
-                    <DIFF_UPDATE val="T"/>
-                    <Condition val="N"/>
-                    <Modifier val="S"/>
-                    <Direction val="C"/>
-                  </Select>
-                </LogicLine>
-                <LogicLine>
-                  <Select FieldID="50" FlowIsn="246" id="50">
-                    <Column val="130"/>
-                    <Type val="R"/>
-                    <ExposedToRoute val="N"/>
-                    <IsParameter val="N"/>
-                    <INT_DIT_INFO>
-                      <v>26</v>
-                      <v>27</v>
-                      <v>28</v>
-                      <v>29</v>
-                      <v>30</v>
-                      <v>31</v>
-                      <v>32</v>
-                      <v>33</v>
-                    </INT_DIT_INFO>
-                    <DIFF_UPDATE val="T"/>
-                    <Condition val="N"/>
-                    <Modifier val="S"/>
-                    <Direction val="C"/>
-                  </Select>
-                </LogicLine>
-                <LogicLine>
-                  <END_LINK FlowIsn="241"/>
-                </LogicLine>
-                <LogicLine>
                   <Remark FlowIsn="42">
                     <Type val="0"/>
                     <Text val=" "/>
                   </Remark>
                 </LogicLine>
                 <LogicLine>
-                  <LNK Direction="A" EVL_CND="R" FlowIsn="43" Key="1" Mode="R" SortType="46" VIEW="37" VIEWS="2">
+                  <LNK Direction="A" EVL_CND="R" FlowIsn="43" Key="1" Mode="R" SortType="46" VIEW="32" VIEWS="2">
                     <DB comp="-1" obj="500"/>
                     <Expanded val="1"/>
                     <Condition val="Y"/>
@@ -13620,7 +13526,7 @@
                   <END_LINK FlowIsn="46"/>
                 </LogicLine>
                 <LogicLine>
-                  <LNK Direction="A" EVL_CND="R" FlowIsn="47" Key="1" Mode="R" SortType="51" VIEW="39" VIEWS="3">
+                  <LNK Direction="A" EVL_CND="R" FlowIsn="47" Key="1" Mode="R" SortType="51" VIEW="34" VIEWS="3">
                     <DB comp="-1" obj="501"/>
                     <Expanded val="1"/>
                     <Condition val="Y"/>
@@ -13837,7 +13743,6 @@
               <Event>
                 <EventType val="S"/>
               </Event>
-              <Expanded val="1"/>
               <LogicLines>
                 <LogicLine>
                   <Update FlowIsn="65">
@@ -13873,7 +13778,6 @@
               <Event>
                 <EventType val="S"/>
               </Event>
-              <Expanded val="1"/>
               <LogicLines>
                 <LogicLine>
                   <Remark FlowIsn="66">
@@ -13921,7 +13825,6 @@
               <Event>
                 <EventType val="S"/>
               </Event>
-              <Expanded val="1"/>
               <LogicLines>
                 <LogicLine>
                   <Remark FlowIsn="70">
@@ -14120,7 +14023,6 @@
                 <EventType val="S"/>
               </Event>
               <TXT val="TDT 取引区分"/>
-              <Expanded val="1"/>
               <LogicLines>
                 <LogicLine>
                   <Remark FlowIsn="87">
@@ -14235,11 +14137,9 @@
                 <EventType val="S"/>
               </Event>
               <TXT val="TDS 手形期日"/>
-              <Expanded val="1"/>
               <LogicLines>
                 <LogicLine>
                   <BLOCK EndBlock="101" EndBlockSegment="101" FlowIsn="97" Type="I">
-                    <Expanded val="1"/>
                     <Condition Exp="41"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>
@@ -14312,11 +14212,9 @@
                 <EventType val="S"/>
               </Event>
               <TXT val="D)銀行名"/>
-              <Expanded val="1"/>
               <LogicLines>
                 <LogicLine>
                   <BLOCK EndBlock="110" EndBlockSegment="110" FlowIsn="102" Type="I">
-                    <Expanded val="1"/>
                     <Condition Exp="44"/>
                     <Modifier val="B"/>
                     <Direction val="F"/>
@@ -14330,7 +14228,6 @@
                 </LogicLine>
                 <LogicLine>
                   <BLOCK EndBlock="109" EndBlockSegment="109" FlowIsn="104" Type="I">
-                    <Expanded val="1"/>
                     <Condition Exp="45"/>
                     <Modifier val="B"/>
                     <Direction val="F"/>
@@ -14338,7 +14235,6 @@
                 </LogicLine>
                 <LogicLine>
                   <BLOCK EndBlock="108" EndBlockSegment="108" FlowIsn="105" Type="I">
-                    <Expanded val="1"/>
                     <Condition Exp="48"/>
                     <Modifier val="B"/>
                     <Direction val="F"/>
@@ -14407,7 +14303,6 @@
                 <Parent val="1"/>
                 <PublicObject comp="-1" obj="4"/>
               </Event>
-              <Expanded val="1"/>
               <LogicLines>
                 <LogicLine>
                   <CallTask FlowIsn="113">
@@ -15584,7 +15479,7 @@
               <ExpAttribute val="B"/>
             </Expression>
             <Expression id="45">
-              <ExpSyntax val="IN (1, {0,10},{0,11},{0,12},{0,14},{0,16},{0,17})"/>
+              <ExpSyntax val="IN (1, {0,11},{0,12},{0,14},{0,16},{0,17})"/>
               <ExpAttribute val="B"/>
             </Expression>
             <Expression id="46">
@@ -15640,7 +15535,7 @@
               <ExpAttribute val="B"/>
             </Expression>
             <Expression id="59">
-              <ExpSyntax val="IF({0,50}=1 AND ({1,30}=1 OR {1,30}=2),170,IF({0,31}=0,151,170))"/>
+              <ExpSyntax val="IF({0,31}=0,151,170)"/>
               <ExpAttribute val="N"/>
             </Expression>
             <Expression id="60">

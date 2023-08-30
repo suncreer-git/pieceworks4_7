@@ -14,7 +14,6 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="回収支払問合せ" ISN_2="1" LastIsn="52" id="6029">
-          <Public val="KaiInq"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -24,10 +23,10 @@
           </ReturnValue>
           <SqlWhereExist val="N"/>
           <TaskType val="O"/>
-          <External val="Y"/>
+          <External val="N"/>
           <Offline val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="738719" _time="58552" date="2023/07/18" time="16:15:52"/>
+          <LastModified _date="738735" _time="38627" date="2023/08/03" time="10:43:47"/>
         </Header>
         <ItemIsn val="128"/>
         <Resource>
@@ -3481,7 +3480,6 @@
               <EventType val="U"/>
               <PublicObject comp="-1" obj="3"/>
             </Event>
-            <Expanded val="1"/>
             <LogicLines>
               <LogicLine>
                 <Evaluate FlowIsn="130">
@@ -3548,7 +3546,6 @@
               <EventType val="U"/>
               <PublicObject comp="-1" obj="4"/>
             </Event>
-            <Expanded val="1"/>
             <LogicLines>
               <LogicLine>
                 <CallTask FlowIsn="1742">
@@ -5237,9 +5234,9 @@
             <TaskType val="O"/>
             <External val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="738719" _time="57416" date="2023/07/18" time="15:56:56"/>
+            <LastModified _date="736972" _time="40832" date="2018/10/05" time="11:20:32"/>
           </Header>
-          <ItemIsn val="125"/>
+          <ItemIsn val="124"/>
           <Resource>
             <DB id="1">
               <DataObject comp="-1" obj="473"/>
@@ -5712,7 +5709,7 @@
                     <INT_RCMP_INFO>
                       <v>12</v>
                     </INT_RCMP_INFO>
-                    <_DitIndexForToolkit val="10"/>
+                    <_DitIndexForToolkit val="9"/>
                     <DIFF_UPDATE val="T"/>
                     <PartOfDataview val="Y"/>
                     <Condition val="Y"/>
@@ -5817,7 +5814,7 @@
                     <Type val="V"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="16"/>
+                    <_DitIndexForToolkit val="15"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -5830,7 +5827,7 @@
                     <Type val="V"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="15"/>
+                    <_DitIndexForToolkit val="14"/>
                     <DIFF_UPDATE val="T"/>
                     <PartOfDataview val="Y"/>
                     <Condition val="Y"/>
@@ -5860,7 +5857,7 @@
                     <INT_DIT_INFO>
                       <v>30</v>
                     </INT_DIT_INFO>
-                    <_DitIndexForToolkit val="12"/>
+                    <_DitIndexForToolkit val="11"/>
                     <DIFF_UPDATE val="T"/>
                     <PartOfDataview val="Y"/>
                     <Condition val="Y"/>
@@ -5908,9 +5905,8 @@
                   </Select>
                 </LogicLine>
                 <LogicLine>
-                  <LNK Direction="A" EVL_CND="R" FieldID="6" FlowIsn="12" Key="1" Mode="R" SortType="34" VIEW="19" VIEWS="22">
+                  <LNK Direction="A" EVL_CND="R" FieldID="6" FlowIsn="12" Key="1" Mode="R" SortType="34" VIEW="19" VIEWS="21">
                     <DB comp="-1" obj="473"/>
-                    <Expanded val="1"/>
                     <Condition val="Y"/>
                   </LNK>
                 </LogicLine>
@@ -5971,7 +5967,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="11"/>
+                    <_DitIndexForToolkit val="10"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="N"/>
                     <Modifier val="S"/>
@@ -6171,19 +6167,6 @@
                   </Select>
                 </LogicLine>
                 <LogicLine>
-                  <Select FieldID="125" FlowIsn="1463" id="125">
-                    <Column val="258"/>
-                    <Type val="R"/>
-                    <ExposedToRoute val="N"/>
-                    <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="17"/>
-                    <DIFF_UPDATE val="T"/>
-                    <Condition val="N"/>
-                    <Modifier val="S"/>
-                    <Direction val="C"/>
-                  </Select>
-                </LogicLine>
-                <LogicLine>
                   <END_LINK FlowIsn="34"/>
                 </LogicLine>
                 <LogicLine>
@@ -6208,7 +6191,6 @@
               <LogicLines>
                 <LogicLine>
                   <BLOCK EndBlock="1071" EndBlockSegment="1071" FlowIsn="1070" Type="I">
-                    <Expanded val="1"/>
                     <Condition Exp="67"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>
@@ -6371,7 +6353,7 @@
             </LogicUnit>
           </TaskLogic>
           <TaskForms>
-            <FormEntry _last_isn="40" _last_test_id="151" id="1">
+            <FormEntry _last_isn="38" _last_test_id="149" id="1">
               <PropertyList model="FORM_GUI0">
                 <Model comp="-1" id="1" obj="133"/>
                 <Placement bottom="100" id="20" right="100"/>
@@ -6398,7 +6380,7 @@
                   <ControlName id="46" val="MEISAI"/>
                   <TitleHeight id="79" val="14"/>
                   <RowHeight id="80" val="16"/>
-                  <Elements id="81" val="8"/>
+                  <Elements id="81" val="7"/>
                   <_WindowWidth id="241" val="672"/>
                   <TitleColor id="677" val="150"/>
                 </PropertyList>
@@ -6476,15 +6458,6 @@
                   <Sortable id="134" val="Y"/>
                   <Placement id="138"/>
                   <ColumnTitle Exp="41" id="139" valUnicode="回収予定額"/>
-                </PropertyList>
-              </Control>
-              <Control ISN_FATHER="1" PDOD="128" _test_id="150" id="39">
-                <PropertyList model="CTRL_GUI0_COLUMN">
-                  <Width id="23" val="163"/>
-                  <ControlLayer id="25" val="8"/>
-                  <Font id="50" val="140"/>
-                  <Color id="51" val="150"/>
-                  <ColumnTitle id="139" valUnicode="回収条件"/>
                 </PropertyList>
               </Control>
               <Control ISN_FATHER="1" PDOD="5" _test_id="109" id="12">
@@ -6630,27 +6603,6 @@
                   <TabInto id="269"/>
                   <TabOrder id="314" val="8"/>
                   <AllowParking id="315"/>
-                  <Border id="452"/>
-                </PropertyList>
-              </Control>
-              <Control ISN_FATHER="1" _test_id="151" id="40">
-                <PropertyList model="CTRL_GUI0_EDIT">
-                  <Model ID="MODEL_GUI_INT_TBL" id="1">
-                    <Var FieldID="125"/>
-                  </Model>
-                  <Placement bottom="100" id="20" right="100"/>
-                  <X id="21" val="413"/>
-                  <Y id="22" val="17"/>
-                  <Width id="23" val="160"/>
-                  <Height id="24" val="11"/>
-                  <ControlLayer id="25" val="8"/>
-                  <Data FieldID="125" id="43"/>
-                  <ControlName id="46" val="TRI 予備文字１"/>
-                  <Font id="50" val="140"/>
-                  <Color id="51" val="151"/>
-                  <Style id="63" val="1"/>
-                  <_Orientation id="143"/>
-                  <TabOrder id="314" val="16"/>
                   <Border id="452"/>
                 </PropertyList>
               </Control>
@@ -7682,9 +7634,9 @@
             <TaskType val="O"/>
             <External val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="738719" _time="58552" date="2023/07/18" time="16:15:52"/>
+            <LastModified _date="736971" _time="57285" date="2018/10/04" time="15:54:45"/>
           </Header>
-          <ItemIsn val="124"/>
+          <ItemIsn val="123"/>
           <Resource>
             <DB id="1">
               <DataObject comp="-1" obj="473"/>
@@ -8151,7 +8103,7 @@
                     <INT_RCMP_INFO>
                       <v>12</v>
                     </INT_RCMP_INFO>
-                    <_DitIndexForToolkit val="10"/>
+                    <_DitIndexForToolkit val="9"/>
                     <DIFF_UPDATE val="T"/>
                     <PartOfDataview val="Y"/>
                     <Condition val="Y"/>
@@ -8256,7 +8208,7 @@
                     <Type val="V"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="16"/>
+                    <_DitIndexForToolkit val="15"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -8269,7 +8221,7 @@
                     <Type val="V"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="15"/>
+                    <_DitIndexForToolkit val="14"/>
                     <DIFF_UPDATE val="T"/>
                     <PartOfDataview val="Y"/>
                     <Condition val="Y"/>
@@ -8299,7 +8251,7 @@
                     <INT_DIT_INFO>
                       <v>30</v>
                     </INT_DIT_INFO>
-                    <_DitIndexForToolkit val="12"/>
+                    <_DitIndexForToolkit val="11"/>
                     <DIFF_UPDATE val="T"/>
                     <PartOfDataview val="Y"/>
                     <Condition val="Y"/>
@@ -8353,9 +8305,8 @@
                   </Select>
                 </LogicLine>
                 <LogicLine>
-                  <LNK Direction="A" EVL_CND="R" FieldID="6" FlowIsn="12" Key="1" Mode="R" SortType="34" VIEW="19" VIEWS="22">
+                  <LNK Direction="A" EVL_CND="R" FieldID="6" FlowIsn="12" Key="1" Mode="R" SortType="34" VIEW="19" VIEWS="21">
                     <DB comp="-1" obj="473"/>
-                    <Expanded val="1"/>
                     <Condition val="Y"/>
                   </LNK>
                 </LogicLine>
@@ -8416,7 +8367,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="11"/>
+                    <_DitIndexForToolkit val="10"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="N"/>
                     <Modifier val="S"/>
@@ -8616,19 +8567,6 @@
                   </Select>
                 </LogicLine>
                 <LogicLine>
-                  <Select FieldID="124" FlowIsn="1402" id="124">
-                    <Column val="258"/>
-                    <Type val="R"/>
-                    <ExposedToRoute val="N"/>
-                    <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="17"/>
-                    <DIFF_UPDATE val="T"/>
-                    <Condition val="N"/>
-                    <Modifier val="S"/>
-                    <Direction val="C"/>
-                  </Select>
-                </LogicLine>
-                <LogicLine>
                   <END_LINK FlowIsn="34"/>
                 </LogicLine>
                 <LogicLine>
@@ -8815,7 +8753,7 @@
             </LogicUnit>
           </TaskLogic>
           <TaskForms>
-            <FormEntry _last_isn="40" _last_test_id="151" id="1">
+            <FormEntry _last_isn="38" _last_test_id="149" id="1">
               <PropertyList model="FORM_GUI0">
                 <Model comp="-1" id="1" obj="133"/>
                 <Placement bottom="100" id="20" right="100"/>
@@ -8842,7 +8780,7 @@
                   <ControlName id="46" val="MEISAI"/>
                   <TitleHeight id="79" val="14"/>
                   <RowHeight id="80" val="16"/>
-                  <Elements id="81" val="8"/>
+                  <Elements id="81" val="7"/>
                   <_WindowWidth id="241" val="672"/>
                   <TitleColor id="677" val="150"/>
                 </PropertyList>
@@ -8920,15 +8858,6 @@
                   <Sortable id="134" val="Y"/>
                   <Placement id="138"/>
                   <ColumnTitle Exp="41" id="139" valUnicode="回収予定額"/>
-                </PropertyList>
-              </Control>
-              <Control ISN_FATHER="1" PDOD="128" _test_id="150" id="39">
-                <PropertyList model="CTRL_GUI0_COLUMN">
-                  <Width id="23" val="163"/>
-                  <ControlLayer id="25" val="8"/>
-                  <Font id="50" val="140"/>
-                  <Color id="51" val="150"/>
-                  <ColumnTitle id="139" valUnicode="支払条件"/>
                 </PropertyList>
               </Control>
               <Control ISN_FATHER="1" PDOD="5" _test_id="109" id="12">
@@ -9074,26 +9003,6 @@
                   <TabInto id="269"/>
                   <TabOrder id="314" val="8"/>
                   <AllowParking id="315"/>
-                  <Border id="452"/>
-                </PropertyList>
-              </Control>
-              <Control ISN_FATHER="1" _test_id="151" id="40">
-                <PropertyList model="CTRL_GUI0_EDIT">
-                  <Model ID="MODEL_GUI_INT_TBL" id="1">
-                    <Var FieldID="124"/>
-                  </Model>
-                  <Placement bottom="100" id="20" right="100"/>
-                  <X id="21" val="413"/>
-                  <Y id="22" val="17"/>
-                  <Width id="23" val="160"/>
-                  <Height id="24" val="11"/>
-                  <ControlLayer id="25" val="8"/>
-                  <Data FieldID="124" id="43"/>
-                  <ControlName id="46" val="TRI 予備文字１"/>
-                  <Font id="50" val="140"/>
-                  <Color id="51" val="151"/>
-                  <Style id="63" val="1"/>
-                  <TabOrder id="314" val="16"/>
                   <Border id="452"/>
                 </PropertyList>
               </Control>

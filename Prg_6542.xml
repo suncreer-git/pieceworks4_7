@@ -14,7 +14,6 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="取引先マスタ保守" ISN_2="1" LastIsn="45" id="6542">
-          <Public val="TriMnt"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -24,10 +23,10 @@
           </ReturnValue>
           <SqlWhereExist val="N"/>
           <TaskType val="O"/>
-          <External val="Y"/>
+          <External val="N"/>
           <Offline val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="738707" _time="37227" date="2023/07/06" time="10:20:27"/>
+          <LastModified _date="738719" _time="35908" date="2023/07/18" time="09:58:28"/>
         </Header>
         <ItemIsn val="73"/>
         <Resource>
@@ -780,7 +779,6 @@
               <LogicLine>
                 <LNK Direction="A" EVL_CND="R" FlowIsn="166" Key="1" Mode="R" SortType="167" VIEW="41" VIEWS="2">
                   <DB comp="-1" obj="526"/>
-                  <Expanded val="1"/>
                   <Condition val="Y"/>
                 </LNK>
               </LogicLine>
@@ -2358,7 +2356,7 @@
             <TaskType val="O"/>
             <External val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="738707" _time="37227" date="2023/07/06" time="10:20:27"/>
+            <LastModified _date="737362" _time="62106" date="2019/10/30" time="17:15:06"/>
           </Header>
           <MAGIC_SQL val="109"/>
           <ItemIsn val="147"/>
@@ -4152,7 +4150,7 @@
                   <LNK Direction="A" EVL_CND="R" FieldID="107" FlowIsn="140" Key="11" Mode="R" SortType="147" VIEW="108" VIEWS="6">
                     <DB comp="-1" obj="480"/>
                     <Expanded val="1"/>
-                    <Condition val="N"/>
+                    <Condition val="Y"/>
                   </LNK>
                 </LogicLine>
                 <LogicLine>
@@ -4255,7 +4253,7 @@
                   <LNK Direction="A" EVL_CND="R" FieldID="143" FlowIsn="1213" Key="1" Mode="R" SortType="1220" VIEW="115" VIEWS="7">
                     <DB comp="-1" obj="480"/>
                     <Expanded val="1"/>
-                    <Condition val="N"/>
+                    <Condition val="Y"/>
                   </LNK>
                 </LogicLine>
                 <LogicLine>
@@ -5007,7 +5005,6 @@
                 </LogicLine>
                 <LogicLine>
                   <BLOCK EndBlock="216" EndBlockSegment="216" FlowIsn="191" Type="I">
-                    <Expanded val="1"/>
                     <Condition Exp="95"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>
@@ -5015,7 +5012,6 @@
                 </LogicLine>
                 <LogicLine>
                   <BLOCK EndBlock="215" EndBlockSegment="215" FlowIsn="192" Type="I">
-                    <Expanded val="1"/>
                     <Condition Exp="98"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>
@@ -5174,7 +5170,6 @@
                 <EventType val="S"/>
                 <KeyCombinationID val="87"/>
               </Event>
-              <Expanded val="1"/>
               <LogicLines>
                 <LogicLine>
                   <CallTask FlowIsn="1438">

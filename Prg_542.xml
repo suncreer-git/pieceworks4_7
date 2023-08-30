@@ -14,7 +14,6 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="ユーザー設定" ISN_2="1" LastIsn="1" id="542">
-          <Public val="UsrMnt"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -24,10 +23,10 @@
           </ReturnValue>
           <SqlWhereExist val="N"/>
           <TaskType val="O"/>
-          <External val="Y"/>
+          <External val="N"/>
           <Offline val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="738719" _time="42297" date="2023/07/18" time="11:44:57"/>
+          <LastModified _date="738720" _time="29398" date="2023/07/19" time="08:09:58"/>
         </Header>
         <ItemIsn val="99"/>
         <Resource>
@@ -2148,7 +2147,7 @@
                 <Data Exp="9" id="43"/>
                 <Font id="50" val="139"/>
                 <Color id="51" val="150"/>
-                <Format id="82" valUnicode="会社コード"/>
+                <Format id="82" valUnicode="予備１"/>
                 <_Orientation id="143"/>
                 <TabOrder id="314" val="20"/>
               </PropertyList>

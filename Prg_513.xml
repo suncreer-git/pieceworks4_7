@@ -19,11 +19,12 @@
           <SQL val="N"/>
           <ReturnValue>
             <ReturnValueAttr/>
-            <TSK_PARAMS val="5"/>
+            <TSK_PARAMS val="6"/>
             <ParametersAttributes>
               <Attr MgAttr="N"/>
               <Attr MgAttr="D"/>
               <Attr MgAttr="A"/>
+              <Attr MgAttr="N"/>
               <Attr MgAttr="N"/>
               <Attr MgAttr="N"/>
             </ParametersAttributes>
@@ -33,9 +34,9 @@
           <External val="N"/>
           <Offline val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="738573" _time="42618" date="2023/02/22" time="11:50:18"/>
+          <LastModified _date="738748" _time="58080" date="2023/08/16" time="16:08:00"/>
         </Header>
-        <ItemIsn val="8"/>
+        <ItemIsn val="9"/>
         <Resource>
           <Columns>
             <Column id="1" name="P)取引部門">
@@ -77,6 +78,14 @@
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="81"/>
                 <UpdateStyle id="176" val="A"/>
+                <DbColumnName id="178"/>
+                <Type id="179"/>
+                <UserType id="180"/>
+              </PropertyList>
+            </Column>
+            <Column id="9" name="P)セット商品Ｆ[0N1Y]">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="109"/>
                 <DbColumnName id="178"/>
                 <Type id="179"/>
                 <UserType id="180"/>
@@ -252,6 +261,19 @@
                 </Select>
               </LogicLine>
               <LogicLine>
+                <Select FieldID="9" FlowIsn="18" id="9">
+                  <Column val="9"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <PartOfDataview val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
                 <Remark FlowIsn="8">
                   <Type val="0"/>
                   <Text val=" "/>
@@ -314,6 +336,20 @@
             <Expanded val="1"/>
             <LogicLines>
               <LogicLine>
+                <Remark FlowIsn="26">
+                  <Type val="2"/>
+                  <Text val="・2023.08.16 李 カスタマイズ セット商品の在庫数取得機能の追加"/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <BLOCK EndBlock="22" EndBlockSegment="21" FlowIsn="19" Type="I">
+                  <Expanded val="1"/>
+                  <Condition Exp="2"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
                 <CallTask FlowIsn="13">
                   <OperationType val="P"/>
                   <Event>
@@ -361,6 +397,57 @@
                   <Modifier val="S"/>
                   <Direction val="C"/>
                 </CallTask>
+              </LogicLine>
+              <LogicLine>
+                <BLOCK EndBlock="22" EndBlockSegment="22" FlowIsn="21" Type="E">
+                  <Expanded val="1"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="24">
+                  <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
+                  <TaskID comp="-1" obj="7735"/>
+                  <Lock val="N"/>
+                  <Arguments>
+                    <Argument>
+                      <Variable val="1"/>
+                      <Skip val="N"/>
+                    </Argument>
+                    <Argument>
+                      <Variable val="3"/>
+                      <Skip val="N"/>
+                    </Argument>
+                    <Argument>
+                      <Variable val="4"/>
+                      <Skip val="N"/>
+                    </Argument>
+                    <Argument>
+                      <Variable val="8"/>
+                      <Skip val="N"/>
+                    </Argument>
+                  </Arguments>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
+              <LogicLine>
+                <END_BLK FlowIsn="22"/>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="25">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
               </LogicLine>
               <LogicLine>
                 <CallTask FlowIsn="14">
@@ -471,6 +558,10 @@
           <Expression id="1">
             <ExpSyntax val="({0,8} - {0,6}) + {0,7}"/>
             <ExpAttribute val="N"/>
+          </Expression>
+          <Expression id="2">
+            <ExpSyntax val="{0,9}=0"/>
+            <ExpAttribute val="B"/>
           </Expression>
         </Expressions>
         <Task MainProgram="N">

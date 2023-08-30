@@ -31,7 +31,7 @@
           <External val="Y"/>
           <Offline val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="738741" _time="48960" date="2023/08/09" time="13:36:00"/>
+          <LastModified _date="738753" _time="61829" date="2023/08/21" time="17:10:29"/>
         </Header>
         <ItemIsn val="219"/>
         <Resource>
@@ -8516,6 +8516,7 @@
               <EventType val="U"/>
               <PublicObject comp="-1" obj="7"/>
             </Event>
+            <Expanded val="1"/>
             <LogicLines>
               <LogicLine>
                 <RaiseEvent FlowIsn="576">
@@ -8589,6 +8590,7 @@
               <EventType val="U"/>
               <PublicObject comp="-1" obj="10"/>
             </Event>
+            <Expanded val="1"/>
             <LogicLines>
               <LogicLine>
                 <Remark FlowIsn="581">
@@ -15580,9 +15582,9 @@
             <TaskType val="O"/>
             <External val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="738741" _time="48960" date="2023/08/09" time="13:36:00"/>
+            <LastModified _date="738753" _time="61775" date="2023/08/21" time="17:09:35"/>
           </Header>
-          <ItemIsn val="116"/>
+          <ItemIsn val="200"/>
           <Resource>
             <DB id="1">
               <DataObject comp="-1" obj="475"/>
@@ -15610,7 +15612,7 @@
             </DB>
             <DB id="4">
               <DataObject comp="-1" obj="478"/>
-              <Access val="R"/>
+              <Access val="W"/>
               <Share val="W"/>
               <Open val="N"/>
               <Cache val="N"/>
@@ -16300,6 +16302,8 @@
                     <INT_RCMP_INFO>
                       <v>29</v>
                       <v>107</v>
+                      <v>561</v>
+                      <v>1253</v>
                     </INT_RCMP_INFO>
                     <_DitIndexForToolkit val="60"/>
                     <DIFF_UPDATE val="T"/>
@@ -16335,6 +16339,7 @@
                 <LogicLine>
                   <LNK Direction="A" EVL_CND="R" FieldID="19" FlowIsn="29" Key="1" Mode="R" SortType="59" VIEW="20" VIEWS="29">
                     <DB comp="-1" obj="474"/>
+                    <Expanded val="1"/>
                     <Condition val="Y"/>
                   </LNK>
                 </LogicLine>
@@ -16843,6 +16848,8 @@
                     <INT_RCMP_INFO>
                       <v>69</v>
                       <v>107</v>
+                      <v>561</v>
+                      <v>1252</v>
                     </INT_RCMP_INFO>
                     <_DitIndexForToolkit val="62"/>
                     <DIFF_UPDATE val="T"/>
@@ -16874,6 +16881,7 @@
                 <LogicLine>
                   <LNK Direction="A" EVL_CND="R" FieldID="53" FlowIsn="69" Key="1" Mode="R" SortType="74" VIEW="54" VIEWS="4">
                     <DB comp="-1" obj="475"/>
+                    <Expanded val="1"/>
                     <Condition val="Y"/>
                   </LNK>
                 </LogicLine>
@@ -17884,6 +17892,125 @@
                     <Text val=" "/>
                   </Remark>
                 </LogicLine>
+                <LogicLine>
+                  <LNK Direction="A" EVL_CND="R" FlowIsn="561" Key="5" Mode="W" SortType="562" VIEW="115" VIEWS="8">
+                    <DB comp="-1" obj="478"/>
+                    <Expanded val="1"/>
+                    <Condition val="Y"/>
+                  </LNK>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="200" FlowIsn="1256" id="200">
+                    <ASS val="35"/>
+                    <Column val="209"/>
+                    <Type val="R"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
+                    <Locate MAX="35" MIN="35"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="N"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="199" FlowIsn="1255" id="199">
+                    <ASS val="4"/>
+                    <Column val="1"/>
+                    <Type val="R"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
+                    <Locate MAX="4" MIN="4"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="N"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="198" FlowIsn="1254" id="198">
+                    <ASS val="3"/>
+                    <Column val="2"/>
+                    <Type val="R"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
+                    <Locate MAX="3" MIN="3"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="N"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="197" FlowIsn="1253" id="197">
+                    <ASS val="45"/>
+                    <Column val="3"/>
+                    <Type val="R"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
+                    <Locate MAX="45" MIN="45"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="N"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="196" FlowIsn="1252" id="196">
+                    <ASS val="51"/>
+                    <Column val="4"/>
+                    <Type val="R"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
+                    <Locate MAX="51" MIN="51"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="N"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="193" FlowIsn="943" id="193">
+                    <ASS val="199"/>
+                    <Column val="171"/>
+                    <Type val="R"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="N"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="194" FlowIsn="944" id="194">
+                    <ASS val="199"/>
+                    <Column val="172"/>
+                    <Type val="R"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="N"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="195" FlowIsn="945" id="195">
+                    <ASS val="200"/>
+                    <Column val="173"/>
+                    <Type val="R"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="N"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <END_LINK FlowIsn="562"/>
+                </LogicLine>
               </LogicLines>
             </LogicUnit>
             <LogicUnit id="3" propagate="78">
@@ -18481,7 +18608,6 @@
                 <EventType val="U"/>
                 <PublicObject comp="-1" obj="2"/>
               </Event>
-              <Expanded val="1"/>
               <LogicLines>
                 <LogicLine>
                   <Evaluate FlowIsn="202">
@@ -18558,7 +18684,6 @@
                 <EventType val="U"/>
                 <PublicObject comp="-1" obj="1"/>
               </Event>
-              <Expanded val="1"/>
               <LogicLines>
                 <LogicLine>
                   <Evaluate FlowIsn="208">
@@ -19574,6 +19699,7 @@
               <Event>
                 <EventType val="S"/>
               </Event>
+              <Expanded val="1"/>
               <LogicLines>
                 <LogicLine>
                   <Remark FlowIsn="283">
@@ -19882,7 +20008,6 @@
                 <EventType val="S"/>
               </Event>
               <TXT val="[F5]NYs 検索Ｃ"/>
-              <Expanded val="1"/>
               <LogicLines>
                 <LogicLine>
                   <BLOCK EndBlock="322" EndBlockSegment="322" FlowIsn="313" Type="I">
@@ -20418,7 +20543,7 @@
                 <LogicLine>
                   <Remark FlowIsn="352">
                     <Type val="2"/>
-                    <Text val=" "/>
+                    <Text val="20230818 フォームにて在庫区分=0の時に手入力可に修正"/>
                   </Remark>
                 </LogicLine>
                 <LogicLine>
@@ -20819,7 +20944,7 @@
                 <LogicLine>
                   <Remark FlowIsn="397">
                     <Type val="2"/>
-                    <Text val="・ット在庫数が不足しています"/>
+                    <Text val="ロット在庫数が不足しています"/>
                   </Remark>
                 </LogicLine>
                 <LogicLine>
@@ -21014,7 +21139,6 @@
               <Event>
                 <EventType val="S"/>
               </Event>
-              <TXT val="コメント修正"/>
             </LogicUnit>
             <LogicUnit id="41" propagate="78">
               <Level val="K"/>
@@ -21061,7 +21185,6 @@
                 <EventType val="S"/>
               </Event>
               <TXT val="NYS 商品名"/>
-              <Expanded val="1"/>
               <LogicLines>
                 <LogicLine>
                   <RaiseEvent FlowIsn="416">
@@ -21138,6 +21261,83 @@
                 <LogicLine>
                   <END_BLK FlowIsn="421"/>
                 </LogicLine>
+                <LogicLine>
+                  <Remark FlowIsn="505">
+                    <Type val="2"/>
+                    <Text val="バリデーションチェック"/>
+                  </Remark>
+                </LogicLine>
+                <LogicLine>
+                  <RaiseEvent FlowIsn="448">
+                    <Event>
+                      <EventType val="U"/>
+                      <Parent val="32768"/>
+                      <PublicObject comp="-1" obj="22"/>
+                    </Event>
+                    <Wait val="89"/>
+                    <Arguments>
+                      <Argument>
+                        <Variable val="50"/>
+                        <Skip val="N"/>
+                      </Argument>
+                    </Arguments>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </RaiseEvent>
+                </LogicLine>
+                <LogicLine>
+                  <BLOCK EndBlock="475" EndBlockSegment="475" FlowIsn="474" Type="I">
+                    <Expanded val="1"/>
+                    <Condition Exp="194"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </BLOCK>
+                </LogicLine>
+                <LogicLine>
+                  <Remark FlowIsn="476">
+                    <Type val="2"/>
+                    <Text val="半角の「&quot;」は使用不可です。"/>
+                  </Remark>
+                </LogicLine>
+                <LogicLine>
+                  <CallTask FlowIsn="477">
+                    <OperationType val="P"/>
+                    <Event>
+                      <EventType val="N"/>
+                    </Event>
+                    <TaskID comp="-1" obj="571"/>
+                    <Lock val="N"/>
+                    <Arguments>
+                      <Argument>
+                        <Expression val="195"/>
+                        <Skip val="N"/>
+                      </Argument>
+                      <Argument>
+                        <Parent val="1"/>
+                        <Variable val="178"/>
+                        <Skip val="N"/>
+                      </Argument>
+                    </Arguments>
+                    <Wait val="Y"/>
+                    <SyncData val="N"/>
+                    <RetainFocus val="N"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </CallTask>
+                </LogicLine>
+                <LogicLine>
+                  <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="160" FlowIsn="478" IMG_DEF_CHG="N" Image="C" Mode="E" TTL_DEF_CHG="N" TitleTxt="エラー" VR_DISP="B">
+                    <AppendToErrorLog val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </STP>
+                </LogicLine>
+                <LogicLine>
+                  <END_BLK FlowIsn="475"/>
+                </LogicLine>
               </LogicLines>
             </LogicUnit>
             <LogicUnit id="45" propagate="78">
@@ -21151,7 +21351,6 @@
                 <EventType val="S"/>
               </Event>
               <TXT val="NYS 規格"/>
-              <Expanded val="1"/>
               <LogicLines>
                 <LogicLine>
                   <RaiseEvent FlowIsn="422">
@@ -21227,6 +21426,77 @@
                 </LogicLine>
                 <LogicLine>
                   <END_BLK FlowIsn="427"/>
+                </LogicLine>
+                <LogicLine>
+                  <Remark FlowIsn="446">
+                    <Type val="2"/>
+                    <Text val="バリデーションチェック"/>
+                  </Remark>
+                </LogicLine>
+                <LogicLine>
+                  <RaiseEvent FlowIsn="507">
+                    <Event>
+                      <EventType val="U"/>
+                      <Parent val="32768"/>
+                      <PublicObject comp="-1" obj="22"/>
+                    </Event>
+                    <Wait val="89"/>
+                    <Arguments>
+                      <Argument>
+                        <Variable val="51"/>
+                        <Skip val="N"/>
+                      </Argument>
+                    </Arguments>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </RaiseEvent>
+                </LogicLine>
+                <LogicLine>
+                  <BLOCK EndBlock="509" EndBlockSegment="509" FlowIsn="508" Type="I">
+                    <Expanded val="1"/>
+                    <Condition Exp="194"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </BLOCK>
+                </LogicLine>
+                <LogicLine>
+                  <CallTask FlowIsn="540">
+                    <OperationType val="P"/>
+                    <Event>
+                      <EventType val="N"/>
+                    </Event>
+                    <TaskID comp="-1" obj="571"/>
+                    <Lock val="N"/>
+                    <Arguments>
+                      <Argument>
+                        <Expression val="195"/>
+                        <Skip val="N"/>
+                      </Argument>
+                      <Argument>
+                        <Parent val="1"/>
+                        <Variable val="178"/>
+                        <Skip val="N"/>
+                      </Argument>
+                    </Arguments>
+                    <Wait val="Y"/>
+                    <SyncData val="N"/>
+                    <RetainFocus val="N"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </CallTask>
+                </LogicLine>
+                <LogicLine>
+                  <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="160" FlowIsn="541" IMG_DEF_CHG="N" Image="C" Mode="E" TTL_DEF_CHG="N" TitleTxt="エラー" VR_DISP="B">
+                    <AppendToErrorLog val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </STP>
+                </LogicLine>
+                <LogicLine>
+                  <END_BLK FlowIsn="509"/>
                 </LogicLine>
               </LogicLines>
             </LogicUnit>
@@ -21355,6 +21625,7 @@
                 </LogicLine>
                 <LogicLine>
                   <BLOCK EndBlock="439" EndBlockSegment="439" FlowIsn="435" Type="I">
+                    <Expanded val="1"/>
                     <Condition Exp="181"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>
@@ -21417,7 +21688,6 @@
                 <EventType val="S"/>
               </Event>
               <TXT val="[F5]NYS 明細摘要"/>
-              <Expanded val="1"/>
               <LogicLines>
                 <LogicLine>
                   <RaiseEvent FlowIsn="440">
@@ -21444,7 +21714,6 @@
                 </LogicLine>
                 <LogicLine>
                   <BLOCK EndBlock="445" EndBlockSegment="445" FlowIsn="441" Type="I">
-                    <Expanded val="1"/>
                     <Condition Exp="181"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>
@@ -22723,7 +22992,7 @@
               <ExpAttribute val="B"/>
             </Expression>
             <Expression id="20">
-              <ExpSyntax val="{0,44} = 1  AND  IF({0,17}=0,{1,57} = 0,'TRUE'LOG)"/>
+              <ExpSyntax val="IF({0,44} = 1, IF({0,17}=0,{1,57} = 0,'TRUE'LOG),'TRUE'LOG)"/>
               <ExpAttribute val="B"/>
             </Expression>
             <Expression id="21">
@@ -23370,6 +23639,10 @@
               <ExpSyntax val="{32768,50}=1"/>
               <ExpAttribute val="B"/>
             </Expression>
+            <Expression id="194">
+              <ExpSyntax val="{32768,190}=1"/>
+              <ExpAttribute val="B"/>
+            </Expression>
             <Expression id="182">
               <ExpSyntax val="79"/>
               <ExpAttribute val="N"/>
@@ -23417,6 +23690,18 @@
             <Expression id="193">
               <ExpSyntax val="SubformExecMode(0)=0"/>
               <ExpAttribute val="B"/>
+            </Expression>
+            <Expression id="195">
+              <ExpSyntax val="701"/>
+              <ExpAttribute val="N"/>
+            </Expression>
+            <Expression id="199">
+              <ExpSyntax val="Date()"/>
+              <ExpAttribute val="D"/>
+            </Expression>
+            <Expression id="200">
+              <ExpSyntax val="Prog()"/>
+              <ExpAttribute val="A"/>
             </Expression>
           </Expressions>
           <EVNT DESC="行挿入準備処理" FORCE_EXIT="N" id="1">
